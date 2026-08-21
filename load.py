@@ -6,7 +6,7 @@ from great_expectations.expectations import (
     ExpectColumnValuesToBeUnique,
     ExpectColumnValuesToNotBeNull,
     ExpectColumnValuesToBeInSet,
-    ExpectColumnValuesToBeBetween
+    ExpectColumnValuesToMatchRegex
 )
 
 def run_validation_and_load(transformed_path, clean_csv_path, db_path):
@@ -21,53 +21,33 @@ def run_validation_and_load(transformed_path, clean_csv_path, db_path):
     context = gx.get_context()
     
     # Add pandas data source and asset
-    data_source = context.data_sources.add_pandas("kpc_pipeline_datasource")
-    data_asset = data_source.add_dataframe_asset("kpc_transformed_asset")
-    batch_def = data_asset.add_batch_definition_whole_dataframe("kpc_batch_def")
+    data_source = context.data_sources.add_pandas("inuka_pipeline_datasource")
+    data_asset = data_source.add_dataframe_asset("inuka_transformed_asset")
+    batch_def = data_asset.add_batch_definition_whole_dataframe("inuka_batch_def")
     
     # Create Expectation Suite
-    suite = context.suites.add(gx.ExpectationSuite("kpc_quality_gate_suite"))
+    suite = context.suites.add(gx.ExpectationSuite("inuka_quality_gate_suite"))
     
     # Define expectations
     expectations = [
-        ExpectColumnValuesToNotBeNull(column="transaction_id"),
-        ExpectColumnValuesToBeUnique(column="transaction_id"),
+        ExpectColumnValuesToNotBeNull(column="beneficiary_id"),
+        ExpectColumnValuesToBeUnique(column="beneficiary_id"),
+        ExpectColumnValuesToNotBeNull(column="full_name"),
         ExpectColumnValuesToBeInSet(
-            column="depot_location", 
-            value_set=["Nairobi", "Kisumu", "Mombasa", "Eldoret", "Nakuru"]
-        ),
-        ExpectColumnValuesToBeInSet(
-            column="product_type",
-            value_set=[
-                "Automotive Gas Oil (AGO)", 
-                "Illuminating Kerosene (IK)", 
-                "Jet A1", 
-                "Premium Motor Spirit (PMS)"
-            ]
-        ),
-        ExpectColumnValuesToBeBetween(
-            column="ordered_volume_liters", 
-            min_value=30000, 
-            max_value=60000
-        ),
-        ExpectColumnValuesToBeBetween(
-            column="actual_loaded_liters", 
-            min_value=20000, 
-            max_value=65000
-        ),
-        ExpectColumnValuesToBeBetween(
-            column="loading_accuracy", 
-            min_value=95.0, 
-            max_value=105.0
-        ),
-        ExpectColumnValuesToBeBetween(
-            column="total_tat_minutes", 
-            min_value=30.0, 
-            max_value=1000.0
+            column="pillar",
+            value_set=["Scholarship", "Plus", "Vocational", "Tech"]
         ),
         ExpectColumnValuesToBeInSet(
-            column="demurrage_incurred", 
-            value_set=[0, 1]
+            column="region",
+            value_set=["North Eastern", "Coastal", "Eastern", "Central", "Nairobi", "Nyanza", "Rift Valley", "Western"]
+        ),
+        ExpectColumnValuesToBeInSet(
+            column="consent_status",
+            value_set=["Consented", "Pending", "Withdrawn"]
+        ),
+        ExpectColumnValuesToMatchRegex(
+            column="email",
+            regex=r"^[^@]+@[^@]+\.[^@]+$"
         )
     ]
     
@@ -79,7 +59,7 @@ def run_validation_and_load(transformed_path, clean_csv_path, db_path):
     # Add validation definition and run validation
     validation_definition = context.validation_definitions.add(
         gx.ValidationDefinition(
-            name="kpc_validation_def",
+            name="inuka_validation_def",
             data=batch_def,
             suite=suite
         )
@@ -110,20 +90,15 @@ def run_validation_and_load(transformed_path, clean_csv_path, db_path):
     conn = sqlite3.connect(db_path)
     
     # Drop existing table if any and load fresh data
-    df.to_sql("depot_operations", conn, if_exists="replace", index=False)
-    
-    # Verify load
-    cursor = conn.cursor()
-    cursor.execute("SELECT COUNT(*) FROM depot_operations")
-    row_count = cursor.fetchone()[0]
+    df.to_sql("inuka_beneficiaries", conn, if_exists="replace", index=False)
     conn.close()
     
-    print(f"Successfully loaded {row_count} rows into 'depot_operations' table in {db_path}.")
+    print(f"Successfully loaded {len(df)} rows into 'inuka_beneficiaries' table in {db_path}.")
     print("--- LOAD STAGE COMPLETED ---")
     return True
 
 if __name__ == "__main__":
-    TRANSFORMED_PATH = os.path.join("dataset", "kpc_depot_transformed.csv")
-    CLEAN_CSV_PATH = os.path.join("dataset", "kpc_depot_clean.csv")
+    TRANSFORMED_PATH = os.path.join("dataset", "inuka_beneficiary_transformed.csv")
+    CLEAN_CSV_PATH = os.path.join("dataset", "inuka_beneficiary_clean.csv")
     DB_PATH = os.path.join("dataset", "kpc_depot.db")
     run_validation_and_load(TRANSFORMED_PATH, CLEAN_CSV_PATH, DB_PATH)

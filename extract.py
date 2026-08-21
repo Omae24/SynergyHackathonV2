@@ -18,6 +18,6 @@ def extract_data(raw_path, extracted_path):
     return df
 
 if __name__ == "__main__":
-    RAW_PATH = os.path.join("dataset", "kpc_depot_raw.csv")
-    EXTRACTED_PATH = os.path.join("dataset", "kpc_depot_extracted.csv")
+    RAW_PATH = os.path.join("dataset", "inuka_beneficiary_raw.csv")
+    EXTRACTED_PATH = os.path.join("dataset", "inuka_beneficiary_extracted.csv")
     extract_data(RAW_PATH, EXTRACTED_PATH)
