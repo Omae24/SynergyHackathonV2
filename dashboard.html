@@ -1,0 +1,1868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inuka Beneficiary Privacy & Consent Portal (KDPA Compliance)</title>
+    <style>
+        :root {
+            --bg-main: #0b0f19;
+            --bg-panel: #111827;
+            --bg-card: #1f2937;
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --text-main: #f3f4f6;
+            --text-secondary: #9ca3af;
+            --border: #374151;
+            --shadow: rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* --- LOGIN SCREEN OVERLAY --- */
+        #login-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 15, 25, 0.95);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-box {
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            padding: 30px;
+            border-radius: 12px;
+            width: 440px;
+            box-shadow: 0 10px 25px var(--shadow);
+        }
+
+        .login-logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .login-subtitle {
+            font-size: 13px;
+            color: var(--text-secondary);
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-main);
+            font-size: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 12px;
+            background: var(--primary);
+            color: var(--text-main);
+            border: none;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-login:hover {
+            background: var(--primary-hover);
+        }
+
+        .login-error {
+            color: var(--danger);
+            font-size: 12px;
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+        }
+
+        /* --- MAIN LAYOUT --- */
+        .app-layout {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - 60px);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--bg-panel);
+            border-bottom: 1px solid var(--border);
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 10;
+        }
+
+        .header-logo {
+            font-size: 18px;
+            font-weight: 800;
+            color: var(--primary);
+        }
+
+        .header-user {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .user-info {
+            text-align: right;
+        }
+
+        .user-name {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .user-role-badge {
+            font-size: 11px;
+            color: var(--primary);
+            background: rgba(59, 130, 246, 0.15);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 700;
+        }
+
+        .btn-logout {
+            background: transparent;
+            border: 1px solid var(--border);
+            padding: 6px 12px;
+            border-radius: 6px;
+            color: var(--text-secondary);
+            font-size: 12px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-logout:hover {
+            color: var(--text-main);
+            border-color: var(--text-secondary);
+        }
+
+        /* --- MAIN SIDEBAR / FILTERS --- */
+        aside {
+            background: var(--bg-panel);
+            border-right: 1px solid var(--border);
+            width: 280px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: auto;
+        }
+
+        .aside-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+
+        /* --- LIVE STREAM PANEL --- */
+        .live-stream-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .live-stream-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .badge-live {
+            font-size: 10px;
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--success);
+            padding: 2px 6px;
+            border-radius: 99px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .badge-live::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.3; }
+            50% { opacity: 1; }
+            100% { opacity: 0.3; }
+        }
+
+        .live-stream-feed {
+            flex: 1;
+            overflow-y: auto;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 11px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding-right: 5px;
+        }
+
+        .feed-entry {
+            border-left: 2px solid var(--primary);
+            padding-left: 6px;
+            margin-bottom: 2px;
+            line-height: 1.3;
+        }
+
+        .feed-entry.success { border-color: var(--success); color: #a7f3d0; }
+        .feed-entry.quarantine { border-color: var(--danger); color: #fecaca; }
+
+        /* --- MAIN CONTENT AREA --- */
+        main {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: auto;
+        }
+
+        /* --- KPI GRID --- */
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .kpi-card {
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px var(--shadow);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .kpi-card::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: var(--primary);
+        }
+
+        .kpi-card.success::after { background: var(--success); }
+        .kpi-card.warning::after { background: var(--warning); }
+        .kpi-card.danger::after { background: var(--danger); }
+
+        .kpi-title {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+        }
+
+        .kpi-value {
+            font-size: 28px;
+            font-weight: 800;
+            margin-top: 5px;
+        }
+
+        .kpi-trend {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-top: 5px;
+        }
+
+        /* --- DATA TABLE CONTAINER --- */
+        .dashboard-box {
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px var(--shadow);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .box-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .box-title {
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        /* --- TOGGLE SWITCH --- */
+        .toggle-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 48px;
+            height: 24px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            transition: .3s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .3s;
+            border-radius: 50%;
+        }
+
+        input:checked + .slider {
+            background-color: var(--primary);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(24px);
+        }
+
+        .switch-label {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        /* --- TABLE --- */
+        .table-wrapper {
+            overflow-x: auto;
+            max-height: 350px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 13px;
+        }
+
+        th {
+            background: var(--bg-card);
+            padding: 12px;
+            font-weight: 700;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        /* Badge status colors */
+        .badge-status {
+            font-size: 11px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .badge-status.consented { background: rgba(16, 185, 129, 0.15); color: var(--success); }
+        .badge-status.pending { background: rgba(245, 158, 11, 0.15); color: var(--warning); }
+        .badge-status.withdrawn { background: rgba(239, 68, 68, 0.15); color: var(--danger); }
+
+        .btn-table {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            cursor: pointer;
+            margin-right: 5px;
+            transition: all 0.2s;
+        }
+
+        .btn-table:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-table.danger-action:hover {
+            background: var(--danger);
+            border-color: var(--danger);
+        }
+
+        /* Pagination & Search styling */
+        .pagination-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pagination-controls {
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .btn-page {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .btn-page:hover:not(:disabled) {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .btn-page:disabled {
+            opacity: 0.4;
+            cursor: not-allowed;
+        }
+
+        .search-box {
+            padding: 6px 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-main);
+            font-size: 13px;
+            width: 200px;
+        }
+
+        /* --- COMPLIANCE REPORT CHATBOT DRAWER --- */
+        #chatbot-panel {
+            background: var(--bg-panel);
+            border-left: 1px solid var(--border);
+            width: 320px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chat-header {
+            padding: 15px 20px;
+            border-bottom: 1px solid var(--border);
+            background: var(--bg-card);
+        }
+
+        .chat-title {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .chat-subtitle {
+            font-size: 11px;
+            color: var(--text-secondary);
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .chat-bubble {
+            padding: 10px 12px;
+            border-radius: 8px;
+            max-width: 85%;
+            font-size: 12.5px;
+            line-height: 1.4;
+        }
+
+        .chat-bubble.bot {
+            background: var(--bg-card);
+            align-self: flex-start;
+            border: 1px solid var(--border);
+        }
+
+        .chat-bubble.user {
+            background: var(--primary);
+            color: white;
+            align-self: flex-end;
+        }
+
+        .chat-input-wrapper {
+            padding: 15px;
+            border-top: 1px solid var(--border);
+            background: var(--bg-card);
+            display: flex;
+            gap: 8px;
+        }
+
+        .chat-input {
+            flex: 1;
+            padding: 8px 12px;
+            background: var(--bg-main);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--text-main);
+            font-size: 13px;
+        }
+
+        .chat-input:focus {
+            border-color: var(--primary);
+            outline: none;
+        }
+
+        .btn-chat-send {
+            padding: 8px 12px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .btn-chat-send:hover {
+            background: var(--primary-hover);
+        }
+
+        .chat-suggestions {
+            padding: 0 15px 10px 15px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            background: var(--bg-card);
+        }
+
+        .chip {
+            background: var(--bg-main);
+            border: 1px solid var(--border);
+            padding: 4px 8px;
+            border-radius: 99px;
+            font-size: 10.5px;
+            cursor: pointer;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+        }
+
+        .chip:hover {
+            color: var(--text-main);
+            border-color: var(--primary);
+        }
+
+        /* --- BENEFICIARY WORKSPACE --- */
+        #beneficiary-workspace {
+            display: none;
+            flex: 1;
+            padding: 30px;
+            flex-direction: column;
+            gap: 25px;
+            overflow-y: auto;
+        }
+
+        .profile-card {
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            box-shadow: 0 4px 6px var(--shadow);
+            max-width: 700px;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .profile-field {
+            font-size: 14px;
+        }
+
+        .profile-field strong {
+            color: var(--text-secondary);
+            font-size: 12px;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .purpose-checklist {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-top: 15px;
+        }
+
+        .purpose-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--bg-card);
+            padding: 12px 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .purpose-desc {
+            font-size: 13.5px;
+        }
+
+        .purpose-desc strong {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 2px;
+        }
+
+        .purpose-desc span {
+            color: var(--text-secondary);
+            font-size: 12px;
+        }
+
+        /* --- ALIGNMENT / AUDIT TABLE SPAN --- */
+        .audit-alert-row {
+            background: rgba(239, 68, 68, 0.05) !important;
+            border-left: 3px solid var(--danger);
+        }
+        
+        .audit-alert-text {
+            color: #fca5a5;
+            font-weight: 700;
+        }
+
+        /* --- MODAL DIALOG --- */
+        #consent-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(11, 15, 25, 0.8);
+            z-index: 100;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 25px;
+            width: 400px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .restricted-badge {
+            font-size: 11px;
+            color: var(--danger);
+            background: rgba(239, 68, 68, 0.15);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 600;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. LOGIN SECTION -->
+    <div id="login-overlay">
+        <div class="login-box">
+            <div class="login-logo">Inuka Fellowship</div>
+            <div class="login-subtitle">KDPA Compliance & Consent Engine</div>
+            
+            <div class="form-group">
+                <label>Demo Profiles Access Matrix</label>
+                <select id="quick-login" class="form-control" style="background: #111827; border-color: rgba(59, 130, 246, 0.3);" onchange="fillLoginCredentials()">
+                    <option value="">-- Choose Access Profile --</option>
+                    <option value="hq_director">1. HQ Program Director (Full Scope, Maskable PII)</option>
+                    <option value="scholarship_hq">2. Scholarship Pillar Coordinator (Scholarship Pillar Only)</option>
+                    <option value="tech_hq">3. Tech Pillar Coordinator (Tech Pillar Only)</option>
+                    <option value="nyanza_field">4. Nyanza Field Officer (Nyanza Region Only)</option>
+                    <option value="nairobi_field">5. Nairobi Field Officer (Nairobi Region Only)</option>
+                    <option value="coastal_field">6. Coastal Field Officer (Coastal Region Only)</option>
+                    <option value="kdpa_auditor">7. Compliance Auditor (Ledgers Only, Fully Masked)</option>
+                    <option value="INK-2026-1002">8. Beneficiary (INK-2026-1002 - Lucy Hassan)</option>
+                </select>
+                <p style="font-size: 11px; color: var(--text-secondary); margin-top: 6px; line-height: 1.4;">
+                    💡 <strong>Compliance Note:</strong> Column-level and row-level safety policies are enforced dynamically on the database query layer.
+                </p>
+            </div>
+
+            <form id="login-form" onsubmit="handleLoginSubmit(event)">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="username" class="form-control" required placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="password" class="form-control" required placeholder="Enter password">
+                </div>
+                <button type="submit" class="btn-login">Authenticate Profile</button>
+            </form>
+            <div class="login-error" id="login-error">Authentication failed. Invalid username or password.</div>
+        </div>
+    </div>
+
+    <!-- 2. MAIN HEADER -->
+    <header>
+        <div class="header-logo">KPC Inuka Fellowship Data Privacy Portal</div>
+        <div class="header-user">
+            <div class="user-info">
+                <span class="user-name" id="display-username">Username</span>
+                <span class="user-role-badge" id="display-role">ROLE</span>
+            </div>
+            <button class="btn-logout" onclick="logout()">Logout</button>
+        </div>
+    </header>
+
+    <!-- 3. WORKSPACE CONTAINER -->
+    <div class="app-layout">
+        
+        <!-- SIDEBAR FILTERS & LIVE EVENT STREAM -->
+        <aside id="staff-sidebar">
+            <div>
+                <div class="aside-title">Directory Filtering</div>
+                <div class="form-group">
+                    <label for="filter-pillar">Inuka Program Pillar</label>
+                    <select id="filter-pillar" class="form-control" onchange="resetPageAndLoad()">
+                        <option value="All">All Pillars</option>
+                        <option value="Scholarship">Scholarship</option>
+                        <option value="Plus">Plus</option>
+                        <option value="Vocational">Vocational</option>
+                        <option value="Tech">Tech</option>
+                    </select>
+                    <span class="restricted-badge" id="pillar-restricted-msg">Pillar Restricted</span>
+                </div>
+                <div class="form-group" id="region-filter-group">
+                    <label for="filter-region">Regional Data Center</label>
+                    <select id="filter-region" class="form-control" onchange="resetPageAndLoad()">
+                        <option value="All">All Regions</option>
+                        <option value="North Eastern">North Eastern</option>
+                        <option value="Coastal">Coastal</option>
+                        <option value="Eastern">Eastern</option>
+                        <option value="Central">Central</option>
+                        <option value="Nairobi">Nairobi</option>
+                        <option value="Nyanza">Nyanza</option>
+                        <option value="Rift Valley">Rift Valley</option>
+                        <option value="Western">Western</option>
+                    </select>
+                    <span class="restricted-badge" id="region-restricted-msg">Region Restricted</span>
+                </div>
+                <div class="form-group">
+                    <label for="filter-purpose">Consent Purpose Filter</label>
+                    <select id="filter-purpose" class="form-control" onchange="resetPageAndLoad()">
+                        <option value="All">All Purposes</option>
+                        <option value="data_sharing">Stipend Processing (Data Sharing)</option>
+                        <option value="photo_use">Media Highlights (Photo Use)</option>
+                        <option value="sms_contact">Updates/Alerts (SMS Contact)</option>
+                        <option value="external_reporting">Auditing (External Reporting)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Real-Time Data Ingestion Stream -->
+            <div class="live-stream-box">
+                <div class="live-stream-header">
+                    <span class="aside-title">Ingestion Stream (ETL)</span>
+                    <span class="badge-live">Live Stream</span>
+                </div>
+                <div class="live-stream-feed" id="stream-feed-container">
+                    <div style="color: var(--text-secondary); text-align: center; margin-top: 40px;">Awaiting events...</div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- MAIN DASHBOARD CONTENT (STAFF ONLY) -->
+        <main id="staff-workspace">
+            <!-- KPI METRICS GRID -->
+            <div class="kpi-grid">
+                <div class="kpi-card" id="kpi-total-box">
+                    <div class="kpi-title">Active Directory Size</div>
+                    <div class="kpi-value" id="kpi-total">0</div>
+                    <div class="kpi-trend" id="kpi-total-desc">Beneficiary identity registry</div>
+                </div>
+                <div class="kpi-card success" id="kpi-consent-box">
+                    <div class="kpi-title">Stipend Consent Rate</div>
+                    <div class="kpi-value" id="kpi-consent">0%</div>
+                    <div class="kpi-trend" id="kpi-consent-desc">Verified permissions graph</div>
+                </div>
+                <div class="kpi-card warning" id="kpi-quarantine-box">
+                    <div class="kpi-title">GE Quality Quarantines</div>
+                    <div class="kpi-value" id="kpi-quarantine">0</div>
+                    <div class="kpi-trend" id="kpi-quarantine-desc">Great Expectations rejects</div>
+                </div>
+                <div class="kpi-card danger" id="kpi-threat-box">
+                    <div class="kpi-title">Financial Anomalies</div>
+                    <div class="kpi-value" id="kpi-threat">0</div>
+                    <div class="kpi-trend" id="kpi-threat-desc">Stipend payout errors</div>
+                </div>
+            </div>
+
+            <!-- PRIMARY DIRECTORY -->
+            <div class="dashboard-box">
+                <div class="box-header">
+                    <div class="box-title" id="directory-table-title">Beneficiary Identity Directory</div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="text" id="directory-search" class="search-box" placeholder="Search by name, ID..." oninput="resetPageAndLoad()">
+                        <button class="btn-login" style="width: auto; padding: 6px 12px; font-size: 12px; background: var(--success);" onclick="exportCompliantReport()">
+                            Export Compliant Report (CSV)
+                        </button>
+                        <div class="toggle-container" id="anonymize-switch-container">
+                            <span class="switch-label">KDPA Masking</span>
+                            <label class="switch">
+                                <input type="checkbox" id="anonymize-toggle" onchange="resetPageAndLoad()">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name (PII)</th>
+                                <th>National ID (PII)</th>
+                                <th>Email Address (PII)</th>
+                                <th>Phone Number (PII)</th>
+                                <th>Pillar</th>
+                                <th>Region</th>
+                                <th>Consent Status</th>
+                                <th>Verification Date</th>
+                                <th style="text-align: right;">Compliance Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="directory-table-body">
+                            <!-- Filled dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="pagination-container">
+                    <div style="font-size: 13px; color: var(--text-secondary);" id="pagination-info">
+                        Showing 0 to 0 of 0 beneficiaries
+                    </div>
+                    <div class="pagination-controls">
+                        <button class="btn-page" id="btn-page-prev" onclick="changePage(-1)">Previous</button>
+                        <button class="btn-page" id="btn-page-next" onclick="changePage(1)">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DISBURSEMENT VS ATTENDANCE FINANCIAL RECONCILIATION -->
+            <div class="dashboard-box" id="reconciliation-container">
+                <div class="box-header">
+                    <div class="box-title">Financial Reconciliation & Attendance Audit Ledger</div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <select id="reconciliation-filter" class="form-control" style="width: 200px; font-size: 12.5px; padding: 6px;" onchange="loadReconciliation()">
+                            <option value="All">All Payments (August 2026)</option>
+                            <option value="Discrepancy">Flagged Anomalies (Discrepancies)</option>
+                            <option value="Matched">Matched Payments</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Fellow Name</th>
+                                <th>Month</th>
+                                <th>M&E Attendance Rate</th>
+                                <th>Disbursed Amount</th>
+                                <th>Expected Amount (Min 75% Attend)</th>
+                                <th>Discrepancy Alert Reason</th>
+                                <th>Status</th>
+                                <th style="text-align: right;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reconciliation-table-body">
+                            <!-- Filled dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- AUDIT LEDGER -->
+            <div class="dashboard-box">
+                <div class="box-header">
+                    <div class="box-title">Cryptographic KDPA Compliance Access Ledger</div>
+                    <div style="font-size: 11px; background: rgba(59, 130, 246, 0.15); color: #3b82f6; font-weight: 700; padding: 4px 8px; border-radius: 6px;">
+                        Immutable Security Ledger
+                    </div>
+                </div>
+                <div class="table-wrapper" style="max-height: 200px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Log ID</th>
+                                <th>Timestamp</th>
+                                <th>Operator Account</th>
+                                <th>Transaction Action</th>
+                                <th>Target ID</th>
+                                <th>Operator IP</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="audit-table-body">
+                            <!-- Filled dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- DEDICATED BENEFICIARY SELF-SERVICE WORKSPACE -->
+        <div id="beneficiary-workspace">
+            <h2 style="font-size: 20px; font-weight: 700; margin-bottom: 5px;">Fellowship Self-Service Privacy Desk</h2>
+            <p style="font-size: 13.5px; color: var(--text-secondary); margin-bottom: 10px;">
+                As a Fellow under the KPC Inuka Foundation, you hold complete control over your personal data under the Kenya Data Protection Act.
+            </p>
+            
+            <div class="profile-card">
+                <h3 style="font-size: 16px; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 15px;">
+                    1. Enrollment Details & Status
+                </h3>
+                <div class="profile-grid">
+                    <div class="profile-field">
+                        <strong>Beneficiary ID</strong>
+                        <span id="ben-display-id">-</span>
+                    </div>
+                    <div class="profile-field">
+                        <strong>Full Name (PII Masked)</strong>
+                        <span id="ben-display-name">-</span>
+                    </div>
+                    <div class="profile-field">
+                        <strong>Program Pillar</strong>
+                        <span id="ben-display-pillar">-</span>
+                    </div>
+                    <div class="profile-field">
+                        <strong>Administrative Region</strong>
+                        <span id="ben-display-region">-</span>
+                    </div>
+                    <div class="profile-field">
+                        <strong>Consent Status</strong>
+                        <span id="ben-display-consent">-</span>
+                    </div>
+                    <div class="profile-field">
+                        <strong>Enrollment Status</strong>
+                        <span id="ben-display-enrollment" style="font-weight: 700; color: var(--success);">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <h3 style="font-size: 16px;">2. Manage Granular Consent Purposes</h3>
+                <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 10px;">
+                    Modify individual data processing streams. Toggling off stipend processing will place your active fellowship on hold.
+                </p>
+                
+                <div class="purpose-checklist">
+                    <div class="purpose-row">
+                        <div class="purpose-desc">
+                            <strong>Stipend Processing & Data Sharing (Mandatory for Active Fellowship)</strong>
+                            <span>Authorize sharing identity details with banking partners to process monthly stipends.</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="ben-purpose-data-sharing" onchange="checkMandatoryConsentWarning()">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="purpose-row">
+                        <div class="purpose-desc">
+                            <strong>Media Highlights & Photo Use (Optional)</strong>
+                            <span>Consent to featuring your project highlights or photographs in the Foundation's public reports.</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="ben-purpose-photo-use">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="purpose-row">
+                        <div class="purpose-desc">
+                            <strong>SMS Notifications & Alerts (Optional)</strong>
+                            <span>Opt-in to automated SMS notifications regarding class timetables and stipend dispatch updates.</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="ben-purpose-sms">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+
+                    <div class="purpose-row">
+                        <div class="purpose-desc">
+                            <strong>External Reporting & Donor Audits (Optional)</strong>
+                            <span>Consent to sharing aggregated or coded metrics with Inuka Foundation donor boards.</span>
+                        </div>
+                        <label class="switch">
+                            <input type="checkbox" id="ben-purpose-external-reporting">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div style="margin-top: 15px; display: flex; justify-content: flex-end; gap: 10px;">
+                    <button class="btn-login" style="width: auto; padding: 10px 20px;" onclick="saveBeneficiaryConsent()">Save Preferences</button>
+                </div>
+            </div>
+
+            <div class="profile-card" style="border-color: rgba(239, 68, 68, 0.3); background: rgba(239, 68, 68, 0.02);">
+                <h3 style="font-size: 16px; color: var(--danger);">3. Compliance & Revocation Center</h3>
+                <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 15px;">
+                    Under Section 40 of the Kenya Data Protection Act, you can withdraw your consent at any time or request profile erasure.
+                </p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <button class="btn-table danger-action" style="padding: 10px 15px; border-color: var(--danger); color: #fecaca;" onclick="beneficiarySelfWithdrawAll()">
+                        Withdraw Consent & Pause Fellowship
+                    </button>
+                    <button class="btn-table danger-action" style="padding: 10px 15px; border-color: var(--danger); color: #fecaca;" onclick="beneficiarySelfRightToForget()">
+                        Revoke Consent & Erasure (Post-Enrollment)
+                    </button>
+                </div>
+                <p id="ben-compliance-warning" style="font-size: 11px; color: var(--danger); margin-top: 10px; display: none;">
+                    ⚠️ Warning: Toggling off data sharing or choosing to withdraw consent will place your stipend enrollment status "On Hold" immediately.
+                </p>
+            </div>
+        </div>
+
+        <!-- CHATBOX COMPLIANCE SELF-SERVICE -->
+        <div id="chatbot-panel">
+            <div class="chat-header">
+                <div class="chat-title">AI Compliance Chatbot</div>
+                <div class="chat-subtitle">Bilingual Beneficiary Rights Portal</div>
+            </div>
+            <div class="chat-messages" id="chat-messages-container">
+                <div class="chat-bubble bot">
+                    Hello! I am the Inuka compliance agent. I can help you exercise your KDPA data rights. Ask me to check your profile info, grant/revoke consent, redact your details, or compile a pillar compliance report.
+                </div>
+            </div>
+            <div class="chat-suggestions">
+                <div class="chip" onclick="quickChat('Report on the Tech pillar')">Report on Tech</div>
+                <div class="chip" onclick="quickChat('Compliance report for Nyanza')">Report on Nyanza</div>
+                <div class="chip" onclick="quickChat('Show details for Joseph')">Show details for Joseph</div>
+                <div class="chip" onclick="quickChat('Delete data for Joseph')">Delete data for Joseph</div>
+            </div>
+            <div class="chat-input-wrapper">
+                <input type="text" id="chat-input" class="chat-input" placeholder="Type command in English or Swahili..." onkeypress="handleChatKeyPress(event)">
+                <button class="btn-chat-send" onclick="sendChatMessage()">Send</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 4. CONSENT OVERRIDE MODAL -->
+    <div id="consent-modal">
+        <div class="modal-content">
+            <h3 style="font-size: 16px;">Modify Beneficiary Consent</h3>
+            <p id="consent-modal-desc" style="font-size: 13px; color: var(--text-secondary);"></p>
+            <input type="hidden" id="modal-beneficiary-id">
+            
+            <div class="form-group">
+                <label>Consent Status</label>
+                <select id="modal-consent-select" class="form-control">
+                    <option value="Consented">Consented (Opt-In)</option>
+                    <option value="Pending">Pending Validation</option>
+                    <option value="Withdrawn">Withdrawn (Opt-Out)</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label>Consent Verification Method</label>
+                <select id="modal-type-select" class="form-control">
+                    <option value="Digital Signature">Digital Signature (Web Form)</option>
+                    <option value="SMS OTP">SMS OTP Verification</option>
+                    <option value="Physical Form">Physical Paper Waiver</option>
+                </select>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 10px; margin-top: 10px;">
+                <button class="btn-table" onclick="closeConsentModal()">Cancel</button>
+                <button class="btn-login" style="width: auto; padding: 8px 16px;" onclick="submitConsentUpdate()">Apply Consent Change</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. CLIENT SCRIPTS -->
+    <script>
+        let currentUser = null;
+        let updateIntervals = null;
+        let currentPage = 1;
+        const recordsPerPage = 10;
+        let filteredBeneficiaries = [];
+
+        function fillLoginCredentials() {
+            const select = document.getElementById('quick-login');
+            const userField = document.getElementById('username');
+            const passField = document.getElementById('password');
+
+            if (select.value) {
+                userField.value = select.value;
+                passField.value = 'password';
+            } else {
+                userField.value = '';
+                passField.value = '';
+            }
+        }
+
+        async function handleLoginSubmit(e) {
+            e.preventDefault();
+            const userField = document.getElementById('username').value.trim();
+            const passField = document.getElementById('password').value.trim();
+            const errorDiv = document.getElementById('login-error');
+
+            try {
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ username: userField, password: passField })
+                });
+
+                if (response.ok) {
+                    currentUser = await response.json();
+                    document.getElementById('login-overlay').style.display = 'none';
+                    document.getElementById('display-username').innerText = currentUser.username;
+                    document.getElementById('display-role').innerText = currentUser.role.replace('_', ' ').toUpperCase();
+                    
+                    // Route views depending on role
+                    if (currentUser.role === 'beneficiary') {
+                        document.getElementById('staff-sidebar').style.display = 'none';
+                        document.getElementById('staff-workspace').style.display = 'none';
+                        document.getElementById('beneficiary-workspace').style.display = 'flex';
+                        
+                        setupBeneficiaryProfileView();
+                    } else {
+                        document.getElementById('staff-sidebar').style.display = 'flex';
+                        document.getElementById('staff-workspace').style.display = 'flex';
+                        document.getElementById('beneficiary-workspace').style.display = 'none';
+
+                        const filterRegion = document.getElementById('filter-region');
+                        const filterPillar = document.getElementById('filter-pillar');
+                        document.getElementById('region-restricted-msg').style.display = 'none';
+                        document.getElementById('pillar-restricted-msg').style.display = 'none';
+                        filterRegion.disabled = false;
+                        filterPillar.disabled = false;
+
+                        if (currentUser.role === 'field_officer') {
+                            filterRegion.value = currentUser.depot;
+                            filterRegion.disabled = true;
+                            document.getElementById('region-restricted-msg').style.display = 'block';
+                        }
+                        if (currentUser.role === 'pillar_coord') {
+                            filterPillar.value = currentUser.truck_reg;
+                            filterPillar.disabled = true;
+                            document.getElementById('pillar-restricted-msg').style.display = 'block';
+                        }
+
+                        const switchToggle = document.getElementById('anonymize-toggle');
+                        if (currentUser.role === 'compliance_auditor') {
+                            switchToggle.checked = true;
+                            switchToggle.disabled = true;
+                        } else {
+                            switchToggle.checked = false;
+                            switchToggle.disabled = false;
+                        }
+
+                        currentPage = 1;
+                        initDashboard();
+                    }
+                } else {
+                    errorDiv.style.display = 'block';
+                }
+            } catch (err) {
+                console.error("Login failed", err);
+                errorDiv.style.display = 'block';
+            }
+        }
+
+        function logout() {
+            currentUser = null;
+            clearInterval(updateIntervals);
+            document.getElementById('login-overlay').style.display = 'flex';
+            document.getElementById('username').value = '';
+            document.getElementById('password').value = '';
+            document.getElementById('quick-login').value = '';
+        }
+
+        function initDashboard() {
+            loadBeneficiaries();
+            loadReconciliation();
+            loadLogs();
+            
+            updateIntervals = setInterval(() => {
+                loadBeneficiaries(false);
+                loadReconciliation();
+                loadLogs();
+            }, 3000);
+        }
+
+        function resetPageAndLoad() {
+            currentPage = 1;
+            loadBeneficiaries();
+        }
+
+        async function loadBeneficiaries(shouldRender = true) {
+            if (!currentUser) return;
+
+            const pillar = document.getElementById('filter-pillar').value;
+            const region = document.getElementById('filter-region').value;
+            const purpose = document.getElementById('filter-purpose').value;
+            const forceAnonymize = document.getElementById('anonymize-toggle').checked;
+
+            try {
+                const url = `/api/beneficiaries?operator=${currentUser.username}&role=${currentUser.role}&operator_region=${currentUser.depot}&operator_pillar=${currentUser.truck_reg}&region=${region}&pillar=${pillar}&purpose=${purpose}&force_anonymize=${forceAnonymize}`;
+                
+                const response = await fetch(url);
+                if (!response.ok) return;
+
+                const data = await response.json();
+                filteredBeneficiaries = data.beneficiaries;
+                
+                const searchVal = document.getElementById('directory-search').value.toLowerCase().trim();
+                if (searchVal) {
+                    filteredBeneficiaries = filteredBeneficiaries.filter(b => 
+                        b.beneficiary_id.toLowerCase().includes(searchVal) ||
+                        b.full_name.toLowerCase().includes(searchVal) ||
+                        b.national_id.toLowerCase().includes(searchVal) ||
+                        b.email.toLowerCase().includes(searchVal) ||
+                        b.phone.toLowerCase().includes(searchVal)
+                    );
+                }
+
+                if (shouldRender) {
+                    renderDirectoryTable();
+                }
+                updateDashboardKPIs(data.beneficiaries, data.access_flagged_anomaly);
+
+            } catch (err) {
+                console.error("Failed to load beneficiaries", err);
+            }
+        }
+
+        function renderDirectoryTable() {
+            const tbody = document.getElementById('directory-table-body');
+            tbody.innerHTML = '';
+
+            const total = filteredBeneficiaries.length;
+            const totalPages = Math.ceil(total / recordsPerPage) || 1;
+            
+            if (currentPage > totalPages) currentPage = totalPages;
+            if (currentPage < 1) currentPage = 1;
+
+            const startIndex = (currentPage - 1) * recordsPerPage;
+            const endIndex = Math.min(startIndex + recordsPerPage, total);
+
+            const displayList = filteredBeneficiaries.slice(startIndex, endIndex);
+
+            displayList.forEach(b => {
+                const tr = document.createElement('tr');
+                
+                let consentBadge = `<span class="badge-status pending">Pending</span>`;
+                if (b.consent_status === 'Consented') {
+                    consentBadge = `<span class="badge-status consented">Consented</span>`;
+                } else if (b.consent_status === 'Withdrawn') {
+                    consentBadge = `<span class="badge-status withdrawn">Withdrawn</span>`;
+                }
+
+                let btnDisable = b.status === 'Anonymized' ? 'disabled' : '';
+                let actionButtons = `
+                    <button class="btn-table" onclick="openConsentModal('${b.beneficiary_id}', '${b.full_name}', '${b.consent_status}')" ${btnDisable}>Manage Consent</button>
+                    <button class="btn-table danger-action" onclick="anonymizeBeneficiary('${b.beneficiary_id}')" ${btnDisable}>Right to Forget</button>
+                `;
+
+                if (currentUser.role === 'compliance_auditor') {
+                    actionButtons = `<span style="font-size:11px; color:var(--text-secondary)">Read-only Auditor</span>`;
+                }
+
+                tr.innerHTML = `
+                    <td style="font-weight: 600;">${b.beneficiary_id}</td>
+                    <td style="font-weight: 600;">${b.full_name}</td>
+                    <td>${b.national_id}</td>
+                    <td>${b.email}</td>
+                    <td>${b.phone}</td>
+                    <td>${b.pillar}</td>
+                    <td>${b.region}</td>
+                    <td>${consentBadge}</td>
+                    <td>${b.consent_date || 'N/A'}</td>
+                    <td style="text-align: right;">${actionButtons}</td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('pagination-info').innerText = 
+                `Showing ${total > 0 ? startIndex + 1 : 0} to ${endIndex} of ${total} beneficiaries`;
+                
+            document.getElementById('btn-page-prev').disabled = currentPage === 1;
+            document.getElementById('btn-page-next').disabled = currentPage === totalPages;
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            renderDirectoryTable();
+        }
+
+        async function exportCompliantReport() {
+            // Force 100% compliant anonymization from server regardless of UI toggle
+            const pillar = document.getElementById('filter-pillar').value;
+            const region = document.getElementById('filter-region').value;
+            const purpose = document.getElementById('filter-purpose').value;
+            
+            try {
+                const url = `/api/beneficiaries?operator=${currentUser.username}&role=compliance_auditor&operator_region=${currentUser.depot}&operator_pillar=${currentUser.truck_reg}&region=${region}&pillar=${pillar}&purpose=${purpose}&force_anonymize=true`;
+                const response = await fetch(url);
+                if (!response.ok) return;
+
+                const data = await response.json();
+                const list = data.beneficiaries;
+
+                // Build CSV content
+                let csvContent = "data:text/csv;charset=utf-8,";
+                csvContent += "BeneficiaryID,FullName_KDPA_Masked,NationalID_KDPA_Masked,Email_KDPA_Masked,Phone_KDPA_Masked,Pillar,Region,ConsentStatus,ConsentVerificationDate\n";
+                
+                list.forEach(b => {
+                    const row = [
+                        b.beneficiary_id,
+                        b.full_name,
+                        b.national_id,
+                        b.email,
+                        b.phone,
+                        b.pillar,
+                        b.region,
+                        b.consent_status,
+                        b.consent_date || "N/A"
+                    ].map(val => `"${val.replace(/"/g, '""')}"`).join(",");
+                    csvContent += row + "\n";
+                });
+
+                const encodedUri = encodeURI(csvContent);
+                const link = document.createElement("a");
+                link.setAttribute("href", encodedUri);
+                link.setAttribute("download", `inuka_compliant_donor_report_${new Date().toISOString().split('T')[0]}.csv`);
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                alert("Compliant report exported successfully. PII identifiers have been fully redacted according to KDPA guidelines.");
+            } catch (err) {
+                console.error("Export failed", err);
+            }
+        }
+
+        async function loadReconciliation() {
+            if (!currentUser) return;
+            const filterVal = document.getElementById('reconciliation-filter').value;
+            
+            try {
+                const response = await fetch(`/api/reconciliation?role=${currentUser.role}&operator_region=${currentUser.depot}&operator_pillar=${currentUser.truck_reg}&status=${filterVal}`);
+                if (response.ok) {
+                    const records = await response.json();
+                    
+                    const tbody = document.getElementById('reconciliation-table-body');
+                    tbody.innerHTML = '';
+                    
+                    let discrepancyCount = 0;
+                    records.forEach(r => {
+                        if (r.status === 'Discrepancy') discrepancyCount++;
+                        
+                        const tr = document.createElement('tr');
+                        if (r.status === 'Discrepancy') {
+                            tr.className = 'audit-alert-row';
+                        }
+                        
+                        let actionCell = `<span style="font-size:11px; color:var(--success)">Matched</span>`;
+                        if (r.status === 'Discrepancy') {
+                            actionCell = `<button class="btn-table danger-action" onclick="correctReconciliation('${r.beneficiary_id}')">Recall Payout & Hold</button>`;
+                        }
+                        
+                        tr.innerHTML = `
+                            <td style="font-weight: 600;">${r.beneficiary_id}</td>
+                            <td style="font-weight: 600;">${r.full_name}</td>
+                            <td>${r.month}</td>
+                            <td style="font-weight: 700; color: ${r.attendance_rate < 75.0 ? 'var(--danger)' : 'var(--success)'}">${r.attendance_rate}%</td>
+                            <td style="font-weight: 700;">KES ${r.disbursed_amount.toLocaleString(undefined, {minimumFractionDigits: 2})}</td>
+                            <td style="font-weight: 700; color: var(--text-secondary)">KES ${r.expected_amount.toLocaleString(undefined, {minimumFractionDigits: 2})}</td>
+                            <td style="color: #fca5a5; font-weight: 600;">${r.discrepancy_reason || 'None'}</td>
+                            <td><span class="badge-status ${r.status === 'Discrepancy' ? 'withdrawn' : 'consented'}">${r.status}</span></td>
+                            <td style="text-align: right;">${actionCell}</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                    
+                    document.getElementById('kpi-threat').innerText = discrepancyCount;
+                }
+            } catch (err) {
+                console.error("Reconciliation error", err);
+            }
+        }
+
+        async function correctReconciliation(id) {
+            if (!confirm(`Are you sure you want to recall disbursement and hold payment for fellow ${id}?\nThis will adjust their disbursed amount to KES 0.00 and flag their active fellowship status "On Hold".`)) {
+                return;
+            }
+            try {
+                const response = await fetch('/api/reconciliation/correct', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ beneficiary_id: id, operator: currentUser.username })
+                });
+                if (response.ok) {
+                    loadReconciliation();
+                    loadLogs();
+                } else {
+                    alert("Correction rejected by finance gateway.");
+                }
+            } catch (err) {
+                console.error(err);
+            }
+        }
+
+        function updateDashboardKPIs(list, anomalyFlagged) {
+            const total = list.length;
+            const consented = list.filter(b => b.consent_status === 'Consented').length;
+            const consentRate = total > 0 ? Math.round((consented / total) * 100) : 0;
+
+            document.getElementById('kpi-total').innerText = total;
+            document.getElementById('kpi-consent').innerText = consentRate + '%';
+        }
+
+        async function loadLogs() {
+            try {
+                const responseLedger = await fetch('/api/audit/logs');
+                if (responseLedger.ok) {
+                    const logs = await responseLedger.json();
+                    
+                    const tbody = document.getElementById('audit-table-body');
+                    tbody.innerHTML = '';
+                    
+                    logs.forEach(l => {
+                        const tr = document.createElement('tr');
+                        if (l.is_anomaly === 1) {
+                            tr.className = 'audit-alert-row';
+                        }
+                        
+                        let actionCell = l.action_type;
+                        if (l.is_anomaly === 1) {
+                            actionCell = `<span class="audit-alert-text">⚠️ [ML ALERT] ${l.action_type}</span>`;
+                        }
+
+                        tr.innerHTML = `
+                            <td style="font-weight: 600;">#${l.audit_id}</td>
+                            <td>${l.timestamp}</td>
+                            <td style="font-weight: 600;">${l.operator}</td>
+                            <td>${actionCell}</td>
+                            <td>${l.target_beneficiary_id || 'Global'}</td>
+                            <td>${l.ip_address}</td>
+                            <td>${l.details}</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                }
+
+                const responseQuarantined = await fetch('/api/quarantined');
+                const responseBeneficiaries = await fetch('/api/beneficiaries?role=hq_admin');
+                
+                if (responseQuarantined.ok && responseBeneficiaries.ok) {
+                    const qEvents = await responseQuarantined.json();
+                    const cleanEvents = (await responseBeneficiaries.json()).beneficiaries;
+
+                    document.getElementById('kpi-quarantine').innerText = qEvents.length;
+
+                    const feedList = [];
+                    cleanEvents.forEach(c => {
+                        if (c.consent_date) {
+                            feedList.push({
+                                type: 'success',
+                                time: c.consent_date,
+                                text: `[PASS] Ingested ${c.beneficiary_id} (${c.pillar}) verified by GE Quality suite.`
+                            });
+                        }
+                    });
+                    qEvents.forEach(q => {
+                        feedList.push({
+                            type: 'quarantine',
+                            time: q.timestamp,
+                            text: `[FAIL] Quarantined payload: ${q.failure_reasons}`
+                        });
+                    });
+
+                    feedList.sort((a,b) => b.time.localeCompare(a.time));
+
+                    const feedContainer = document.getElementById('stream-feed-container');
+                    feedContainer.innerHTML = '';
+                    
+                    feedList.slice(0, 10).forEach(f => {
+                        const div = document.createElement('div');
+                        div.className = `feed-entry ${f.type}`;
+                        div.innerHTML = `<strong>${f.time.split(' ')[1] || f.time}</strong> ${f.text}`;
+                        feedContainer.appendChild(div);
+                    });
+                }
+
+            } catch (err) {
+                console.error("Failed to load logs", err);
+            }
+        }
+
+        // --- BENEFICIARY VIEW LOGIC ---
+        async function setupBeneficiaryProfileView() {
+            try {
+                const response = await fetch(`/api/beneficiaries?operator=${currentUser.username}&role=beneficiary&region=${currentUser.depot}&pillar=${currentUser.truck_reg}`);
+                if (response.ok) {
+                    const data = await response.json();
+                    const profile = data.beneficiaries.find(b => b.beneficiary_id === currentUser.username);
+                    
+                    if (profile) {
+                        document.getElementById('ben-display-id').innerText = profile.beneficiary_id;
+                        document.getElementById('ben-display-name').innerText = profile.full_name;
+                        document.getElementById('ben-display-pillar').innerText = profile.pillar;
+                        document.getElementById('ben-display-region').innerText = profile.region;
+                        document.getElementById('ben-display-consent').innerText = profile.consent_status;
+                        
+                        const enrollBadge = document.getElementById('ben-display-enrollment');
+                        enrollBadge.innerText = profile.enrollment_status;
+                        if (profile.enrollment_status === 'Enrolled') {
+                            enrollBadge.style.color = 'var(--success)';
+                        } else if (profile.enrollment_status === 'Pending Review') {
+                            enrollBadge.style.color = 'var(--warning)';
+                        } else {
+                            enrollBadge.style.color = 'var(--danger)';
+                        }
+
+                        document.getElementById('ben-purpose-data-sharing').checked = profile.consent_data_sharing === 1;
+                        document.getElementById('ben-purpose-photo-use').checked = profile.consent_photo_use === 1;
+                        document.getElementById('ben-purpose-sms').checked = profile.consent_sms_contact === 1;
+                        document.getElementById('ben-purpose-external-reporting').checked = profile.consent_external_reporting === 1;
+                        
+                        checkMandatoryConsentWarning();
+                    }
+                }
+            } catch (e) {
+                console.error("Error setting up beneficiary profile", e);
+            }
+        }
+
+        function checkMandatoryConsentWarning() {
+            const sharingChecked = document.getElementById('ben-purpose-data-sharing').checked;
+            const warningText = document.getElementById('ben-compliance-warning');
+            
+            if (!sharingChecked) {
+                warningText.style.display = 'block';
+            } else {
+                warningText.style.display = 'none';
+            }
+        }
+
+        async function saveBeneficiaryConsent() {
+            const dataSharing = document.getElementById('ben-purpose-data-sharing').checked ? 1 : 0;
+            const photoUse = document.getElementById('ben-purpose-photo-use').checked ? 1 : 0;
+            const sms = document.getElementById('ben-purpose-sms').checked ? 1 : 0;
+            const extReport = document.getElementById('ben-purpose-external-reporting').checked ? 1 : 0;
+
+            try {
+                const response = await fetch('/api/beneficiary/update_consent', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        beneficiary_id: currentUser.username,
+                        consent_data_sharing: dataSharing,
+                        consent_photo_use: photoUse,
+                        consent_sms_contact: sms,
+                        consent_external_reporting: extReport
+                    })
+                });
+
+                if (response.ok) {
+                    const res = await response.json();
+                    alert("Your KDPA consent preferences have been updated and cryptographically logged.");
+                    
+                    currentUser.enrollment_status = res.profile.enrollment_status;
+                    currentUser.consent_status = res.profile.consent_status;
+                    
+                    setupBeneficiaryProfileView();
+                } else {
+                    alert("Failed to save changes.");
+                }
+            } catch (err) {
+                console.error("Error saving consent", err);
+            }
+        }
+
+        async function beneficiarySelfWithdrawAll() {
+            if (!confirm("Are you sure you want to withdraw all consent?\nThis will update your enrollment status to 'On Hold' and halt all stipend disbursements.")) {
+                return;
+            }
+            document.getElementById('ben-purpose-data-sharing').checked = false;
+            document.getElementById('ben-purpose-photo-use').checked = false;
+            document.getElementById('ben-purpose-sms').checked = false;
+            document.getElementById('ben-purpose-external-reporting').checked = false;
+            saveBeneficiaryConsent();
+        }
+
+        async function beneficiarySelfRightToForget() {
+            if (!confirm("Are you requesting a complete post-enrollment erasure under Section 40 of KDPA?\nThis will permanently redact your profile details (all names, phones, IDs and emails) in the database and is irreversible. Proceed only if your fellowship period is complete.")) {
+                return;
+            }
+            
+            try {
+                const response = await fetch('/api/beneficiary/anonymize', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        beneficiary_id: currentUser.username,
+                        operator: currentUser.username
+                    })
+                });
+
+                if (response.ok) {
+                    alert("Right to be Forgotten request successfully executed. Your profile has been permanently anonymized.");
+                    logout();
+                } else {
+                    alert("Purge request rejected.");
+                }
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        // --- MANAGE CONSENT MODAL ---
+        function openConsentModal(id, name, currentConsent) {
+            document.getElementById('modal-beneficiary-id').value = id;
+            document.getElementById('consent-modal-desc').innerText = `Update data processing consent properties for beneficiary: ${name} (${id})`;
+            document.getElementById('modal-consent-select').value = currentConsent;
+            document.getElementById('consent-modal').style.display = 'flex';
+        }
+
+        function closeConsentModal() {
+            document.getElementById('consent-modal').style.display = 'none';
+        }
+
+        async function submitConsentUpdate() {
+            const id = document.getElementById('modal-beneficiary-id').value;
+            const status = document.getElementById('modal-consent-select').value;
+            const type = document.getElementById('modal-type-select').value;
+
+            try {
+                const response = await fetch('/api/consent/update', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        beneficiary_id: id,
+                        consent_status: status,
+                        consent_type: type,
+                        operator: currentUser.username
+                    })
+                });
+
+                if (response.ok) {
+                    closeConsentModal();
+                    loadBeneficiaries(true);
+                    loadLogs();
+                } else {
+                    alert("Consent update rejected by data controller.");
+                }
+            } catch (err) {
+                console.error("Failed to submit consent", err);
+            }
+        }
+
+        async function anonymizeBeneficiary(id) {
+            if (!confirm(`Are you absolutely sure you want to anonymize beneficiary ${id}?\nThis runs the Right to be Forgotten (KDPA Section 40), permanently redacting all names, IDs, phones, and emails in the database. This action is irreversible.`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch('/api/beneficiary/anonymize', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        beneficiary_id: id,
+                        operator: currentUser.username
+                    })
+                });
+
+                if (response.ok) {
+                    loadBeneficiaries(true);
+                    loadLogs();
+                } else {
+                    alert("Anonymization request rejected.");
+                }
+            } catch (err) {
+                console.error("Anonymization failed", err);
+            }
+        }
+
+        // --- BILINGUAL CHATBOT INTERFACE ---
+        function handleChatKeyPress(e) {
+            if (e.key === 'Enter') {
+                sendChatMessage();
+            }
+        }
+
+        function quickChat(msg) {
+            document.getElementById('chat-input').value = msg;
+            sendChatMessage();
+        }
+
+        async function sendChatMessage() {
+            const input = document.getElementById('chat-input');
+            const queryText = input.value.trim();
+            if (!queryText) return;
+
+            input.value = '';
+
+            appendChatBubble(queryText, 'user');
+
+            try {
+                const response = await fetch('/api/chatbot/message', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: queryText })
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    appendChatBubble(data.reply, 'bot');
+                    if (currentUser && currentUser.role === 'beneficiary') {
+                        setupBeneficiaryProfileView();
+                    } else if (currentUser) {
+                        loadBeneficiaries(true);
+                        loadReconciliation();
+                        loadLogs();
+                    }
+                } else {
+                    appendChatBubble("I'm sorry, I encountered an error communicating with the consent gateway.", 'bot');
+                }
+            } catch (err) {
+                console.error("Chat error", err);
+                appendChatBubble("I'm sorry, I lost connectivity to the compliance server.", 'bot');
+            }
+        }
+
+        function appendChatBubble(text, sender) {
+            const container = document.getElementById('chat-messages-container');
+            const bubble = document.createElement('div');
+            bubble.className = `chat-bubble ${sender}`;
+            bubble.innerHTML = text.replace(/\n/g, '<br>');
+            container.appendChild(bubble);
+            container.scrollTop = container.scrollHeight;
+        }
+
+    </script>
+</body>
+</html>

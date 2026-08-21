@@ -1,0 +1,1001 @@
+beneficiary_id,full_name,national_id,email,phone,pillar,region,consent_status,consent_type,consent_date,status,enrollment_status,consent_data_sharing,consent_photo_use,consent_sms_contact,consent_external_reporting
+INK-2026-1001,Peter Wangari,20000670,peter.wangari.1@inuka.org,+254 795 977 706,Scholarship,Coastal,Consented,SMS OTP,2026-03-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1002,Lydia Nduku,20000871,lydia.nduku.2@inuka.org,+254 739 723 584,Scholarship,Rift Valley,Consented,Physical Form,2026-02-13 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1003,Agnes Kemei,20000374,agnes.kemei.3@inuka.org,+254 797 439 463,Plus,Rift Valley,Consented,SMS OTP,2026-04-06 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1004,Charles Ali,20000265,charles.ali.4@inuka.org,+254 753 995 121,Vocational,Western,Withdrawn,SMS OTP,2026-08-03 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1005,Michael Mutua,20000245,michael.mutua.5@inuka.org,+254 762 235 830,Scholarship,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1006,Halima Kemei,20000476,halima.kemei.6@inuka.org,+254 718 901 835,Plus,North Eastern,Consented,Digital Signature,2026-02-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1007,Evans Ibrahim,20000600,evans.ibrahim.7@inuka.org,+254 723 296 111,Scholarship,Nairobi,Consented,Digital Signature,2026-02-21 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1008,Lucy Kipkorir,20001027,lucy.kipkorir.8@inuka.org,+254 722 375 652,Tech,Central,Consented,Digital Signature,2026-07-13 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1009,Esther Odhiambo,20000748,esther.odhiambo.9@inuka.org,+254 795 900 310,Scholarship,Coastal,Consented,SMS OTP,2026-06-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1010,Sarah Sang,20000695,sarah.sang.10@inuka.org,+254 789 482 669,Plus,Nyanza,Consented,Physical Form,2026-07-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1011,Alice Kamau,20000427,alice.kamau.11@inuka.org,+254 794 181 640,Tech,North Eastern,Consented,SMS OTP,2026-07-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1012,Daniel Odhiambo,20000442,daniel.odhiambo.12@inuka.org,+254 785 709 850,Scholarship,Nyanza,Consented,Physical Form,2026-03-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1013,Faith Kamau,20000793,faith.kamau.13@inuka.org,+254 733 137 712,Vocational,Coastal,Consented,SMS OTP,2026-04-25 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1014,Patrick Wamalwa,20001096,patrick.wamalwa.14@inuka.org,+254 723 319 173,Vocational,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1015,Alice Njoroge,20000588,alice.njoroge.15@inuka.org,+254 736 824 192,Vocational,Rift Valley,Consented,Digital Signature,2026-02-05 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1016,Jane Wangari,20000746,jane.wangari.16@inuka.org,+254 738 390 336,Plus,Nyanza,Consented,Digital Signature,2026-02-14 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1017,John Koech,20001070,john.koech.17@inuka.org,+254 785 437 986,Scholarship,Nairobi,Consented,Physical Form,2026-03-18 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1018,Mary Ndwiga,20001206,mary.ndwiga.18@inuka.org,+254 758 841 317,Vocational,Rift Valley,Consented,SMS OTP,2026-02-03 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1019,Joseph Kamau,20001093,joseph.kamau.19@inuka.org,+254 740 397 279,Plus,Coastal,Consented,Digital Signature,2026-03-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1020,Wycliffe Odhiambo,20000919,wycliffe.odhiambo.20@inuka.org,+254 741 608 613,Tech,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1021,Emmanuel Kariuki,20001162,emmanuel.kariuki.21@inuka.org,+254 731 121 432,Scholarship,Rift Valley,Consented,Digital Signature,2026-02-25 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1022,Joseph Maina,20001032,joseph.maina.22@inuka.org,+254 788 542 137,Tech,Rift Valley,Consented,SMS OTP,2026-06-14 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1023,Mary Mwangi,20000562,mary.mwangi.23@inuka.org,+254 710 963 380,Tech,North Eastern,Consented,Digital Signature,2026-04-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1024,Asha Omondi,20001315,asha.omondi.24@inuka.org,+254 729 423 849,Tech,Central,Consented,SMS OTP,2026-06-07 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1025,Lydia Karanja,20001363,lydia.karanja.25@inuka.org,+254 774 823 355,Scholarship,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1026,Joseph Onyango,20000930,joseph.onyango.26@inuka.org,+254 790 269 411,Vocational,Rift Valley,Consented,Physical Form,2026-08-05 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1027,Gladys Rotich,20001086,gladys.rotich.27@inuka.org,+254 757 751 805,Plus,Rift Valley,Consented,Digital Signature,2026-08-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1028,Julius Ali,20000907,julius.ali.28@inuka.org,+254 767 474 209,Scholarship,Rift Valley,Consented,SMS OTP,2026-06-23 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1029,Catherine Sang,20001474,catherine.sang.29@inuka.org,+254 727 870 740,Tech,North Eastern,Consented,Physical Form,2026-06-21 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1030,Florence Nduku,20001100,florence.nduku.30@inuka.org,+254 796 282 578,Tech,Central,Consented,SMS OTP,2026-05-27 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1031,Grace Wangari,20000983,grace.wangari.31@inuka.org,+254 782 539 519,Plus,Nairobi,Consented,Digital Signature,2026-05-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1032,Faith Kipkorir,20001343,faith.kipkorir.32@inuka.org,+254 752 505 307,Scholarship,Rift Valley,Consented,Digital Signature,2026-06-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1033,Zainab Ali,20001450,zainab.ali.33@inuka.org,+254 780 367 438,Scholarship,Rift Valley,Consented,Digital Signature,2026-04-04 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1034,Halima Wekesa,20000849,halima.wekesa.34@inuka.org,+254 761 746 684,Vocational,Rift Valley,Consented,Physical Form,2026-08-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1035,Catherine Odhiambo,20000829,catherine.odhiambo.35@inuka.org,+254 763 320 471,Vocational,Rift Valley,Consented,Physical Form,2026-05-07 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1036,Eunice Otieno,20000947,eunice.otieno.36@inuka.org,+254 781 650 237,Scholarship,Central,Consented,Digital Signature,2026-05-12 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1037,Michael Koech,20000760,michael.koech.37@inuka.org,+254 718 721 245,Plus,North Eastern,Consented,SMS OTP,2026-07-21 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1038,Halima Nduku,20001547,halima.nduku.38@inuka.org,+254 796 231 288,Scholarship,Rift Valley,Consented,SMS OTP,2026-02-23 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1039,Asha Kiptoo,20001128,asha.kiptoo.39@inuka.org,+254 782 522 566,Scholarship,Rift Valley,Consented,Digital Signature,2026-05-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1040,James Kemei,20001436,james.kemei.40@inuka.org,+254 733 843 958,Tech,Central,Consented,SMS OTP,2026-06-02 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1041,Beatrice Nyambura,20000883,beatrice.nyambura.41@inuka.org,+254 743 763 168,Scholarship,Nairobi,Consented,Digital Signature,2026-06-29 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1042,Florence Karanja,20001223,florence.karanja.42@inuka.org,+254 798 840 739,Scholarship,Western,Consented,SMS OTP,2026-06-02 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1043,Ruth Njoroge,20001477,ruth.njoroge.43@inuka.org,+254 723 939 482,Scholarship,Rift Valley,Consented,Physical Form,2026-05-18 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1044,Ruth Kimani,20001682,ruth.kimani.44@inuka.org,+254 742 427 887,Scholarship,North Eastern,Consented,Digital Signature,2026-08-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1045,Faith Ndwiga,20001128,faith.ndwiga.45@inuka.org,+254 723 625 551,Plus,Nairobi,Consented,Digital Signature,2026-07-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1046,Faith Karanja,20001655,faith.karanja.46@inuka.org,+254 715 458 740,Vocational,Nyanza,Consented,SMS OTP,2026-06-02 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1047,Faith Hassan,20001055,faith.hassan.47@inuka.org,+254 764 302 571,Tech,Nyanza,Consented,SMS OTP,2026-03-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1048,Collins Mohamed,20001339,collins.mohamed.48@inuka.org,+254 762 335 888,Tech,Western,Consented,SMS OTP,2026-07-29 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1049,Philip Wamalwa,20001478,philip.wamalwa.49@inuka.org,+254 786 783 239,Tech,Western,Consented,SMS OTP,2026-05-30 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1050,Gladys Jebet,20001518,gladys.jebet.50@inuka.org,+254 766 562 764,Plus,Eastern,Consented,Physical Form,2026-04-27 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1051,Grace Otieno,20000998,grace.otieno.51@inuka.org,+254 744 526 749,Tech,Central,Consented,SMS OTP,2026-04-21 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1052,Joseph Odhiambo,20001808,joseph.odhiambo.52@inuka.org,+254 763 848 657,Plus,Nairobi,Consented,Physical Form,2026-08-10 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1053,Faith Kiprop,20001140,faith.kiprop.53@inuka.org,+254 760 742 120,Vocational,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1054,Emmanuel Otieno,20001435,emmanuel.otieno.54@inuka.org,+254 797 595 665,Vocational,Coastal,Withdrawn,SMS OTP,2026-07-26 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1055,John Juma,20001536,john.juma.55@inuka.org,+254 740 346 148,Tech,Eastern,Withdrawn,Physical Form,2026-07-06 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1056,Charles Mohamed,20001256,charles.mohamed.56@inuka.org,+254 765 920 818,Tech,North Eastern,Consented,SMS OTP,2026-05-16 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1057,Anita Omondi,20001402,anita.omondi.57@inuka.org,+254 731 563 584,Plus,Central,Consented,Digital Signature,2026-02-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1058,Grace Achieng,20001554,grace.achieng.58@inuka.org,+254 724 552 664,Vocational,North Eastern,Consented,Digital Signature,2026-06-19 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1059,James Omondi,20001486,james.omondi.59@inuka.org,+254 720 716 688,Tech,Western,Consented,Physical Form,2026-03-13 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1060,Florence Wambui,20001674,florence.wambui.60@inuka.org,+254 743 636 912,Vocational,Western,Consented,Digital Signature,2026-03-24 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1061,Philip Juma,20001420,philip.juma.61@inuka.org,+254 750 426 955,Vocational,Nyanza,Consented,SMS OTP,2026-05-16 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1062,Philip Kiptoo,20001830,philip.kiptoo.62@inuka.org,+254 770 947 547,Plus,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1063,Mercy Ekiru,20001715,mercy.ekiru.63@inuka.org,+254 787 559 569,Vocational,Central,Consented,Digital Signature,2026-08-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1064,Grace Jebet,20001256,grace.jebet.64@inuka.org,+254 787 458 576,Scholarship,Western,Consented,Physical Form,2026-04-02 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1065,Evans Wambui,20001588,evans.wambui.65@inuka.org,+254 713 934 394,Plus,Nyanza,Consented,SMS OTP,2026-07-11 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1066,Charles Mohamed,20001884,charles.mohamed.66@inuka.org,+254 741 728 478,Tech,Central,Consented,SMS OTP,2026-06-11 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1067,Sarah Mutua,20002105,sarah.mutua.67@inuka.org,+254 794 796 964,Scholarship,Nairobi,Consented,Physical Form,2026-08-16 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1068,Lydia Wanyama,20001456,lydia.wanyama.68@inuka.org,+254 715 325 547,Tech,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1069,Grace Achieng,20002120,grace.achieng.69@inuka.org,+254 763 636 672,Vocational,North Eastern,Consented,Digital Signature,2026-02-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1070,Geoffrey Ekiru,20001580,geoffrey.ekiru.70@inuka.org,+254 765 816 908,Tech,Central,Consented,SMS OTP,2026-06-05 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1071,Alice Karanja,20002076,alice.karanja.71@inuka.org,+254 717 141 732,Scholarship,Nyanza,Consented,SMS OTP,2026-02-25 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1072,Julius Kariuki,20001616,julius.kariuki.72@inuka.org,+254 733 953 661,Tech,Western,Consented,SMS OTP,2026-03-21 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1073,Alice Juma,20001493,alice.juma.73@inuka.org,+254 758 756 784,Plus,Nyanza,Consented,Digital Signature,2026-02-10 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1074,Emmanuel Wekesa,20002063,emmanuel.wekesa.74@inuka.org,+254 789 951 105,Scholarship,Nyanza,Consented,Physical Form,2026-04-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1075,Peter Cherono,20001438,peter.cherono.75@inuka.org,+254 755 492 606,Vocational,Central,Consented,SMS OTP,2026-04-19 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1076,Philip Wamalwa,20001962,philip.wamalwa.76@inuka.org,+254 734 407 494,Plus,Central,Consented,Digital Signature,2026-03-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1077,Brian Ekiru,20002172,brian.ekiru.77@inuka.org,+254 783 819 603,Vocational,Eastern,Consented,Digital Signature,2026-08-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1078,Emmanuel Kiprop,20001795,emmanuel.kiprop.78@inuka.org,+254 713 175 552,Tech,Coastal,Consented,Physical Form,2026-03-28 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1079,Jane Rotich,20001843,jane.rotich.79@inuka.org,+254 786 984 857,Vocational,North Eastern,Consented,SMS OTP,2026-05-17 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1080,Agnes Nyangau,20001716,agnes.nyangau.80@inuka.org,+254 753 305 572,Tech,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1081,Collins Kariuki,20002205,collins.kariuki.81@inuka.org,+254 768 653 274,Tech,Nyanza,Withdrawn,SMS OTP,2026-07-22 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1082,Charles Mwangi,20001736,charles.mwangi.82@inuka.org,+254 747 611 849,Vocational,Coastal,Consented,Physical Form,2026-04-12 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1083,Peter Kiprop,20001980,peter.kiprop.83@inuka.org,+254 747 664 139,Plus,Western,Consented,Physical Form,2026-05-14 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1084,Julius Hassan,20001585,julius.hassan.84@inuka.org,+254 725 768 805,Scholarship,Western,Consented,Digital Signature,2026-07-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1085,Joyce Wangari,20002203,joyce.wangari.85@inuka.org,+254 791 421 660,Vocational,North Eastern,Consented,SMS OTP,2026-05-03 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1086,Charles Wanjiku,20002313,charles.wanjiku.86@inuka.org,+254 756 393 962,Plus,Rift Valley,Consented,SMS OTP,2026-05-05 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1087,Andrew Otieno,20002378,andrew.otieno.87@inuka.org,+254 716 663 757,Plus,Rift Valley,Consented,Physical Form,2026-07-07 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1088,Rachael Wangari,20001775,rachael.wangari.88@inuka.org,+254 725 109 788,Tech,North Eastern,Consented,SMS OTP,2026-02-28 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1089,Francis Chepkemoi,20002321,francis.chepkemoi.89@inuka.org,+254 717 154 225,Plus,Coastal,Consented,Digital Signature,2026-05-29 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1090,Joyce Mutua,20001913,joyce.mutua.90@inuka.org,+254 772 282 855,Scholarship,Eastern,Consented,Physical Form,2026-04-25 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1091,Philip Otieno,20002265,philip.otieno.91@inuka.org,+254 731 421 392,Tech,Central,Consented,Digital Signature,2026-08-14 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1092,Lydia Kamau,20002390,lydia.kamau.92@inuka.org,+254 720 598 983,Vocational,Central,Consented,SMS OTP,2026-03-22 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1093,Grace Omondi,20002412,grace.omondi.93@inuka.org,+254 799 263 910,Scholarship,Nyanza,Consented,Digital Signature,2026-08-13 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1094,James Mwangi,20002592,james.mwangi.94@inuka.org,+254 734 115 531,Vocational,North Eastern,Consented,Digital Signature,2026-04-09 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1095,Wycliffe Kipkorir,20001925,wycliffe.kipkorir.95@inuka.org,+254 781 857 162,Scholarship,North Eastern,Consented,Physical Form,2026-06-27 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1096,Beatrice Kemei,20001734,beatrice.kemei.96@inuka.org,+254 718 666 267,Vocational,Nairobi,Consented,Physical Form,2026-08-15 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1097,James Wamalwa,20001983,james.wamalwa.97@inuka.org,+254 783 715 619,Scholarship,Western,Consented,Physical Form,2026-08-10 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1098,Sarah Ali,20002178,sarah.ali.98@inuka.org,+254 714 223 599,Vocational,Eastern,Consented,Digital Signature,2026-07-29 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1099,Zainab Achieng,20002221,zainab.achieng.99@inuka.org,+254 720 988 312,Tech,Rift Valley,Consented,Physical Form,2026-02-12 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1100,Catherine Mwangi,20002018,catherine.mwangi.100@inuka.org,+254 739 379 110,Vocational,Nyanza,Consented,SMS OTP,2026-03-14 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1101,Grace Sang,20002692,grace.sang.101@inuka.org,+254 739 110 716,Scholarship,Coastal,Withdrawn,Physical Form,2026-07-09 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1102,Andrew Mwangi,20002684,andrew.mwangi.102@inuka.org,+254 793 599 847,Plus,Eastern,Consented,SMS OTP,2026-05-29 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1103,Wycliffe Kipkorir,20002736,wycliffe.kipkorir.103@inuka.org,+254 716 552 226,Plus,Coastal,Consented,Digital Signature,2026-06-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1104,Patrick Lagat,20002641,patrick.lagat.104@inuka.org,+254 734 369 951,Plus,Western,Consented,SMS OTP,2026-03-11 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1105,Simon Kipruto,20002310,simon.kipruto.105@inuka.org,+254 783 535 480,Vocational,Central,Consented,Digital Signature,2026-03-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1106,Joyce Karanja,20002282,joyce.karanja.106@inuka.org,+254 757 448 310,Plus,North Eastern,Consented,Digital Signature,2026-06-29 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1107,Zainab Wamalwa,20002459,zainab.wamalwa.107@inuka.org,+254 764 583 235,Tech,Western,Consented,Digital Signature,2026-03-22 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1108,Asha Karanja,20002791,asha.karanja.108@inuka.org,+254 727 212 999,Vocational,Rift Valley,Consented,Physical Form,2026-05-11 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1109,Collins Juma,20002389,collins.juma.109@inuka.org,+254 717 739 273,Tech,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1110,Michael Juma,20002052,michael.juma.110@inuka.org,+254 781 704 630,Vocational,Central,Consented,Digital Signature,2026-03-11 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1111,Alice Mutua,20002374,alice.mutua.111@inuka.org,+254 783 462 364,Plus,Nyanza,Consented,SMS OTP,2026-06-16 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1112,Anita Ndwiga,20002589,anita.ndwiga.112@inuka.org,+254 728 788 766,Scholarship,Central,Consented,SMS OTP,2026-08-04 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1113,Brian Barasa,20002343,brian.barasa.113@inuka.org,+254 716 282 102,Tech,Western,Consented,Physical Form,2026-04-14 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1114,Mercy Kipruto,20002323,mercy.kipruto.114@inuka.org,+254 777 957 286,Vocational,Nairobi,Consented,Physical Form,2026-05-22 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1115,Paul Hassan,20002641,paul.hassan.115@inuka.org,+254 716 122 707,Scholarship,Eastern,Consented,Digital Signature,2026-07-10 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1116,Rose Mwangi,20002531,rose.mwangi.116@inuka.org,+254 792 841 565,Tech,Rift Valley,Consented,Digital Signature,2026-03-24 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1117,Philip Nduku,20002788,philip.nduku.117@inuka.org,+254 759 500 756,Scholarship,North Eastern,Consented,Physical Form,2026-07-02 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1118,Gladys Wanjiku,20002432,gladys.wanjiku.118@inuka.org,+254 749 945 704,Tech,North Eastern,Consented,Physical Form,2026-07-26 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1119,Halima Kimani,20002410,halima.kimani.119@inuka.org,+254 737 257 908,Vocational,Eastern,Consented,SMS OTP,2026-04-23 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1120,Daniel Wambui,20002514,daniel.wambui.120@inuka.org,+254 745 197 137,Scholarship,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1121,Simon Mohamed,20002164,simon.mohamed.121@inuka.org,+254 795 951 623,Plus,Coastal,Consented,SMS OTP,2026-06-07 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1122,Joseph Chelimo,20002574,joseph.chelimo.122@inuka.org,+254 760 233 151,Vocational,Eastern,Consented,SMS OTP,2026-07-01 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1123,Charles Chelimo,20002914,charles.chelimo.123@inuka.org,+254 770 535 921,Scholarship,Nyanza,Consented,Digital Signature,2026-03-19 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1124,James Wangari,20002619,james.wangari.124@inuka.org,+254 733 809 488,Plus,Central,Consented,Physical Form,2026-03-01 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1125,Eunice Mwangi,20002269,eunice.mwangi.125@inuka.org,+254 769 559 926,Scholarship,Nyanza,Consented,Digital Signature,2026-08-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1126,Rose Chelimo,20003032,rose.chelimo.126@inuka.org,+254 738 450 426,Vocational,Coastal,Consented,Physical Form,2026-02-03 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1127,Michael Wamalwa,20002268,michael.wamalwa.127@inuka.org,+254 779 596 727,Tech,Eastern,Consented,Digital Signature,2026-05-13 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1128,Agnes Kemei,20002629,agnes.kemei.128@inuka.org,+254 757 362 376,Plus,Rift Valley,Consented,SMS OTP,2026-07-20 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1129,Francis Nyangau,20002835,francis.nyangau.129@inuka.org,+254 779 837 384,Plus,Central,Consented,Physical Form,2026-04-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1130,Esther Nyambura,20002408,esther.nyambura.130@inuka.org,+254 716 208 448,Vocational,North Eastern,Consented,Physical Form,2026-07-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1131,Moses Muthoni,20002803,moses.muthoni.131@inuka.org,+254 779 177 665,Vocational,Western,Consented,SMS OTP,2026-05-11 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1132,Philip Kariuki,20003191,philip.kariuki.132@inuka.org,+254 768 765 533,Tech,Central,Consented,Physical Form,2026-02-16 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1133,Wycliffe Chelimo,20003199,wycliffe.chelimo.133@inuka.org,+254 731 390 529,Tech,Eastern,Consented,Digital Signature,2026-07-27 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1134,Anita Ibrahim,20002602,anita.ibrahim.134@inuka.org,+254 794 464 748,Vocational,Central,Consented,Digital Signature,2026-06-13 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1135,Andrew Kiprop,20003257,andrew.kiprop.135@inuka.org,+254 774 807 478,Vocational,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1136,Gladys Kiarie,20002487,gladys.kiarie.136@inuka.org,+254 781 530 546,Tech,Rift Valley,Withdrawn,SMS OTP,2026-07-30 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1137,Philip Onyango,20003121,philip.onyango.137@inuka.org,+254 762 433 924,Scholarship,Nyanza,Consented,Digital Signature,2026-02-23 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1138,Geoffrey Juma,20002864,geoffrey.juma.138@inuka.org,+254 766 656 786,Tech,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1139,John Kiarie,20003116,john.kiarie.139@inuka.org,+254 728 312 548,Plus,Nyanza,Consented,Digital Signature,2026-08-09 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1140,Wycliffe Mwangi,20003014,wycliffe.mwangi.140@inuka.org,+254 744 497 125,Plus,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1141,Collins Kimani,20003001,collins.kimani.141@inuka.org,+254 754 136 192,Scholarship,Coastal,Consented,Physical Form,2026-07-06 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1142,Halima Sang,20002806,halima.sang.142@inuka.org,+254 743 546 481,Vocational,Rift Valley,Consented,Digital Signature,2026-07-07 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1143,Sarah Mohamed,20003022,sarah.mohamed.143@inuka.org,+254 791 107 677,Plus,North Eastern,Consented,SMS OTP,2026-06-03 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1144,Geoffrey Chepkemoi,20003186,geoffrey.chepkemoi.144@inuka.org,+254 720 285 625,Scholarship,Eastern,Consented,Digital Signature,2026-08-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1145,Brian Ali,20003265,brian.ali.145@inuka.org,+254 767 890 241,Vocational,Western,Consented,Physical Form,2026-03-26 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1146,Joseph Juma,20003320,joseph.juma.146@inuka.org,+254 710 329 874,Plus,Nairobi,Consented,Physical Form,2026-03-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1147,Philip Hassan,20003491,philip.hassan.147@inuka.org,+254 728 199 934,Vocational,Eastern,Consented,SMS OTP,2026-05-26 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1148,Mercy Barasa,20003329,mercy.barasa.148@inuka.org,+254 787 548 544,Tech,Coastal,Consented,Digital Signature,2026-03-07 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1149,Mary Mwangi,20002781,mary.mwangi.149@inuka.org,+254 799 110 310,Scholarship,Coastal,Consented,SMS OTP,2026-05-22 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1150,Grace Lagat,20003400,grace.lagat.150@inuka.org,+254 745 840 252,Vocational,Central,Consented,Physical Form,2026-05-31 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1151,Moses Cherono,20003540,moses.cherono.151@inuka.org,+254 778 677 796,Scholarship,Rift Valley,Consented,SMS OTP,2026-07-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1152,Joseph Wekesa,20003339,joseph.wekesa.152@inuka.org,+254 731 108 778,Tech,Eastern,Consented,SMS OTP,2026-03-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1153,Stephen Wangari,20002972,stephen.wangari.153@inuka.org,+254 762 962 266,Vocational,North Eastern,Consented,SMS OTP,2026-05-22 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1154,Geoffrey Muthoni,20002945,geoffrey.muthoni.154@inuka.org,+254 716 627 612,Vocational,Central,Consented,Physical Form,2026-08-03 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1155,Ruth Mwangi,20003248,ruth.mwangi.155@inuka.org,+254 722 183 568,Vocational,Nyanza,Consented,SMS OTP,2026-07-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1156,Florence Ndwiga,20002922,florence.ndwiga.156@inuka.org,+254 724 994 153,Vocational,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1157,Peter Chelimo,20003031,peter.chelimo.157@inuka.org,+254 719 530 232,Plus,Nairobi,Consented,Digital Signature,2026-05-13 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1158,Evans Wambui,20003293,evans.wambui.158@inuka.org,+254 792 600 298,Scholarship,Rift Valley,Consented,Digital Signature,2026-02-09 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1159,John Ali,20002850,john.ali.159@inuka.org,+254 782 565 981,Tech,Central,Consented,Physical Form,2026-08-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1160,Jane Simiyu,20003467,jane.simiyu.160@inuka.org,+254 741 896 752,Plus,North Eastern,Consented,Physical Form,2026-03-21 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1161,Sarah Wanjiku,20003570,sarah.wanjiku.161@inuka.org,+254 745 502 232,Vocational,Central,Consented,Digital Signature,2026-03-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1162,John Ali,20003303,john.ali.162@inuka.org,+254 769 747 122,Vocational,Coastal,Consented,Physical Form,2026-06-03 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1163,Emmanuel Nekesa,20003142,emmanuel.nekesa.163@inuka.org,+254 732 125 870,Vocational,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1164,Collins Nekesa,20003260,collins.nekesa.164@inuka.org,+254 745 645 301,Tech,Western,Consented,SMS OTP,2026-05-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1165,Lydia Kiprop,20003248,lydia.kiprop.165@inuka.org,+254 719 916 111,Scholarship,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1166,Esther Wekesa,20003283,esther.wekesa.166@inuka.org,+254 797 662 716,Plus,Rift Valley,Consented,Digital Signature,2026-05-31 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1167,Julius Kiptoo,20003432,julius.kiptoo.167@inuka.org,+254 715 825 939,Vocational,Central,Consented,SMS OTP,2026-07-05 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1168,Alice Ombati,20003374,alice.ombati.168@inuka.org,+254 796 941 945,Vocational,North Eastern,Consented,Physical Form,2026-02-04 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1169,Asha Sang,20003280,asha.sang.169@inuka.org,+254 720 753 141,Plus,Nairobi,Consented,Digital Signature,2026-08-06 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1170,Peter Otieno,20003295,peter.otieno.170@inuka.org,+254 719 808 732,Vocational,Central,Withdrawn,SMS OTP,2026-07-03 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1171,Wycliffe Cherono,20003659,wycliffe.cherono.171@inuka.org,+254 723 419 548,Vocational,Nyanza,Consented,Physical Form,2026-03-23 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1172,Sarah Nyangau,20003730,sarah.nyangau.172@inuka.org,+254 775 192 547,Tech,Rift Valley,Consented,Digital Signature,2026-04-09 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1173,Kevin Hassan,20003610,kevin.hassan.173@inuka.org,+254 784 538 829,Vocational,Coastal,Consented,SMS OTP,2026-08-19 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1174,Stephen Wamalwa,20003330,stephen.wamalwa.174@inuka.org,+254 798 575 402,Vocational,Nyanza,Consented,Digital Signature,2026-08-02 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1175,Florence Cherono,20003396,florence.cherono.175@inuka.org,+254 750 208 478,Scholarship,Western,Consented,SMS OTP,2026-03-04 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1176,Patrick Jebet,20003925,patrick.jebet.176@inuka.org,+254 749 551 389,Plus,Rift Valley,Consented,SMS OTP,2026-03-31 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1177,James Mohamed,20003223,james.mohamed.177@inuka.org,+254 770 684 757,Plus,Nairobi,Consented,Physical Form,2026-03-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1178,Moses Achieng,20003800,moses.achieng.178@inuka.org,+254 736 657 260,Tech,Rift Valley,Consented,Physical Form,2026-06-08 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1179,Eunice Karanja,20003989,eunice.karanja.179@inuka.org,+254 798 632 511,Scholarship,Rift Valley,Consented,Physical Form,2026-07-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1180,Agnes Mutua,20003999,agnes.mutua.180@inuka.org,+254 767 951 306,Vocational,Central,Consented,Physical Form,2026-05-06 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1181,Ruth Maina,20003319,ruth.maina.181@inuka.org,+254 746 242 622,Plus,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1182,Asha Achieng,20003858,asha.achieng.182@inuka.org,+254 740 903 763,Tech,Coastal,Consented,Physical Form,2026-05-05 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1183,Brian Wekesa,20003782,brian.wekesa.183@inuka.org,+254 796 115 242,Scholarship,Coastal,Consented,SMS OTP,2026-08-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1184,Daniel Kiarie,20004014,daniel.kiarie.184@inuka.org,+254 771 258 549,Plus,Nyanza,Consented,Digital Signature,2026-06-17 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1185,Daniel Karanja,20003494,daniel.karanja.185@inuka.org,+254 727 285 145,Plus,Rift Valley,Consented,Physical Form,2026-04-17 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1186,Faith Wambui,20003271,faith.wambui.186@inuka.org,+254 772 383 989,Vocational,Nairobi,Consented,Physical Form,2026-04-29 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1187,Zainab Kimani,20003447,zainab.kimani.187@inuka.org,+254 710 616 838,Tech,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1188,Beatrice Wamalwa,20003905,beatrice.wamalwa.188@inuka.org,+254 754 143 468,Vocational,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1189,Joseph Nyangau,20003626,joseph.nyangau.189@inuka.org,+254 769 945 773,Vocational,Nyanza,Consented,Digital Signature,2026-03-08 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1190,Faith Simiyu,20003580,faith.simiyu.190@inuka.org,+254 728 223 584,Plus,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1191,Philip Ochieng,20003354,philip.ochieng.191@inuka.org,+254 754 139 658,Vocational,North Eastern,Consented,SMS OTP,2026-07-05 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1192,Eunice Kariuki,20003854,eunice.kariuki.192@inuka.org,+254 755 930 753,Vocational,Eastern,Consented,Physical Form,2026-07-12 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1193,Sarah Ochieng,20003955,sarah.ochieng.193@inuka.org,+254 717 946 679,Tech,Rift Valley,Consented,Digital Signature,2026-08-18 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1194,Mercy Muthoni,20003509,mercy.muthoni.194@inuka.org,+254 755 669 862,Scholarship,Rift Valley,Consented,Digital Signature,2026-04-28 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1195,Rose Hassan,20003532,rose.hassan.195@inuka.org,+254 795 976 125,Tech,Central,Consented,Digital Signature,2026-07-10 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1196,Philip Mohamed,20003570,philip.mohamed.196@inuka.org,+254 732 618 316,Scholarship,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1197,Daniel Wambui,20003579,daniel.wambui.197@inuka.org,+254 762 180 847,Scholarship,Western,Consented,Physical Form,2026-07-31 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1198,Beatrice Kiarie,20003468,beatrice.kiarie.198@inuka.org,+254 760 770 341,Tech,Nyanza,Consented,Physical Form,2026-07-27 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1199,Kevin Maina,20003745,kevin.maina.199@inuka.org,+254 796 522 314,Scholarship,Nyanza,Consented,Digital Signature,2026-08-19 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1200,Philip Omondi,20003688,philip.omondi.200@inuka.org,+254 723 672 594,Scholarship,Western,Withdrawn,Physical Form,2026-08-08 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1201,Beatrice Ibrahim,20004285,beatrice.ibrahim.201@inuka.org,+254 723 866 873,Plus,Nyanza,Consented,Digital Signature,2026-06-25 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1202,Mary Kipkorir,20004237,mary.kipkorir.202@inuka.org,+254 776 187 511,Vocational,Nairobi,Consented,SMS OTP,2026-06-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1203,Mercy Muthoni,20003955,mercy.muthoni.203@inuka.org,+254 743 686 670,Vocational,Rift Valley,Consented,Digital Signature,2026-07-03 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1204,Halima Ochieng,20003838,halima.ochieng.204@inuka.org,+254 746 650 404,Scholarship,Coastal,Consented,SMS OTP,2026-07-13 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1205,Rose Kipruto,20004427,rose.kipruto.205@inuka.org,+254 766 717 663,Scholarship,Central,Withdrawn,SMS OTP,2026-08-05 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1206,Ruth Juma,20003728,ruth.juma.206@inuka.org,+254 766 487 122,Scholarship,Nairobi,Consented,Digital Signature,2026-03-12 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1207,Michael Ochieng,20003887,michael.ochieng.207@inuka.org,+254 777 188 337,Scholarship,North Eastern,Consented,Digital Signature,2026-03-23 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1208,Jane Jebet,20004513,jane.jebet.208@inuka.org,+254 789 391 952,Plus,Western,Consented,Digital Signature,2026-03-13 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1209,Evans Ekiru,20004002,evans.ekiru.209@inuka.org,+254 755 901 727,Plus,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1210,Joseph Njoroge,20004193,joseph.njoroge.210@inuka.org,+254 741 595 463,Scholarship,North Eastern,Consented,Physical Form,2026-04-25 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1211,Catherine Ochieng,20003999,catherine.ochieng.211@inuka.org,+254 793 656 174,Plus,Central,Consented,SMS OTP,2026-04-15 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1212,Brian Ombati,20004203,brian.ombati.212@inuka.org,+254 731 783 324,Plus,Western,Consented,Digital Signature,2026-07-31 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1213,Collins Kiptoo,20004143,collins.kiptoo.213@inuka.org,+254 763 544 241,Plus,Rift Valley,Consented,Physical Form,2026-04-29 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1214,Lucy Wangari,20004553,lucy.wangari.214@inuka.org,+254 773 148 479,Plus,Nyanza,Consented,Digital Signature,2026-03-19 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1215,Daniel Wanjiku,20004221,daniel.wanjiku.215@inuka.org,+254 761 116 691,Tech,Nyanza,Consented,Physical Form,2026-05-27 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1216,Agnes Njoroge,20004637,agnes.njoroge.216@inuka.org,+254 715 487 428,Tech,Coastal,Consented,Physical Form,2026-02-04 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1217,Alice Kiptoo,20004104,alice.kiptoo.217@inuka.org,+254 764 321 796,Scholarship,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1218,Alice Hassan,20004619,alice.hassan.218@inuka.org,+254 795 822 200,Vocational,Nyanza,Consented,Digital Signature,2026-02-26 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1219,Patrick Chepkemoi,20004505,patrick.chepkemoi.219@inuka.org,+254 759 904 967,Scholarship,Nairobi,Withdrawn,Physical Form,2026-07-15 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1220,Patrick Ochieng,20004653,patrick.ochieng.220@inuka.org,+254 777 366 320,Vocational,North Eastern,Consented,SMS OTP,2026-02-02 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1221,Simon Karanja,20003934,simon.karanja.221@inuka.org,+254 725 268 189,Tech,Central,Consented,Digital Signature,2026-04-29 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1222,Wycliffe Karanja,20004525,wycliffe.karanja.222@inuka.org,+254 740 731 178,Plus,Central,Consented,Physical Form,2026-02-22 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1223,Beatrice Wangari,20004538,beatrice.wangari.223@inuka.org,+254 789 978 440,Vocational,Central,Consented,Digital Signature,2026-03-13 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1224,Julius Karanja,20004125,julius.karanja.224@inuka.org,+254 754 967 646,Scholarship,Coastal,Consented,SMS OTP,2026-04-22 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1225,Wycliffe Kipkorir,20004123,wycliffe.kipkorir.225@inuka.org,+254 718 147 474,Tech,North Eastern,Consented,Digital Signature,2026-06-06 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1226,Sarah Wekesa,20004711,sarah.wekesa.226@inuka.org,+254 777 192 678,Tech,Coastal,Consented,Digital Signature,2026-06-27 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1227,Francis Kipruto,20004838,francis.kipruto.227@inuka.org,+254 770 949 664,Scholarship,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1228,Lydia Jebet,20004210,lydia.jebet.228@inuka.org,+254 723 755 734,Scholarship,Central,Consented,SMS OTP,2026-02-25 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1229,Joseph Kipruto,20004071,joseph.kipruto.229@inuka.org,+254 781 832 408,Tech,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1230,Moses Otieno,20004737,moses.otieno.230@inuka.org,+254 761 817 568,Tech,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1231,Daniel Nekesa,20004473,daniel.nekesa.231@inuka.org,+254 768 378 475,Plus,Coastal,Consented,SMS OTP,2026-03-31 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1232,Anita Chelimo,20004414,anita.chelimo.232@inuka.org,+254 799 304 411,Plus,Nairobi,Consented,Digital Signature,2026-05-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1233,Julius Kiprop,20004297,julius.kiprop.233@inuka.org,+254 754 315 180,Scholarship,Nyanza,Consented,Digital Signature,2026-06-22 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1234,Asha Ibrahim,20004704,asha.ibrahim.234@inuka.org,+254 726 369 560,Tech,Nairobi,Consented,SMS OTP,2026-04-02 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1235,Francis Nduku,20004441,francis.nduku.235@inuka.org,+254 734 203 427,Plus,Central,Consented,Digital Signature,2026-07-01 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1236,Philip Kiptoo,20004651,philip.kiptoo.236@inuka.org,+254 783 963 288,Vocational,Nyanza,Consented,SMS OTP,2026-03-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1237,Daniel Ekiru,20004662,daniel.ekiru.237@inuka.org,+254 765 335 116,Plus,Western,Consented,SMS OTP,2026-03-06 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1238,Rose Wanjiku,20004486,rose.wanjiku.238@inuka.org,+254 720 101 532,Scholarship,Coastal,Consented,SMS OTP,2026-04-22 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1239,Andrew Koech,20004346,andrew.koech.239@inuka.org,+254 758 713 648,Tech,Central,Consented,SMS OTP,2026-05-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1240,Mercy Nyangau,20004702,mercy.nyangau.240@inuka.org,+254 786 169 758,Scholarship,Western,Consented,Physical Form,2026-08-06 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1241,Evans Kiprop,20004770,evans.kiprop.241@inuka.org,+254 776 240 425,Plus,Nyanza,Consented,SMS OTP,2026-07-28 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1242,Emmanuel Rotich,20004998,emmanuel.rotich.242@inuka.org,+254 786 422 755,Plus,Coastal,Consented,SMS OTP,2026-06-01 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1243,Fatuma Rotich,20004378,fatuma.rotich.243@inuka.org,+254 780 979 979,Plus,Nairobi,Consented,SMS OTP,2026-06-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1244,Faith Kimani,20004806,faith.kimani.244@inuka.org,+254 761 558 729,Scholarship,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1245,Charles Kipruto,20004848,charles.kipruto.245@inuka.org,+254 745 574 363,Vocational,Central,Consented,SMS OTP,2026-05-08 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1246,Robert Hassan,20005179,robert.hassan.246@inuka.org,+254 730 502 548,Scholarship,Central,Consented,SMS OTP,2026-08-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1247,Daniel Kiptoo,20004344,daniel.kiptoo.247@inuka.org,+254 772 285 145,Tech,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1248,Anita Lagat,20005160,anita.lagat.248@inuka.org,+254 768 162 729,Scholarship,Central,Consented,Digital Signature,2026-05-05 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1249,Wycliffe Muthoni,20004873,wycliffe.muthoni.249@inuka.org,+254 796 871 327,Vocational,Central,Consented,Physical Form,2026-07-03 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1250,Esther Ibrahim,20004990,esther.ibrahim.250@inuka.org,+254 787 407 750,Vocational,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1251,Kevin Muthoni,20004538,kevin.muthoni.251@inuka.org,+254 768 282 246,Tech,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1252,Joseph Onyango,20004623,joseph.onyango.252@inuka.org,+254 766 110 504,Plus,Coastal,Consented,SMS OTP,2026-07-14 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1253,Wycliffe Nduku,20004725,wycliffe.nduku.253@inuka.org,+254 743 986 872,Scholarship,Eastern,Consented,Physical Form,2026-03-03 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1254,Catherine Nyambura,20004916,catherine.nyambura.254@inuka.org,+254 764 210 291,Scholarship,Coastal,Consented,SMS OTP,2026-02-24 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1255,Mary Kipkorir,20004469,mary.kipkorir.255@inuka.org,+254 733 725 323,Tech,Western,Consented,SMS OTP,2026-04-15 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1256,Collins Kimani,20005313,collins.kimani.256@inuka.org,+254 774 992 671,Tech,Nairobi,Consented,Digital Signature,2026-07-05 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1257,Gladys Karanja,20005274,gladys.karanja.257@inuka.org,+254 766 814 727,Vocational,Coastal,Consented,Physical Form,2026-07-17 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1258,Grace Ombati,20005014,grace.ombati.258@inuka.org,+254 754 912 507,Vocational,Nyanza,Consented,Digital Signature,2026-02-15 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1259,Patrick Odhiambo,20005165,patrick.odhiambo.259@inuka.org,+254 727 486 744,Scholarship,Coastal,Withdrawn,Physical Form,2026-07-14 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1260,Charles Kamau,20005166,charles.kamau.260@inuka.org,+254 771 960 640,Scholarship,Nairobi,Consented,SMS OTP,2026-04-10 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1261,Lucy Kariuki,20004865,lucy.kariuki.261@inuka.org,+254 723 142 344,Vocational,Nyanza,Consented,Digital Signature,2026-06-19 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1262,Alice Wanyama,20004554,alice.wanyama.262@inuka.org,+254 781 150 410,Scholarship,Nyanza,Consented,Physical Form,2026-07-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1263,Mercy Otieno,20004663,mercy.otieno.263@inuka.org,+254 727 416 604,Vocational,Western,Consented,SMS OTP,2026-04-12 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1264,Beatrice Jebet,20004694,beatrice.jebet.264@inuka.org,+254 718 841 494,Vocational,Eastern,Consented,Digital Signature,2026-06-07 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1265,Lucy Mutua,20005135,lucy.mutua.265@inuka.org,+254 731 156 217,Scholarship,Eastern,Consented,Physical Form,2026-04-09 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1266,Collins Koech,20005180,collins.koech.266@inuka.org,+254 786 277 596,Scholarship,Rift Valley,Consented,Digital Signature,2026-06-18 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1267,David Lagat,20005451,david.lagat.267@inuka.org,+254 764 558 934,Tech,Nairobi,Consented,Physical Form,2026-04-02 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1268,Andrew Kamau,20004785,andrew.kamau.268@inuka.org,+254 779 123 637,Scholarship,Nairobi,Consented,Digital Signature,2026-05-09 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1269,Sarah Nyambura,20005209,sarah.nyambura.269@inuka.org,+254 777 685 827,Vocational,Coastal,Consented,Digital Signature,2026-06-27 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1270,Ruth Nduku,20005497,ruth.nduku.270@inuka.org,+254 722 885 247,Vocational,Rift Valley,Consented,Digital Signature,2026-05-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1271,Alice Sang,20004737,alice.sang.271@inuka.org,+254 772 368 885,Plus,Western,Consented,SMS OTP,2026-02-15 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1272,Zainab Ekiru,20005317,zainab.ekiru.272@inuka.org,+254 718 783 452,Tech,Nyanza,Consented,SMS OTP,2026-04-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1273,Rachael Kiprop,20004914,rachael.kiprop.273@inuka.org,+254 710 763 930,Vocational,Central,Consented,SMS OTP,2026-02-09 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1274,Joseph Kariuki,20005109,joseph.kariuki.274@inuka.org,+254 789 337 499,Plus,Coastal,Consented,SMS OTP,2026-07-21 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1275,Catherine Mwangi,20005547,catherine.mwangi.275@inuka.org,+254 782 612 142,Tech,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1276,Mary Onyango,20005596,mary.onyango.276@inuka.org,+254 767 435 832,Plus,Western,Consented,Physical Form,2026-02-24 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1277,Rose Ombati,20005328,rose.ombati.277@inuka.org,+254 756 541 834,Tech,Eastern,Consented,Physical Form,2026-04-07 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1278,Lydia Kipkorir,20005524,lydia.kipkorir.278@inuka.org,+254 731 277 710,Vocational,North Eastern,Consented,Physical Form,2026-06-23 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1279,Emmanuel Kamau,20005308,emmanuel.kamau.279@inuka.org,+254 770 188 166,Plus,Coastal,Consented,Physical Form,2026-08-14 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1280,Simon Nduku,20004991,simon.nduku.280@inuka.org,+254 744 270 101,Tech,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1281,Mary Chelimo,20004916,mary.chelimo.281@inuka.org,+254 785 534 828,Vocational,Eastern,Consented,Physical Form,2026-08-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1282,Simon Wamalwa,20005534,simon.wamalwa.282@inuka.org,+254 751 121 319,Plus,Nairobi,Consented,Digital Signature,2026-04-30 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1283,Grace Ndwiga,20005130,grace.ndwiga.283@inuka.org,+254 714 436 765,Tech,Eastern,Consented,Physical Form,2026-03-22 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1284,Joseph Cherono,20005072,joseph.cherono.284@inuka.org,+254 768 564 439,Plus,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1285,John Cherono,20005503,john.cherono.285@inuka.org,+254 776 108 885,Plus,Central,Consented,SMS OTP,2026-04-14 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1286,Michael Kimani,20005707,michael.kimani.286@inuka.org,+254 760 656 716,Plus,Nyanza,Consented,Physical Form,2026-08-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1287,Joseph Chelimo,20005773,joseph.chelimo.287@inuka.org,+254 763 691 709,Plus,Eastern,Withdrawn,Physical Form,2026-07-18 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1288,Moses Wamalwa,20005180,moses.wamalwa.288@inuka.org,+254 748 611 500,Plus,Eastern,Consented,SMS OTP,2026-06-28 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1289,Sarah Mohamed,20005588,sarah.mohamed.289@inuka.org,+254 721 559 982,Plus,Western,Consented,SMS OTP,2026-07-09 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1290,Lydia Kiprop,20005604,lydia.kiprop.290@inuka.org,+254 759 902 699,Vocational,North Eastern,Consented,Physical Form,2026-08-02 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1291,Mary Mwangi,20005939,mary.mwangi.291@inuka.org,+254 785 759 235,Plus,Rift Valley,Consented,Digital Signature,2026-04-03 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1292,Halima Kiptoo,20005476,halima.kiptoo.292@inuka.org,+254 728 222 194,Plus,Western,Consented,Digital Signature,2026-04-10 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1293,Rose Wekesa,20005747,rose.wekesa.293@inuka.org,+254 731 889 531,Vocational,Western,Consented,Physical Form,2026-03-07 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1294,James Kimani,20005773,james.kimani.294@inuka.org,+254 773 923 536,Tech,Nyanza,Consented,Physical Form,2026-07-10 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1295,Joyce Odhiambo,20005734,joyce.odhiambo.295@inuka.org,+254 753 219 430,Tech,Rift Valley,Consented,Physical Form,2026-02-04 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1296,David Mohamed,20006004,david.mohamed.296@inuka.org,+254 759 709 653,Plus,Nairobi,Consented,Digital Signature,2026-02-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1297,Philip Otieno,20005390,philip.otieno.297@inuka.org,+254 736 259 191,Plus,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1298,Asha Barasa,20005325,asha.barasa.298@inuka.org,+254 723 506 724,Tech,Western,Consented,Physical Form,2026-03-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1299,Francis Kamau,20006038,francis.kamau.299@inuka.org,+254 727 198 867,Plus,Western,Consented,Physical Form,2026-02-02 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1300,Lydia Ochieng,20005912,lydia.ochieng.300@inuka.org,+254 796 708 943,Plus,Central,Consented,SMS OTP,2026-06-21 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1301,Anita Chepkemoi,20005599,anita.chepkemoi.301@inuka.org,+254 729 488 224,Vocational,Eastern,Consented,Digital Signature,2026-04-11 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1302,Florence Kemei,20006045,florence.kemei.302@inuka.org,+254 717 348 910,Plus,Western,Consented,Physical Form,2026-04-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1303,Joyce Achieng,20005663,joyce.achieng.303@inuka.org,+254 767 941 544,Plus,Rift Valley,Withdrawn,SMS OTP,2026-08-04 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1304,Michael Rotich,20005389,michael.rotich.304@inuka.org,+254 776 855 861,Scholarship,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1305,Patrick Kamau,20005704,patrick.kamau.305@inuka.org,+254 732 582 341,Plus,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1306,Asha Ibrahim,20005332,asha.ibrahim.306@inuka.org,+254 721 590 166,Tech,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1307,Sarah Jebet,20005811,sarah.jebet.307@inuka.org,+254 735 367 962,Scholarship,Eastern,Consented,Digital Signature,2026-07-11 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1308,Faith Wambui,20005929,faith.wambui.308@inuka.org,+254 724 851 571,Plus,Coastal,Consented,SMS OTP,2026-04-23 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1309,Faith Jebet,20005647,faith.jebet.309@inuka.org,+254 727 292 425,Scholarship,Eastern,Consented,SMS OTP,2026-06-05 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1310,Julius Wambui,20005805,julius.wambui.310@inuka.org,+254 743 593 159,Plus,Western,Consented,Digital Signature,2026-07-22 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1311,Lydia Njoroge,20005455,lydia.njoroge.311@inuka.org,+254 771 671 303,Plus,Rift Valley,Consented,SMS OTP,2026-06-17 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1312,Mercy Wekesa,20005634,mercy.wekesa.312@inuka.org,+254 736 107 458,Plus,North Eastern,Consented,Digital Signature,2026-02-13 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1313,Florence Chepkemoi,20005673,florence.chepkemoi.313@inuka.org,+254 756 126 163,Scholarship,Nyanza,Consented,Physical Form,2026-07-22 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1314,Grace Lagat,20006285,grace.lagat.314@inuka.org,+254 771 393 851,Plus,Coastal,Consented,Digital Signature,2026-07-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1315,Mercy Ochieng,20005512,mercy.ochieng.315@inuka.org,+254 722 725 126,Vocational,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1316,Brian Mwangi,20005802,brian.mwangi.316@inuka.org,+254 754 147 612,Scholarship,Coastal,Consented,Digital Signature,2026-04-18 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1317,Rachael Chelimo,20005853,rachael.chelimo.317@inuka.org,+254 775 639 424,Vocational,Central,Consented,Physical Form,2026-03-10 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1318,Julius Mwangi,20006384,julius.mwangi.318@inuka.org,+254 799 568 305,Plus,Rift Valley,Consented,Digital Signature,2026-06-30 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1319,Paul Barasa,20005911,paul.barasa.319@inuka.org,+254 737 267 143,Vocational,Central,Consented,Digital Signature,2026-05-03 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1320,Alice Kiprop,20006142,alice.kiprop.320@inuka.org,+254 783 147 705,Tech,Rift Valley,Consented,Digital Signature,2026-02-17 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1321,David Wambui,20005939,david.wambui.321@inuka.org,+254 717 635 376,Plus,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1322,Daniel Kipkorir,20006011,daniel.kipkorir.322@inuka.org,+254 749 220 687,Plus,Western,Withdrawn,Digital Signature,2026-07-29 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1323,Zainab Jebet,20005963,zainab.jebet.323@inuka.org,+254 767 314 203,Scholarship,Western,Consented,Digital Signature,2026-02-27 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1324,Florence Wamalwa,20006474,florence.wamalwa.324@inuka.org,+254 796 740 706,Scholarship,Eastern,Consented,SMS OTP,2026-07-07 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1325,Mary Kamau,20006161,mary.kamau.325@inuka.org,+254 747 540 673,Tech,North Eastern,Consented,Digital Signature,2026-02-12 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1326,Florence Onyango,20006178,florence.onyango.326@inuka.org,+254 792 169 332,Tech,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1327,Catherine Kiarie,20005818,catherine.kiarie.327@inuka.org,+254 787 757 508,Plus,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1328,Stephen Kiptoo,20006094,stephen.kiptoo.328@inuka.org,+254 765 549 455,Plus,Coastal,Consented,Digital Signature,2026-07-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1329,Jane Sang,20005874,jane.sang.329@inuka.org,+254 718 955 249,Tech,Eastern,Consented,Digital Signature,2026-06-03 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1330,Evans Ochieng,20005710,evans.ochieng.330@inuka.org,+254 777 993 534,Vocational,Nyanza,Consented,Physical Form,2026-05-28 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1331,Asha Wamalwa,20006529,asha.wamalwa.331@inuka.org,+254 746 305 797,Tech,Coastal,Consented,SMS OTP,2026-03-27 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1332,Daniel Kimani,20006365,daniel.kimani.332@inuka.org,+254 770 163 544,Vocational,Rift Valley,Consented,SMS OTP,2026-05-28 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1333,Joseph Kiprop,20005777,joseph.kiprop.333@inuka.org,+254 736 324 579,Plus,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1334,Jane Sang,20006044,jane.sang.334@inuka.org,+254 768 678 924,Vocational,North Eastern,Consented,SMS OTP,2026-06-22 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1335,Andrew Ndwiga,20006535,andrew.ndwiga.335@inuka.org,+254 722 155 245,Plus,Nairobi,Consented,SMS OTP,2026-05-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1336,Daniel Cherono,20006519,daniel.cherono.336@inuka.org,+254 753 406 168,Vocational,North Eastern,Withdrawn,SMS OTP,2026-07-18 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1337,Rose Sang,20006593,rose.sang.337@inuka.org,+254 754 728 889,Scholarship,Coastal,Consented,Physical Form,2026-05-02 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1338,Eunice Odhiambo,20006461,eunice.odhiambo.338@inuka.org,+254 791 142 234,Vocational,Eastern,Consented,Physical Form,2026-02-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1339,Florence Jebet,20006512,florence.jebet.339@inuka.org,+254 728 365 793,Vocational,Nairobi,Consented,Physical Form,2026-07-25 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1340,Grace Kemei,20006172,grace.kemei.340@inuka.org,+254 798 269 419,Tech,Rift Valley,Consented,Digital Signature,2026-02-15 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1341,Gladys Kiarie,20005954,gladys.kiarie.341@inuka.org,+254 768 259 802,Plus,North Eastern,Consented,Digital Signature,2026-05-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1342,Moses Lagat,20006745,moses.lagat.342@inuka.org,+254 722 665 877,Tech,Central,Consented,SMS OTP,2026-06-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1343,Rachael Otieno,20005970,rachael.otieno.343@inuka.org,+254 779 700 583,Plus,Nairobi,Consented,Digital Signature,2026-06-20 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1344,Mercy Nyambura,20006672,mercy.nyambura.344@inuka.org,+254 791 856 108,Scholarship,Nairobi,Consented,Digital Signature,2026-07-25 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1345,Gladys Simiyu,20006614,gladys.simiyu.345@inuka.org,+254 715 380 180,Tech,Nairobi,Consented,Digital Signature,2026-03-17 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1346,Anita Cherono,20006765,anita.cherono.346@inuka.org,+254 799 852 365,Vocational,North Eastern,Consented,Physical Form,2026-06-22 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1347,Moses Kiarie,20006312,moses.kiarie.347@inuka.org,+254 765 682 863,Plus,Eastern,Consented,Physical Form,2026-07-10 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1348,Evans Mohamed,20006315,evans.mohamed.348@inuka.org,+254 755 872 344,Plus,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1349,Stephen Wanjiku,20006719,stephen.wanjiku.349@inuka.org,+254 798 144 123,Tech,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1350,Rachael Juma,20006782,rachael.juma.350@inuka.org,+254 759 288 161,Scholarship,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1351,Joyce Nduku,20006643,joyce.nduku.351@inuka.org,+254 774 844 163,Scholarship,Rift Valley,Consented,SMS OTP,2026-06-01 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1352,Peter Odhiambo,20006615,peter.odhiambo.352@inuka.org,+254 724 418 589,Vocational,Rift Valley,Consented,Physical Form,2026-07-26 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1353,Sarah Nekesa,20006386,sarah.nekesa.353@inuka.org,+254 725 197 829,Plus,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1354,Geoffrey Wekesa,20006714,geoffrey.wekesa.354@inuka.org,+254 787 612 770,Vocational,Nairobi,Consented,Physical Form,2026-08-12 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1355,Eunice Muthoni,20006771,eunice.muthoni.355@inuka.org,+254 767 284 526,Plus,North Eastern,Consented,SMS OTP,2026-07-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1356,Stephen Wambui,20006850,stephen.wambui.356@inuka.org,+254 779 324 459,Vocational,Western,Consented,Physical Form,2026-02-01 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1357,Rose Kiptoo,20006222,rose.kiptoo.357@inuka.org,+254 789 657 117,Vocational,Coastal,Consented,Physical Form,2026-06-14 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1358,Emmanuel Rotich,20006775,emmanuel.rotich.358@inuka.org,+254 798 615 761,Scholarship,Eastern,Consented,Physical Form,2026-04-15 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1359,Florence Barasa,20006236,florence.barasa.359@inuka.org,+254 741 835 754,Tech,Western,Consented,Physical Form,2026-05-10 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1360,Patrick Ekiru,20006626,patrick.ekiru.360@inuka.org,+254 785 516 665,Tech,Nyanza,Consented,SMS OTP,2026-06-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1361,Charles Jebet,20006298,charles.jebet.361@inuka.org,+254 732 286 771,Tech,North Eastern,Consented,SMS OTP,2026-06-08 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1362,Francis Wanyama,20006630,francis.wanyama.362@inuka.org,+254 777 331 612,Scholarship,Coastal,Consented,SMS OTP,2026-07-23 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1363,Moses Kamau,20006923,moses.kamau.363@inuka.org,+254 756 767 889,Vocational,North Eastern,Consented,SMS OTP,2026-02-16 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1364,Gladys Wangari,20006781,gladys.wangari.364@inuka.org,+254 730 837 707,Plus,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1365,Anita Mutua,20006910,anita.mutua.365@inuka.org,+254 724 840 849,Tech,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1366,Florence Karanja,20006647,florence.karanja.366@inuka.org,+254 785 518 795,Scholarship,Nairobi,Consented,Digital Signature,2026-05-09 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1367,Beatrice Mwangi,20006706,beatrice.mwangi.367@inuka.org,+254 714 500 818,Scholarship,Central,Consented,SMS OTP,2026-06-17 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1368,Michael Wanyama,20006799,michael.wanyama.368@inuka.org,+254 789 181 851,Plus,Coastal,Consented,Digital Signature,2026-03-22 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1369,Fatuma Omondi,20006841,fatuma.omondi.369@inuka.org,+254 723 562 899,Scholarship,Central,Consented,SMS OTP,2026-06-24 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1370,Agnes Muthoni,20006542,agnes.muthoni.370@inuka.org,+254 733 596 642,Scholarship,Western,Consented,Digital Signature,2026-06-25 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1371,Mercy Juma,20007144,mercy.juma.371@inuka.org,+254 716 237 786,Vocational,Rift Valley,Consented,SMS OTP,2026-05-27 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1372,Andrew Koech,20006489,andrew.koech.372@inuka.org,+254 715 677 745,Vocational,Coastal,Consented,SMS OTP,2026-02-16 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1373,Alice Wekesa,20007015,alice.wekesa.373@inuka.org,+254 737 144 673,Plus,Western,Withdrawn,Digital Signature,2026-08-03 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1374,Grace Sang,20006678,grace.sang.374@inuka.org,+254 731 384 513,Tech,Central,Consented,Digital Signature,2026-06-13 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1375,Rose Kimani,20006492,rose.kimani.375@inuka.org,+254 791 974 673,Tech,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1376,Paul Karanja,20006864,paul.karanja.376@inuka.org,+254 773 799 109,Plus,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1377,Faith Ndwiga,20006770,faith.ndwiga.377@inuka.org,+254 730 624 165,Vocational,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1378,Joyce Onyango,20007052,joyce.onyango.378@inuka.org,+254 740 300 178,Scholarship,North Eastern,Consented,Digital Signature,2026-07-22 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1379,Rose Kipkorir,20006665,rose.kipkorir.379@inuka.org,+254 779 597 124,Tech,Central,Consented,Physical Form,2026-05-09 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1380,Alice Barasa,20006787,alice.barasa.380@inuka.org,+254 799 782 184,Plus,Nyanza,Consented,SMS OTP,2026-07-21 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1381,Joyce Barasa,20006713,joyce.barasa.381@inuka.org,+254 728 432 279,Scholarship,Rift Valley,Consented,Digital Signature,2026-05-28 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1382,James Chelimo,20007053,james.chelimo.382@inuka.org,+254 787 490 945,Vocational,Coastal,Consented,Physical Form,2026-03-31 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1383,Beatrice Njoroge,20007069,beatrice.njoroge.383@inuka.org,+254 741 722 526,Vocational,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1384,Lucy Muthoni,20006777,lucy.muthoni.384@inuka.org,+254 781 183 615,Vocational,Nairobi,Consented,Physical Form,2026-06-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1385,John Nyangau,20006969,john.nyangau.385@inuka.org,+254 774 564 950,Vocational,Nyanza,Consented,Physical Form,2026-07-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1386,Julius Kariuki,20007185,julius.kariuki.386@inuka.org,+254 741 499 337,Plus,North Eastern,Consented,Physical Form,2026-07-13 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1387,Rose Mutua,20007346,rose.mutua.387@inuka.org,+254 779 878 531,Tech,Central,Withdrawn,Digital Signature,2026-07-30 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1388,Julius Kariuki,20006938,julius.kariuki.388@inuka.org,+254 711 367 409,Scholarship,Nairobi,Consented,Digital Signature,2026-07-31 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1389,Ruth Kipruto,20006968,ruth.kipruto.389@inuka.org,+254 738 367 230,Plus,Nairobi,Consented,Digital Signature,2026-08-18 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1390,Zainab Nyambura,20007461,zainab.nyambura.390@inuka.org,+254 736 749 149,Plus,Western,Consented,Digital Signature,2026-04-07 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1391,Lucy Rotich,20007206,lucy.rotich.391@inuka.org,+254 788 402 128,Tech,Coastal,Consented,Digital Signature,2026-04-23 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1392,Simon Hassan,20007244,simon.hassan.392@inuka.org,+254 780 986 887,Vocational,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1393,Francis Maina,20007066,francis.maina.393@inuka.org,+254 726 652 375,Tech,North Eastern,Consented,SMS OTP,2026-05-20 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1394,Agnes Nekesa,20007659,agnes.nekesa.394@inuka.org,+254 772 319 942,Plus,Rift Valley,Consented,Digital Signature,2026-05-29 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1395,Moses Kiprop,20007281,moses.kiprop.395@inuka.org,+254 749 690 393,Tech,Nairobi,Consented,SMS OTP,2026-06-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1396,Jane Kipruto,20007680,jane.kipruto.396@inuka.org,+254 796 610 192,Tech,Nyanza,Consented,Digital Signature,2026-04-29 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1397,Lydia Kimani,20007628,lydia.kimani.397@inuka.org,+254 721 212 533,Tech,Eastern,Consented,SMS OTP,2026-07-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1398,Philip Kiarie,20006889,philip.kiarie.398@inuka.org,+254 749 327 652,Plus,Coastal,Consented,Physical Form,2026-04-25 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1399,Daniel Maina,20007628,daniel.maina.399@inuka.org,+254 799 988 778,Vocational,Nairobi,Consented,Physical Form,2026-04-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1400,Emmanuel Kiprop,20007236,emmanuel.kiprop.400@inuka.org,+254 731 400 886,Scholarship,Coastal,Withdrawn,Digital Signature,2026-08-13 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1401,Philip Ibrahim,20007289,philip.ibrahim.401@inuka.org,+254 760 381 697,Tech,Nairobi,Consented,SMS OTP,2026-06-28 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1402,Agnes Kiprop,20007059,agnes.kiprop.402@inuka.org,+254 793 627 112,Vocational,Coastal,Consented,Physical Form,2026-03-29 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1403,Mary Wamalwa,20007793,mary.wamalwa.403@inuka.org,+254 732 734 139,Vocational,Western,Consented,Digital Signature,2026-03-09 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1404,Grace Wangari,20007470,grace.wangari.404@inuka.org,+254 762 228 944,Plus,Western,Consented,Physical Form,2026-02-24 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1405,Faith Juma,20007835,faith.juma.405@inuka.org,+254 728 974 306,Scholarship,North Eastern,Consented,SMS OTP,2026-07-13 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1406,Daniel Mwangi,20007854,daniel.mwangi.406@inuka.org,+254 761 971 729,Tech,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1407,Fatuma Achieng,20007583,fatuma.achieng.407@inuka.org,+254 797 668 567,Vocational,Rift Valley,Consented,Physical Form,2026-07-18 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1408,Robert Barasa,20007739,robert.barasa.408@inuka.org,+254 760 910 108,Plus,Nairobi,Consented,Digital Signature,2026-05-02 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1409,Emmanuel Mutua,20007073,emmanuel.mutua.409@inuka.org,+254 752 852 341,Tech,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1410,Alice Simiyu,20007458,alice.simiyu.410@inuka.org,+254 772 930 290,Vocational,North Eastern,Consented,Digital Signature,2026-05-26 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1411,Philip Ochieng,20007298,philip.ochieng.411@inuka.org,+254 741 301 804,Plus,Eastern,Consented,Digital Signature,2026-03-26 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1412,Gladys Otieno,20007183,gladys.otieno.412@inuka.org,+254 749 654 408,Plus,Western,Consented,SMS OTP,2026-02-11 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1413,Joyce Mwangi,20007944,joyce.mwangi.413@inuka.org,+254 781 588 377,Vocational,North Eastern,Consented,Physical Form,2026-05-24 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1414,Collins Ndwiga,20007268,collins.ndwiga.414@inuka.org,+254 767 345 421,Plus,Coastal,Consented,Digital Signature,2026-03-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1415,Lucy Kipkorir,20008050,lucy.kipkorir.415@inuka.org,+254 794 725 390,Vocational,Nairobi,Consented,Physical Form,2026-06-29 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1416,Mary Ochieng,20007775,mary.ochieng.416@inuka.org,+254 795 172 757,Scholarship,Nyanza,Consented,Physical Form,2026-04-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1417,David Onyango,20007483,david.onyango.417@inuka.org,+254 754 151 569,Plus,North Eastern,Consented,Digital Signature,2026-05-09 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1418,Lucy Mohamed,20007394,lucy.mohamed.418@inuka.org,+254 755 371 888,Tech,Western,Consented,Physical Form,2026-07-06 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1419,Mercy Hassan,20007753,mercy.hassan.419@inuka.org,+254 746 994 823,Tech,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1420,Joseph Kiarie,20007613,joseph.kiarie.420@inuka.org,+254 756 377 335,Vocational,Rift Valley,Consented,SMS OTP,2026-06-30 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1421,Anita Kiprop,20007932,anita.kiprop.421@inuka.org,+254 782 355 950,Plus,Central,Consented,SMS OTP,2026-03-06 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1422,James Kipruto,20008164,james.kipruto.422@inuka.org,+254 765 812 976,Plus,Coastal,Consented,Physical Form,2026-04-30 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1423,Gladys Barasa,20007924,gladys.barasa.423@inuka.org,+254 764 363 975,Plus,Nyanza,Consented,SMS OTP,2026-03-18 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1424,Mercy Kemei,20007745,mercy.kemei.424@inuka.org,+254 747 901 384,Plus,Rift Valley,Consented,Physical Form,2026-03-23 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1425,Lydia Kemei,20007905,lydia.kemei.425@inuka.org,+254 792 269 455,Vocational,North Eastern,Withdrawn,Physical Form,2026-07-29 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1426,Agnes Omondi,20007737,agnes.omondi.426@inuka.org,+254 777 855 149,Vocational,Central,Consented,Physical Form,2026-05-08 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1427,James Kamau,20007842,james.kamau.427@inuka.org,+254 715 989 511,Tech,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1428,Florence Ekiru,20008187,florence.ekiru.428@inuka.org,+254 724 574 652,Plus,Eastern,Consented,Digital Signature,2026-06-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1429,Mercy Simiyu,20007687,mercy.simiyu.429@inuka.org,+254 741 254 202,Plus,Central,Consented,SMS OTP,2026-07-15 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1430,Faith Maina,20007647,faith.maina.430@inuka.org,+254 728 959 125,Plus,Coastal,Consented,Physical Form,2026-06-22 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1431,Francis Wanyama,20007485,francis.wanyama.431@inuka.org,+254 785 841 432,Tech,North Eastern,Consented,Physical Form,2026-02-14 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1432,Michael Nduku,20008227,michael.nduku.432@inuka.org,+254 731 701 417,Plus,Coastal,Consented,Digital Signature,2026-07-28 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1433,Joyce Chepkemoi,20007627,joyce.chepkemoi.433@inuka.org,+254 746 645 990,Vocational,Rift Valley,Consented,Physical Form,2026-04-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1434,Asha Ekiru,20008062,asha.ekiru.434@inuka.org,+254 713 323 467,Plus,North Eastern,Consented,Digital Signature,2026-08-16 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1435,Fatuma Lagat,20008366,fatuma.lagat.435@inuka.org,+254 745 291 918,Tech,North Eastern,Consented,Digital Signature,2026-03-25 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1436,Lucy Achieng,20007684,lucy.achieng.436@inuka.org,+254 713 135 938,Plus,Nairobi,Consented,Digital Signature,2026-04-14 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1437,Philip Karanja,20008241,philip.karanja.437@inuka.org,+254 796 723 887,Vocational,Nyanza,Consented,Digital Signature,2026-07-31 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1438,Julius Wangari,20007944,julius.wangari.438@inuka.org,+254 792 113 954,Vocational,Western,Consented,Physical Form,2026-03-10 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1439,David Achieng,20008378,david.achieng.439@inuka.org,+254 775 382 123,Scholarship,Coastal,Consented,Physical Form,2026-05-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1440,David Simiyu,20007951,david.simiyu.440@inuka.org,+254 738 499 348,Scholarship,Coastal,Consented,SMS OTP,2026-04-18 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1441,Simon Mutua,20007683,simon.mutua.441@inuka.org,+254 719 351 425,Tech,North Eastern,Consented,Digital Signature,2026-05-26 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1442,Fatuma Onyango,20008041,fatuma.onyango.442@inuka.org,+254 736 304 335,Scholarship,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1443,Collins Otieno,20007957,collins.otieno.443@inuka.org,+254 785 634 159,Vocational,Central,Consented,Physical Form,2026-03-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1444,Robert Kiprop,20008076,robert.kiprop.444@inuka.org,+254 735 585 747,Tech,Rift Valley,Consented,Digital Signature,2026-07-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1445,Geoffrey Ombati,20008560,geoffrey.ombati.445@inuka.org,+254 729 907 911,Tech,Central,Consented,SMS OTP,2026-04-26 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1446,Fatuma Nyangau,20007876,fatuma.nyangau.446@inuka.org,+254 759 296 569,Plus,Rift Valley,Withdrawn,SMS OTP,2026-08-19 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1447,Simon Koech,20007745,simon.koech.447@inuka.org,+254 798 307 953,Tech,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1448,Wycliffe Rotich,20008362,wycliffe.rotich.448@inuka.org,+254 738 438 836,Tech,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1449,Brian Kimani,20008092,brian.kimani.449@inuka.org,+254 790 432 778,Vocational,Eastern,Consented,SMS OTP,2026-05-22 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1450,Rose Muthoni,20008356,rose.muthoni.450@inuka.org,+254 795 207 563,Tech,North Eastern,Consented,Digital Signature,2026-06-02 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1451,Mary Achieng,20008641,mary.achieng.451@inuka.org,+254 760 462 511,Plus,Nairobi,Consented,Digital Signature,2026-07-18 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1452,Florence Ekiru,20007924,florence.ekiru.452@inuka.org,+254 723 451 239,Tech,Central,Consented,Physical Form,2026-02-25 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1453,Rachael Nekesa,20007888,rachael.nekesa.453@inuka.org,+254 773 840 726,Tech,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1454,Geoffrey Kimani,20007866,geoffrey.kimani.454@inuka.org,+254 719 520 351,Plus,North Eastern,Consented,Physical Form,2026-08-03 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1455,Agnes Kiprop,20008299,agnes.kiprop.455@inuka.org,+254 747 175 182,Vocational,Rift Valley,Withdrawn,Physical Form,2026-07-10 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1456,Collins Wambui,20008663,collins.wambui.456@inuka.org,+254 795 853 965,Plus,Central,Consented,SMS OTP,2026-02-20 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1457,Philip Ali,20008670,philip.ali.457@inuka.org,+254 714 705 752,Tech,Nairobi,Consented,Physical Form,2026-08-11 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1458,Agnes Wanjiku,20008153,agnes.wanjiku.458@inuka.org,+254 777 948 886,Vocational,Central,Consented,Digital Signature,2026-03-01 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1459,Kevin Mwangi,20008259,kevin.mwangi.459@inuka.org,+254 779 636 265,Scholarship,North Eastern,Consented,SMS OTP,2026-08-11 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1460,Gladys Wamalwa,20008188,gladys.wamalwa.460@inuka.org,+254 770 299 743,Plus,Rift Valley,Consented,Digital Signature,2026-05-18 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1461,Jane Wambui,20008347,jane.wambui.461@inuka.org,+254 724 234 727,Scholarship,Nyanza,Withdrawn,SMS OTP,2026-07-28 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1462,Lydia Ndwiga,20007998,lydia.ndwiga.462@inuka.org,+254 785 414 925,Plus,Nairobi,Consented,Physical Form,2026-03-10 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1463,Jane Ekiru,20008373,jane.ekiru.463@inuka.org,+254 778 726 805,Scholarship,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1464,Agnes Jebet,20008528,agnes.jebet.464@inuka.org,+254 736 296 929,Plus,Central,Consented,Physical Form,2026-06-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1465,Ruth Wambui,20008840,ruth.wambui.465@inuka.org,+254 729 539 964,Scholarship,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1466,Halima Kariuki,20008720,halima.kariuki.466@inuka.org,+254 775 895 279,Tech,Central,Consented,Physical Form,2026-07-01 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1467,Eunice Lagat,20008418,eunice.lagat.467@inuka.org,+254 741 874 804,Vocational,Nyanza,Consented,SMS OTP,2026-02-15 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1468,Anita Kariuki,20008530,anita.kariuki.468@inuka.org,+254 761 416 256,Plus,Central,Consented,Physical Form,2026-05-19 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1469,Rose Kiarie,20008554,rose.kiarie.469@inuka.org,+254 728 135 465,Vocational,Nairobi,Consented,SMS OTP,2026-03-04 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1470,Mercy Cherono,20008678,mercy.cherono.470@inuka.org,+254 792 553 452,Tech,Western,Withdrawn,SMS OTP,2026-07-15 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1471,Esther Chepkemoi,20008771,esther.chepkemoi.471@inuka.org,+254 741 237 308,Scholarship,Central,Consented,SMS OTP,2026-04-26 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1472,Robert Koech,20008868,robert.koech.472@inuka.org,+254 746 238 502,Plus,North Eastern,Consented,SMS OTP,2026-08-18 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1473,Faith Juma,20008465,faith.juma.473@inuka.org,+254 754 903 554,Scholarship,Central,Consented,Physical Form,2026-05-28 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1474,Kevin Simiyu,20008513,kevin.simiyu.474@inuka.org,+254 728 385 423,Scholarship,Eastern,Consented,Physical Form,2026-04-28 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1475,Collins Otieno,20009018,collins.otieno.475@inuka.org,+254 723 667 472,Tech,North Eastern,Consented,Digital Signature,2026-07-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1476,Rachael Ombati,20008842,rachael.ombati.476@inuka.org,+254 792 803 370,Plus,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1477,Geoffrey Karanja,20008868,geoffrey.karanja.477@inuka.org,+254 725 228 351,Plus,Coastal,Consented,SMS OTP,2026-05-05 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1478,Michael Hassan,20008939,michael.hassan.478@inuka.org,+254 728 423 947,Scholarship,Nairobi,Consented,SMS OTP,2026-07-22 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1479,Kevin Onyango,20008606,kevin.onyango.479@inuka.org,+254 716 554 338,Plus,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1480,Stephen Ochieng,20008294,stephen.ochieng.480@inuka.org,+254 785 547 209,Plus,Rift Valley,Consented,SMS OTP,2026-03-17 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1481,Fatuma Odhiambo,20008596,fatuma.odhiambo.481@inuka.org,+254 750 190 830,Scholarship,North Eastern,Consented,SMS OTP,2026-03-24 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1482,Rose Achieng,20008552,rose.achieng.482@inuka.org,+254 757 229 293,Tech,Central,Consented,Physical Form,2026-06-15 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1483,Brian Chelimo,20009120,brian.chelimo.483@inuka.org,+254 733 912 694,Scholarship,Western,Consented,Digital Signature,2026-04-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1484,John Kiptoo,20009224,john.kiptoo.484@inuka.org,+254 757 987 914,Tech,Coastal,Consented,Digital Signature,2026-03-28 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1485,Michael Kiarie,20008803,michael.kiarie.485@inuka.org,+254 775 188 656,Vocational,North Eastern,Consented,SMS OTP,2026-08-06 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1486,Jane Kipruto,20008841,jane.kipruto.486@inuka.org,+254 742 846 569,Vocational,North Eastern,Consented,Physical Form,2026-04-23 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1487,Peter Kiprop,20008945,peter.kiprop.487@inuka.org,+254 743 990 833,Vocational,Rift Valley,Consented,SMS OTP,2026-03-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1488,Wycliffe Mohamed,20008836,wycliffe.mohamed.488@inuka.org,+254 712 487 147,Tech,Nairobi,Consented,Physical Form,2026-02-21 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1489,Francis Karanja,20008772,francis.karanja.489@inuka.org,+254 773 274 349,Scholarship,Nairobi,Consented,SMS OTP,2026-02-27 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1490,Fatuma Koech,20008520,fatuma.koech.490@inuka.org,+254 799 575 925,Plus,North Eastern,Consented,Digital Signature,2026-07-17 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1491,Daniel Kiprop,20008977,daniel.kiprop.491@inuka.org,+254 730 312 298,Tech,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1492,Brian Barasa,20009011,brian.barasa.492@inuka.org,+254 757 636 228,Tech,Coastal,Consented,Physical Form,2026-08-08 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1493,Asha Nekesa,20008924,asha.nekesa.493@inuka.org,+254 733 475 907,Plus,Central,Consented,Digital Signature,2026-06-07 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1494,Michael Barasa,20009311,michael.barasa.494@inuka.org,+254 770 707 432,Plus,North Eastern,Consented,Digital Signature,2026-08-12 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1495,Patrick Nyangau,20008935,patrick.nyangau.495@inuka.org,+254 799 518 649,Vocational,Nairobi,Consented,SMS OTP,2026-07-09 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1496,Halima Kipkorir,20008658,halima.kipkorir.496@inuka.org,+254 747 333 948,Tech,Central,Withdrawn,SMS OTP,2026-07-11 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1497,Emmanuel Wangari,20008955,emmanuel.wangari.497@inuka.org,+254 782 736 221,Vocational,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1498,Kevin Ndwiga,20009433,kevin.ndwiga.498@inuka.org,+254 750 724 596,Scholarship,Central,Consented,Physical Form,2026-02-28 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1499,Julius Otieno,20009011,julius.otieno.499@inuka.org,+254 742 517 359,Vocational,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1500,Stephen Wanjiku,20009050,stephen.wanjiku.500@inuka.org,+254 756 311 819,Tech,Eastern,Consented,Digital Signature,2026-06-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1501,David Rotich,20009114,david.rotich.501@inuka.org,+254 789 405 411,Tech,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1502,Geoffrey Odhiambo,20008805,geoffrey.odhiambo.502@inuka.org,+254 756 722 570,Scholarship,Nairobi,Consented,Physical Form,2026-06-18 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1503,Geoffrey Mohamed,20009379,geoffrey.mohamed.503@inuka.org,+254 745 914 624,Vocational,North Eastern,Consented,SMS OTP,2026-06-12 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1504,Grace Ochieng,20009038,grace.ochieng.504@inuka.org,+254 798 854 571,Vocational,North Eastern,Consented,SMS OTP,2026-02-13 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1505,Fatuma Wambui,20009365,fatuma.wambui.505@inuka.org,+254 749 118 342,Scholarship,North Eastern,Consented,Physical Form,2026-06-10 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1506,Lydia Sang,20009601,lydia.sang.506@inuka.org,+254 768 204 662,Scholarship,Nyanza,Consented,Digital Signature,2026-07-11 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1507,Brian Njoroge,20009122,brian.njoroge.507@inuka.org,+254 745 423 344,Scholarship,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1508,Robert Ibrahim,20009142,robert.ibrahim.508@inuka.org,+254 739 922 116,Plus,North Eastern,Consented,SMS OTP,2026-04-06 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1509,Zainab Ndwiga,20009151,zainab.ndwiga.509@inuka.org,+254 784 261 728,Plus,Rift Valley,Consented,Physical Form,2026-08-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1510,Simon Odhiambo,20009357,simon.odhiambo.510@inuka.org,+254 784 448 450,Tech,Coastal,Consented,SMS OTP,2026-05-27 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1511,Grace Ombati,20009189,grace.ombati.511@inuka.org,+254 765 884 815,Tech,Rift Valley,Consented,Digital Signature,2026-03-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1512,Simon Wanjiku,20009384,simon.wanjiku.512@inuka.org,+254 776 814 671,Vocational,Nairobi,Consented,Digital Signature,2026-02-10 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1513,Mercy Kemei,20009189,mercy.kemei.513@inuka.org,+254 723 507 714,Vocational,Nyanza,Consented,Digital Signature,2026-03-17 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1514,Esther Kamau,20009307,esther.kamau.514@inuka.org,+254 791 291 879,Vocational,Rift Valley,Consented,Digital Signature,2026-02-24 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1515,Brian Ibrahim,20009089,brian.ibrahim.515@inuka.org,+254 720 292 496,Scholarship,Nyanza,Consented,Physical Form,2026-02-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1516,John Wangari,20009205,john.wangari.516@inuka.org,+254 727 329 153,Tech,Nyanza,Consented,Physical Form,2026-08-08 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1517,Agnes Jebet,20009116,agnes.jebet.517@inuka.org,+254 729 909 810,Scholarship,Rift Valley,Withdrawn,Digital Signature,2026-07-08 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1518,Patrick Maina,20009642,patrick.maina.518@inuka.org,+254 725 846 995,Vocational,Rift Valley,Consented,Digital Signature,2026-07-18 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1519,Stephen Maina,20009434,stephen.maina.519@inuka.org,+254 772 726 998,Vocational,Nairobi,Consented,SMS OTP,2026-05-09 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1520,Asha Koech,20009099,asha.koech.520@inuka.org,+254 762 519 365,Scholarship,Rift Valley,Consented,SMS OTP,2026-06-24 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1521,Collins Onyango,20009439,collins.onyango.521@inuka.org,+254 727 383 797,Tech,Rift Valley,Consented,Physical Form,2026-06-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1522,Evans Koech,20009422,evans.koech.522@inuka.org,+254 743 359 222,Plus,Rift Valley,Consented,Physical Form,2026-03-13 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1523,Agnes Kimani,20009475,agnes.kimani.523@inuka.org,+254 786 758 410,Scholarship,Nairobi,Consented,SMS OTP,2026-05-04 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1524,Philip Sang,20009528,philip.sang.524@inuka.org,+254 723 861 483,Plus,North Eastern,Consented,Physical Form,2026-05-10 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1525,Eunice Koech,20009577,eunice.koech.525@inuka.org,+254 741 983 419,Vocational,Rift Valley,Consented,Digital Signature,2026-03-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1526,Andrew Wanyama,20009372,andrew.wanyama.526@inuka.org,+254 736 105 615,Plus,Coastal,Consented,Physical Form,2026-05-12 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1527,Evans Maina,20009779,evans.maina.527@inuka.org,+254 785 634 390,Vocational,Coastal,Consented,Physical Form,2026-07-09 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1528,Beatrice Otieno,20009645,beatrice.otieno.528@inuka.org,+254 770 390 603,Plus,North Eastern,Consented,Digital Signature,2026-03-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1529,Rose Kiprop,20009266,rose.kiprop.529@inuka.org,+254 724 602 905,Plus,Eastern,Withdrawn,Physical Form,2026-08-18 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1530,Philip Nyangau,20009753,philip.nyangau.530@inuka.org,+254 745 180 155,Vocational,North Eastern,Consented,Physical Form,2026-07-15 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1531,Florence Jebet,20009727,florence.jebet.531@inuka.org,+254 744 467 634,Tech,Western,Consented,Physical Form,2026-06-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1532,Patrick Mwangi,20009809,patrick.mwangi.532@inuka.org,+254 756 389 659,Scholarship,Coastal,Consented,SMS OTP,2026-03-21 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1533,Paul Ndwiga,20009884,paul.ndwiga.533@inuka.org,+254 791 296 492,Plus,Coastal,Consented,Physical Form,2026-04-16 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1534,Stephen Jebet,20010064,stephen.jebet.534@inuka.org,+254 758 803 102,Plus,North Eastern,Consented,Physical Form,2026-02-16 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1535,Mercy Kemei,20010077,mercy.kemei.535@inuka.org,+254 777 753 691,Tech,Eastern,Consented,SMS OTP,2026-06-14 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1536,Paul Kipkorir,20009560,paul.kipkorir.536@inuka.org,+254 729 295 205,Scholarship,Nyanza,Consented,Physical Form,2026-04-25 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1537,John Kimani,20009278,john.kimani.537@inuka.org,+254 760 436 828,Vocational,Central,Consented,Digital Signature,2026-03-02 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1538,David Otieno,20010122,david.otieno.538@inuka.org,+254 793 189 911,Vocational,Nairobi,Consented,Physical Form,2026-03-22 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1539,Emmanuel Wanjiku,20010024,emmanuel.wanjiku.539@inuka.org,+254 745 333 553,Plus,Coastal,Withdrawn,Digital Signature,2026-07-29 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1540,Zainab Ekiru,20010173,zainab.ekiru.540@inuka.org,+254 730 231 827,Vocational,Coastal,Consented,SMS OTP,2026-04-09 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1541,Asha Nyangau,20010037,asha.nyangau.541@inuka.org,+254 745 401 681,Vocational,Nairobi,Consented,Digital Signature,2026-03-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1542,Peter Juma,20009887,peter.juma.542@inuka.org,+254 722 840 613,Tech,Nairobi,Consented,Physical Form,2026-08-12 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1543,Evans Kiprop,20009651,evans.kiprop.543@inuka.org,+254 747 439 430,Vocational,North Eastern,Consented,SMS OTP,2026-04-06 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1544,Agnes Jebet,20009367,agnes.jebet.544@inuka.org,+254 784 495 437,Vocational,Central,Consented,Physical Form,2026-08-17 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1545,Francis Otieno,20010078,francis.otieno.545@inuka.org,+254 795 459 429,Tech,Nyanza,Consented,Digital Signature,2026-05-29 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1546,Esther Otieno,20009872,esther.otieno.546@inuka.org,+254 769 700 774,Tech,Eastern,Consented,Physical Form,2026-02-28 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1547,Florence Wambui,20009565,florence.wambui.547@inuka.org,+254 758 281 684,Scholarship,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1548,Wycliffe Nduku,20009424,wycliffe.nduku.548@inuka.org,+254 762 169 625,Plus,Central,Consented,SMS OTP,2026-08-16 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1549,Lucy Sang,20009820,lucy.sang.549@inuka.org,+254 739 437 866,Scholarship,Rift Valley,Consented,SMS OTP,2026-03-22 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1550,Patrick Koech,20009764,patrick.koech.550@inuka.org,+254 721 412 847,Tech,North Eastern,Consented,Digital Signature,2026-07-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1551,Brian Simiyu,20010048,brian.simiyu.551@inuka.org,+254 756 129 588,Vocational,Nyanza,Consented,Physical Form,2026-07-12 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1552,Collins Omondi,20010030,collins.omondi.552@inuka.org,+254 750 495 385,Vocational,Western,Consented,Digital Signature,2026-04-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1553,Peter Wambui,20009529,peter.wambui.553@inuka.org,+254 720 140 143,Plus,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1554,Rose Ochieng,20010221,rose.ochieng.554@inuka.org,+254 773 279 628,Vocational,Nairobi,Consented,SMS OTP,2026-04-15 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1555,Rachael Ndwiga,20009987,rachael.ndwiga.555@inuka.org,+254 779 179 543,Vocational,Coastal,Consented,Physical Form,2026-06-21 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1556,Evans Otieno,20010402,evans.otieno.556@inuka.org,+254 751 743 250,Scholarship,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1557,Florence Barasa,20010402,florence.barasa.557@inuka.org,+254 763 616 693,Scholarship,Western,Withdrawn,Physical Form,2026-07-05 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1558,Halima Hassan,20009838,halima.hassan.558@inuka.org,+254 738 380 538,Scholarship,Rift Valley,Consented,SMS OTP,2026-07-06 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1559,Gladys Onyango,20010477,gladys.onyango.559@inuka.org,+254 755 473 821,Scholarship,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1560,Charles Nekesa,20010510,charles.nekesa.560@inuka.org,+254 767 887 649,Tech,North Eastern,Consented,Physical Form,2026-03-21 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1561,Beatrice Jebet,20009729,beatrice.jebet.561@inuka.org,+254 755 923 324,Plus,Nyanza,Consented,Physical Form,2026-06-25 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1562,Zainab Kariuki,20009918,zainab.kariuki.562@inuka.org,+254 790 563 379,Plus,Nairobi,Consented,Digital Signature,2026-05-14 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1563,Stephen Muthoni,20010150,stephen.muthoni.563@inuka.org,+254 731 782 890,Tech,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1564,Michael Kamau,20010023,michael.kamau.564@inuka.org,+254 728 978 862,Vocational,North Eastern,Consented,Digital Signature,2026-07-25 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1565,Jane Kiarie,20010154,jane.kiarie.565@inuka.org,+254 789 246 587,Plus,Rift Valley,Consented,SMS OTP,2026-08-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1566,Gladys Chelimo,20010484,gladys.chelimo.566@inuka.org,+254 777 458 484,Scholarship,Nyanza,Consented,Digital Signature,2026-03-04 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1567,Asha Rotich,20009861,asha.rotich.567@inuka.org,+254 769 181 754,Plus,Western,Consented,Physical Form,2026-05-25 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1568,Anita Njoroge,20010543,anita.njoroge.568@inuka.org,+254 744 297 247,Plus,Eastern,Consented,Digital Signature,2026-02-22 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1569,Daniel Ekiru,20010399,daniel.ekiru.569@inuka.org,+254 726 548 421,Scholarship,Coastal,Consented,Digital Signature,2026-06-18 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1570,Grace Kipruto,20010500,grace.kipruto.570@inuka.org,+254 729 857 805,Vocational,Eastern,Consented,SMS OTP,2026-05-19 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1571,Collins Ombati,20010018,collins.ombati.571@inuka.org,+254 744 251 215,Vocational,Nairobi,Consented,Digital Signature,2026-05-24 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1572,Patrick Nyambura,20010257,patrick.nyambura.572@inuka.org,+254 712 692 653,Vocational,Nairobi,Consented,Physical Form,2026-04-17 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1573,David Nyangau,20010541,david.nyangau.573@inuka.org,+254 748 955 774,Tech,Coastal,Consented,Digital Signature,2026-02-12 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1574,Moses Ombati,20010223,moses.ombati.574@inuka.org,+254 726 858 654,Tech,Rift Valley,Consented,Physical Form,2026-08-06 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1575,Jane Achieng,20009929,jane.achieng.575@inuka.org,+254 718 619 919,Plus,Rift Valley,Consented,Digital Signature,2026-05-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1576,Geoffrey Lagat,20010620,geoffrey.lagat.576@inuka.org,+254 773 766 137,Tech,Nyanza,Consented,Physical Form,2026-07-05 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1577,Asha Odhiambo,20010739,asha.odhiambo.577@inuka.org,+254 723 181 354,Plus,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1578,Catherine Wamalwa,20010695,catherine.wamalwa.578@inuka.org,+254 714 608 129,Plus,Western,Consented,Digital Signature,2026-07-28 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1579,Philip Barasa,20010533,philip.barasa.579@inuka.org,+254 710 709 894,Tech,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1580,Evans Ndwiga,20010717,evans.ndwiga.580@inuka.org,+254 776 532 503,Tech,Eastern,Consented,Digital Signature,2026-04-01 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1581,Daniel Mohamed,20010717,daniel.mohamed.581@inuka.org,+254 772 451 808,Scholarship,Rift Valley,Consented,Digital Signature,2026-07-10 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1582,Geoffrey Barasa,20010257,geoffrey.barasa.582@inuka.org,+254 712 765 298,Vocational,North Eastern,Consented,Digital Signature,2026-06-08 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1583,Simon Sang,20010728,simon.sang.583@inuka.org,+254 739 449 492,Scholarship,Rift Valley,Consented,Digital Signature,2026-08-16 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1584,Paul Mwangi,20010831,paul.mwangi.584@inuka.org,+254 730 234 352,Scholarship,Nyanza,Consented,Physical Form,2026-07-23 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1585,Mary Ombati,20010443,mary.ombati.585@inuka.org,+254 790 758 792,Plus,Rift Valley,Consented,Physical Form,2026-04-13 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1586,John Jebet,20010156,john.jebet.586@inuka.org,+254 778 901 351,Vocational,Nyanza,Consented,Physical Form,2026-03-10 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1587,Mary Mutua,20010552,mary.mutua.587@inuka.org,+254 786 730 941,Tech,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1588,Halima Kiarie,20010933,halima.kiarie.588@inuka.org,+254 721 800 829,Tech,North Eastern,Consented,SMS OTP,2026-07-16 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1589,Grace Juma,20010705,grace.juma.589@inuka.org,+254 777 571 106,Plus,North Eastern,Consented,Digital Signature,2026-06-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1590,Julius Nekesa,20010162,julius.nekesa.590@inuka.org,+254 766 348 575,Plus,Eastern,Consented,SMS OTP,2026-03-06 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1591,Philip Lagat,20010212,philip.lagat.591@inuka.org,+254 721 972 862,Tech,Rift Valley,Consented,Digital Signature,2026-04-08 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1592,Peter Kipkorir,20010402,peter.kipkorir.592@inuka.org,+254 726 910 655,Vocational,Eastern,Consented,SMS OTP,2026-08-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1593,Stephen Muthoni,20010713,stephen.muthoni.593@inuka.org,+254 721 999 702,Tech,Nyanza,Consented,Digital Signature,2026-05-26 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1594,Collins Wamalwa,20010334,collins.wamalwa.594@inuka.org,+254 737 707 972,Vocational,Western,Withdrawn,SMS OTP,2026-07-22 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1595,Collins Nyangau,20010629,collins.nyangau.595@inuka.org,+254 783 844 782,Scholarship,Eastern,Consented,Physical Form,2026-04-22 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1596,James Onyango,20010796,james.onyango.596@inuka.org,+254 723 147 998,Vocational,Central,Withdrawn,SMS OTP,2026-07-04 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1597,Faith Ndwiga,20011047,faith.ndwiga.597@inuka.org,+254 734 519 718,Vocational,North Eastern,Consented,Physical Form,2026-06-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1598,Ruth Nyangau,20011138,ruth.nyangau.598@inuka.org,+254 760 487 993,Scholarship,North Eastern,Consented,Digital Signature,2026-07-03 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1599,Wycliffe Nduku,20010497,wycliffe.nduku.599@inuka.org,+254 719 333 966,Plus,Nairobi,Consented,Digital Signature,2026-05-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1600,Gladys Barasa,20010649,gladys.barasa.600@inuka.org,+254 737 408 610,Vocational,Coastal,Consented,Physical Form,2026-07-31 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1601,Collins Ali,20010403,collins.ali.601@inuka.org,+254 779 770 706,Scholarship,Coastal,Consented,Physical Form,2026-03-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1602,Collins Omondi,20010915,collins.omondi.602@inuka.org,+254 762 218 288,Vocational,Western,Withdrawn,SMS OTP,2026-07-10 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1603,Evans Jebet,20010543,evans.jebet.603@inuka.org,+254 765 573 160,Plus,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1604,Rachael Karanja,20010914,rachael.karanja.604@inuka.org,+254 761 562 228,Plus,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1605,Peter Onyango,20010772,peter.onyango.605@inuka.org,+254 746 489 688,Vocational,Western,Consented,Physical Form,2026-04-06 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1606,Beatrice Achieng,20010640,beatrice.achieng.606@inuka.org,+254 763 333 282,Vocational,Central,Consented,SMS OTP,2026-05-25 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1607,Esther Lagat,20011059,esther.lagat.607@inuka.org,+254 759 167 606,Plus,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1608,Rose Kipkorir,20011249,rose.kipkorir.608@inuka.org,+254 771 897 236,Tech,Western,Consented,SMS OTP,2026-04-23 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1609,Moses Jebet,20010776,moses.jebet.609@inuka.org,+254 758 710 765,Scholarship,Eastern,Consented,Digital Signature,2026-03-12 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1610,Francis Otieno,20010817,francis.otieno.610@inuka.org,+254 759 366 600,Scholarship,Rift Valley,Consented,Digital Signature,2026-05-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1611,Michael Rotich,20011040,michael.rotich.611@inuka.org,+254 718 642 270,Tech,North Eastern,Consented,SMS OTP,2026-07-09 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1612,Simon Nduku,20010851,simon.nduku.612@inuka.org,+254 790 467 578,Vocational,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1613,Simon Wanjiku,20011357,simon.wanjiku.613@inuka.org,+254 775 369 171,Tech,Central,Consented,Physical Form,2026-05-08 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1614,Andrew Kipkorir,20011035,andrew.kipkorir.614@inuka.org,+254 718 744 991,Plus,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1615,Emmanuel Rotich,20010607,emmanuel.rotich.615@inuka.org,+254 798 789 937,Scholarship,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1616,Daniel Nyambura,20010718,daniel.nyambura.616@inuka.org,+254 724 813 675,Scholarship,North Eastern,Withdrawn,Digital Signature,2026-08-04 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1617,Evans Nduku,20011282,evans.nduku.617@inuka.org,+254 775 767 935,Tech,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1618,Rose Kamau,20011379,rose.kamau.618@inuka.org,+254 748 231 413,Vocational,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1619,Philip Ibrahim,20010699,philip.ibrahim.619@inuka.org,+254 728 738 608,Vocational,Nyanza,Consented,SMS OTP,2026-08-02 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1620,Catherine Kemei,20011238,catherine.kemei.620@inuka.org,+254 786 690 635,Scholarship,Nairobi,Consented,SMS OTP,2026-02-14 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1621,Catherine Njoroge,20010680,catherine.njoroge.621@inuka.org,+254 797 128 178,Vocational,Nairobi,Consented,Digital Signature,2026-05-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1622,James Omondi,20011058,james.omondi.622@inuka.org,+254 733 673 790,Vocational,North Eastern,Withdrawn,SMS OTP,2026-07-27 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1623,Mary Ibrahim,20011113,mary.ibrahim.623@inuka.org,+254 747 550 882,Tech,Coastal,Consented,Physical Form,2026-07-12 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1624,Rose Sang,20010828,rose.sang.624@inuka.org,+254 719 310 605,Vocational,Nairobi,Consented,SMS OTP,2026-07-09 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1625,Asha Wangari,20011155,asha.wangari.625@inuka.org,+254 724 716 513,Tech,Nairobi,Consented,Physical Form,2026-07-23 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1626,Geoffrey Njoroge,20011270,geoffrey.njoroge.626@inuka.org,+254 765 550 111,Plus,Eastern,Consented,Physical Form,2026-02-11 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1627,Stephen Nyambura,20011034,stephen.nyambura.627@inuka.org,+254 759 554 739,Vocational,Nyanza,Consented,Digital Signature,2026-02-13 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1628,Anita Jebet,20011283,anita.jebet.628@inuka.org,+254 770 433 304,Tech,Eastern,Consented,Digital Signature,2026-05-28 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1629,Beatrice Nduku,20011383,beatrice.nduku.629@inuka.org,+254 786 236 942,Plus,North Eastern,Consented,SMS OTP,2026-03-28 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1630,Gladys Otieno,20011310,gladys.otieno.630@inuka.org,+254 787 285 110,Plus,Rift Valley,Consented,Physical Form,2026-08-04 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1631,Geoffrey Wanjiku,20011056,geoffrey.wanjiku.631@inuka.org,+254 788 893 503,Plus,Nairobi,Consented,SMS OTP,2026-05-23 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1632,Andrew Omondi,20011728,andrew.omondi.632@inuka.org,+254 745 540 195,Scholarship,Eastern,Consented,SMS OTP,2026-02-07 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1633,Jane Kipruto,20011166,jane.kipruto.633@inuka.org,+254 782 172 789,Plus,Coastal,Consented,Digital Signature,2026-03-24 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1634,Esther Kiprop,20011632,esther.kiprop.634@inuka.org,+254 759 517 710,Vocational,Eastern,Consented,Physical Form,2026-06-23 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1635,Florence Hassan,20011466,florence.hassan.635@inuka.org,+254 753 520 335,Vocational,Coastal,Consented,Digital Signature,2026-03-15 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1636,Daniel Sang,20010984,daniel.sang.636@inuka.org,+254 783 343 758,Scholarship,Nairobi,Consented,Physical Form,2026-06-06 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1637,Evans Juma,20011313,evans.juma.637@inuka.org,+254 750 330 786,Vocational,Nairobi,Consented,Digital Signature,2026-08-14 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1638,Beatrice Nekesa,20011278,beatrice.nekesa.638@inuka.org,+254 799 797 411,Tech,Nairobi,Withdrawn,SMS OTP,2026-07-09 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1639,James Cherono,20011075,james.cherono.639@inuka.org,+254 734 233 672,Plus,North Eastern,Consented,SMS OTP,2026-07-29 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1640,Grace Achieng,20011428,grace.achieng.640@inuka.org,+254 787 182 413,Tech,Nyanza,Consented,Digital Signature,2026-03-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1641,Joseph Karanja,20011106,joseph.karanja.641@inuka.org,+254 717 508 449,Tech,Nairobi,Consented,SMS OTP,2026-05-20 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1642,Charles Ali,20011531,charles.ali.642@inuka.org,+254 785 352 215,Plus,Central,Consented,Digital Signature,2026-04-22 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1643,Halima Mutua,20011588,halima.mutua.643@inuka.org,+254 769 970 157,Plus,Western,Consented,Digital Signature,2026-07-08 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1644,David Ndwiga,20011533,david.ndwiga.644@inuka.org,+254 717 652 912,Scholarship,Eastern,Consented,SMS OTP,2026-03-08 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1645,Rachael Jebet,20011347,rachael.jebet.645@inuka.org,+254 726 154 354,Vocational,Nairobi,Consented,SMS OTP,2026-05-18 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1646,Lydia Mutua,20011507,lydia.mutua.646@inuka.org,+254 760 229 733,Vocational,Nairobi,Withdrawn,SMS OTP,2026-07-14 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1647,Geoffrey Cherono,20011728,geoffrey.cherono.647@inuka.org,+254 722 674 960,Tech,Rift Valley,Consented,Physical Form,2026-07-23 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1648,David Kimani,20011660,david.kimani.648@inuka.org,+254 770 824 650,Tech,Central,Consented,Physical Form,2026-05-12 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1649,Brian Koech,20011796,brian.koech.649@inuka.org,+254 718 345 690,Plus,Eastern,Consented,SMS OTP,2026-02-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1650,Sarah Kipruto,20011465,sarah.kipruto.650@inuka.org,+254 725 949 402,Plus,Coastal,Consented,SMS OTP,2026-02-23 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1651,Francis Kariuki,20011260,francis.kariuki.651@inuka.org,+254 751 570 574,Tech,Eastern,Consented,Physical Form,2026-08-16 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1652,Francis Wangari,20012042,francis.wangari.652@inuka.org,+254 793 542 986,Plus,Western,Consented,SMS OTP,2026-04-30 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1653,Lucy Karanja,20011969,lucy.karanja.653@inuka.org,+254 765 631 520,Tech,Nairobi,Consented,SMS OTP,2026-04-09 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1654,Ruth Nyangau,20011351,ruth.nyangau.654@inuka.org,+254 755 157 765,Vocational,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1655,Simon Chelimo,20011252,simon.chelimo.655@inuka.org,+254 743 340 968,Scholarship,Western,Consented,Physical Form,2026-06-22 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1656,Francis Wanyama,20011475,francis.wanyama.656@inuka.org,+254 718 592 173,Tech,Central,Consented,Digital Signature,2026-05-26 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1657,David Nyambura,20012054,david.nyambura.657@inuka.org,+254 743 896 560,Plus,Eastern,Consented,SMS OTP,2026-05-25 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1658,David Njoroge,20012013,david.njoroge.658@inuka.org,+254 711 191 723,Vocational,Eastern,Withdrawn,Physical Form,2026-07-03 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1659,Andrew Jebet,20012006,andrew.jebet.659@inuka.org,+254 755 575 445,Tech,Rift Valley,Consented,Physical Form,2026-05-31 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1660,Paul Nduku,20011628,paul.nduku.660@inuka.org,+254 749 400 688,Vocational,Western,Consented,Physical Form,2026-06-28 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1661,Philip Mwangi,20012114,philip.mwangi.661@inuka.org,+254 721 895 701,Scholarship,Coastal,Consented,SMS OTP,2026-02-13 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1662,Florence Kemei,20011983,florence.kemei.662@inuka.org,+254 788 677 841,Vocational,North Eastern,Consented,SMS OTP,2026-03-15 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1663,Ruth Nyangau,20012194,ruth.nyangau.663@inuka.org,+254 747 101 675,Plus,Western,Consented,Physical Form,2026-08-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1664,Moses Ekiru,20012120,moses.ekiru.664@inuka.org,+254 761 970 231,Vocational,Nairobi,Consented,SMS OTP,2026-08-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1665,Paul Wamalwa,20011683,paul.wamalwa.665@inuka.org,+254 742 406 451,Plus,Western,Consented,SMS OTP,2026-07-10 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1666,Wycliffe Kiptoo,20011636,wycliffe.kiptoo.666@inuka.org,+254 739 436 197,Vocational,North Eastern,Consented,Digital Signature,2026-02-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1667,Peter Rotich,20012195,peter.rotich.667@inuka.org,+254 718 373 269,Vocational,Rift Valley,Consented,Digital Signature,2026-03-21 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1668,Philip Omondi,20011895,philip.omondi.668@inuka.org,+254 757 470 288,Tech,North Eastern,Consented,Digital Signature,2026-06-03 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1669,Stephen Koech,20012111,stephen.koech.669@inuka.org,+254 785 816 540,Vocational,Nairobi,Consented,SMS OTP,2026-02-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1670,Gladys Otieno,20012346,gladys.otieno.670@inuka.org,+254 732 968 653,Tech,Rift Valley,Consented,Digital Signature,2026-06-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1671,Joyce Rotich,20011784,joyce.rotich.671@inuka.org,+254 786 893 830,Plus,Central,Consented,SMS OTP,2026-02-28 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1672,Lydia Kipruto,20011867,lydia.kipruto.672@inuka.org,+254 737 930 203,Tech,North Eastern,Consented,Digital Signature,2026-07-13 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1673,Alice Wanjiku,20012425,alice.wanjiku.673@inuka.org,+254 796 522 464,Vocational,Central,Consented,Digital Signature,2026-06-26 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1674,Joseph Koech,20011954,joseph.koech.674@inuka.org,+254 748 260 414,Vocational,North Eastern,Withdrawn,Physical Form,2026-08-17 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1675,Lydia Wangari,20012020,lydia.wangari.675@inuka.org,+254 739 234 381,Scholarship,Eastern,Consented,Physical Form,2026-03-05 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1676,Asha Wangari,20012434,asha.wangari.676@inuka.org,+254 789 177 241,Scholarship,Nyanza,Consented,Physical Form,2026-04-20 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1677,Lucy Jebet,20012031,lucy.jebet.677@inuka.org,+254 728 672 838,Vocational,Western,Consented,SMS OTP,2026-07-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1678,Sarah Kipruto,20012051,sarah.kipruto.678@inuka.org,+254 745 146 176,Vocational,Nairobi,Consented,SMS OTP,2026-03-29 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1679,Andrew Wekesa,20012273,andrew.wekesa.679@inuka.org,+254 792 740 118,Tech,Western,Consented,Physical Form,2026-03-31 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1680,Alice Kamau,20011967,alice.kamau.680@inuka.org,+254 757 417 979,Scholarship,Eastern,Consented,SMS OTP,2026-05-09 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1681,Philip Wanyama,20011826,philip.wanyama.681@inuka.org,+254 758 700 786,Plus,Rift Valley,Consented,SMS OTP,2026-07-18 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1682,Gladys Mwangi,20012485,gladys.mwangi.682@inuka.org,+254 772 570 863,Tech,Rift Valley,Consented,Physical Form,2026-06-14 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1683,Agnes Koech,20011853,agnes.koech.683@inuka.org,+254 712 857 771,Tech,Central,Consented,Digital Signature,2026-04-24 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1684,Esther Wanjiku,20012542,esther.wanjiku.684@inuka.org,+254 785 608 548,Plus,Coastal,Consented,SMS OTP,2026-08-05 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1685,Rose Karanja,20012093,rose.karanja.685@inuka.org,+254 788 849 710,Scholarship,Rift Valley,Consented,Physical Form,2026-06-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1686,David Mwangi,20011991,david.mwangi.686@inuka.org,+254 790 766 584,Tech,Rift Valley,Consented,Digital Signature,2026-06-24 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1687,Robert Wekesa,20012579,robert.wekesa.687@inuka.org,+254 724 861 544,Tech,Eastern,Consented,SMS OTP,2026-07-30 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1688,Catherine Wanjiku,20012447,catherine.wanjiku.688@inuka.org,+254 767 796 349,Scholarship,Nyanza,Withdrawn,SMS OTP,2026-07-19 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1689,Patrick Wanyama,20012527,patrick.wanyama.689@inuka.org,+254 753 658 252,Plus,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1690,Kevin Omondi,20012457,kevin.omondi.690@inuka.org,+254 766 457 341,Plus,Western,Withdrawn,Physical Form,2026-07-21 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1691,Stephen Kemei,20012503,stephen.kemei.691@inuka.org,+254 718 728 118,Tech,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1692,Paul Njoroge,20012620,paul.njoroge.692@inuka.org,+254 763 417 771,Vocational,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1693,Wycliffe Odhiambo,20012240,wycliffe.odhiambo.693@inuka.org,+254 780 955 789,Plus,Central,Consented,Physical Form,2026-05-14 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1694,James Mwangi,20012382,james.mwangi.694@inuka.org,+254 745 905 570,Tech,Eastern,Consented,Digital Signature,2026-04-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1695,Geoffrey Jebet,20011990,geoffrey.jebet.695@inuka.org,+254 765 466 603,Tech,Rift Valley,Consented,SMS OTP,2026-06-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1696,Evans Simiyu,20012090,evans.simiyu.696@inuka.org,+254 784 865 232,Plus,Coastal,Consented,Physical Form,2026-05-20 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1697,Agnes Cherono,20012429,agnes.cherono.697@inuka.org,+254 736 354 900,Scholarship,North Eastern,Withdrawn,Digital Signature,2026-08-08 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1698,Gladys Cherono,20012007,gladys.cherono.698@inuka.org,+254 763 155 748,Vocational,Rift Valley,Consented,Digital Signature,2026-06-07 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1699,Jane Kemei,20012490,jane.kemei.699@inuka.org,+254 750 817 730,Vocational,Central,Consented,SMS OTP,2026-05-05 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1700,Zainab Kimani,20012140,zainab.kimani.700@inuka.org,+254 711 831 817,Vocational,Coastal,Withdrawn,SMS OTP,2026-07-05 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1701,Wycliffe Cherono,20012124,wycliffe.cherono.701@inuka.org,+254 783 200 338,Scholarship,Central,Consented,Digital Signature,2026-07-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1702,Wycliffe Kipruto,20012415,wycliffe.kipruto.702@inuka.org,+254 781 562 320,Scholarship,Western,Consented,Physical Form,2026-06-10 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1703,Geoffrey Koech,20012920,geoffrey.koech.703@inuka.org,+254 762 109 181,Vocational,Rift Valley,Consented,Digital Signature,2026-06-18 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1704,Asha Karanja,20012958,asha.karanja.704@inuka.org,+254 788 372 347,Scholarship,North Eastern,Withdrawn,Physical Form,2026-07-06 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1705,Grace Wamalwa,20012255,grace.wamalwa.705@inuka.org,+254 756 964 436,Scholarship,Nairobi,Consented,SMS OTP,2026-04-28 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1706,Paul Kariuki,20012239,paul.kariuki.706@inuka.org,+254 777 433 908,Tech,Eastern,Consented,Physical Form,2026-06-21 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1707,Joseph Wanyama,20012970,joseph.wanyama.707@inuka.org,+254 739 850 985,Scholarship,Western,Consented,SMS OTP,2026-06-30 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1708,Rachael Sang,20012959,rachael.sang.708@inuka.org,+254 771 348 864,Vocational,Rift Valley,Consented,Digital Signature,2026-06-04 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1709,Moses Wanjiku,20012948,moses.wanjiku.709@inuka.org,+254 723 978 803,Vocational,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1710,Philip Koech,20012966,philip.koech.710@inuka.org,+254 753 773 507,Tech,Central,Withdrawn,Physical Form,2026-07-23 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1711,David Muthoni,20012362,david.muthoni.711@inuka.org,+254 736 941 887,Plus,North Eastern,Consented,Digital Signature,2026-08-17 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1712,Agnes Mutua,20012295,agnes.mutua.712@inuka.org,+254 798 145 730,Scholarship,Western,Withdrawn,SMS OTP,2026-07-03 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1713,Mary Maina,20012483,mary.maina.713@inuka.org,+254 741 361 257,Vocational,Coastal,Consented,Digital Signature,2026-06-14 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1714,Anita Wekesa,20013085,anita.wekesa.714@inuka.org,+254 716 829 865,Scholarship,Western,Withdrawn,Physical Form,2026-07-28 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1715,Evans Kamau,20012425,evans.kamau.715@inuka.org,+254 722 653 593,Tech,Western,Consented,Digital Signature,2026-07-04 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1716,Peter Kamau,20012721,peter.kamau.716@inuka.org,+254 775 375 916,Plus,Eastern,Consented,Physical Form,2026-05-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1717,Fatuma Juma,20013024,fatuma.juma.717@inuka.org,+254 735 629 702,Vocational,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1718,Beatrice Sang,20012792,beatrice.sang.718@inuka.org,+254 739 519 731,Scholarship,Rift Valley,Consented,Physical Form,2026-06-25 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1719,Patrick Juma,20013161,patrick.juma.719@inuka.org,+254 723 978 846,Plus,Rift Valley,Consented,Digital Signature,2026-07-30 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1720,Emmanuel Kemei,20012556,emmanuel.kemei.720@inuka.org,+254 781 928 356,Vocational,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1721,Joyce Barasa,20013143,joyce.barasa.721@inuka.org,+254 735 592 790,Scholarship,Eastern,Consented,SMS OTP,2026-02-25 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1722,Stephen Mwangi,20012813,stephen.mwangi.722@inuka.org,+254 729 961 156,Scholarship,Rift Valley,Consented,Physical Form,2026-04-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1723,Julius Onyango,20012730,julius.onyango.723@inuka.org,+254 714 786 855,Tech,Coastal,Consented,SMS OTP,2026-03-16 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1724,Jane Kariuki,20013206,jane.kariuki.724@inuka.org,+254 739 249 102,Tech,Eastern,Consented,Digital Signature,2026-03-08 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1725,Philip Nekesa,20012856,philip.nekesa.725@inuka.org,+254 730 561 384,Scholarship,Eastern,Consented,SMS OTP,2026-04-20 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1726,Brian Rotich,20012700,brian.rotich.726@inuka.org,+254 719 884 116,Scholarship,Central,Consented,SMS OTP,2026-06-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1727,Evans Simiyu,20012943,evans.simiyu.727@inuka.org,+254 783 654 933,Vocational,North Eastern,Withdrawn,SMS OTP,2026-07-08 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1728,Mary Hassan,20012685,mary.hassan.728@inuka.org,+254 793 937 842,Tech,Eastern,Consented,SMS OTP,2026-06-19 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1729,Sarah Ali,20012648,sarah.ali.729@inuka.org,+254 792 532 100,Scholarship,Eastern,Consented,SMS OTP,2026-03-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1730,Peter Juma,20013186,peter.juma.730@inuka.org,+254 785 864 689,Tech,North Eastern,Consented,Physical Form,2026-08-04 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1731,Stephen Kipkorir,20012545,stephen.kipkorir.731@inuka.org,+254 711 966 425,Tech,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1732,Simon Koech,20012982,simon.koech.732@inuka.org,+254 736 423 609,Scholarship,Coastal,Consented,Physical Form,2026-07-18 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1733,Julius Kariuki,20012979,julius.kariuki.733@inuka.org,+254 753 308 914,Plus,North Eastern,Consented,SMS OTP,2026-07-24 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1734,Brian Kiprop,20012969,brian.kiprop.734@inuka.org,+254 733 429 413,Scholarship,Eastern,Consented,Physical Form,2026-02-20 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1735,Ruth Muthoni,20012861,ruth.muthoni.735@inuka.org,+254 793 624 236,Tech,Eastern,Consented,Physical Form,2026-02-07 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1736,Evans Kiarie,20012877,evans.kiarie.736@inuka.org,+254 754 703 917,Scholarship,Coastal,Consented,SMS OTP,2026-08-12 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1737,Zainab Sang,20012879,zainab.sang.737@inuka.org,+254 764 116 696,Scholarship,North Eastern,Consented,Physical Form,2026-02-09 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1738,Florence Achieng,20013388,florence.achieng.738@inuka.org,+254 711 285 434,Vocational,Nairobi,Consented,Digital Signature,2026-03-28 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1739,Catherine Ekiru,20013285,catherine.ekiru.739@inuka.org,+254 730 496 799,Tech,Coastal,Consented,Physical Form,2026-04-21 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1740,Gladys Juma,20012839,gladys.juma.740@inuka.org,+254 751 697 510,Tech,Western,Consented,SMS OTP,2026-05-25 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1741,Daniel Ibrahim,20013176,daniel.ibrahim.741@inuka.org,+254 774 887 964,Vocational,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1742,Wycliffe Kimani,20013548,wycliffe.kimani.742@inuka.org,+254 771 543 248,Scholarship,North Eastern,Consented,Digital Signature,2026-02-21 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1743,Joyce Kiarie,20013045,joyce.kiarie.743@inuka.org,+254 736 672 507,Scholarship,Nyanza,Consented,Digital Signature,2026-04-29 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1744,Rose Kiptoo,20012949,rose.kiptoo.744@inuka.org,+254 769 875 354,Scholarship,Nairobi,Consented,Physical Form,2026-07-27 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1745,Charles Omondi,20013392,charles.omondi.745@inuka.org,+254 786 513 347,Scholarship,Coastal,Withdrawn,Physical Form,2026-08-13 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1746,Geoffrey Kiprop,20012817,geoffrey.kiprop.746@inuka.org,+254 791 851 305,Vocational,Central,Consented,Digital Signature,2026-05-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1747,Fatuma Omondi,20013610,fatuma.omondi.747@inuka.org,+254 779 301 466,Tech,Western,Consented,Physical Form,2026-02-13 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1748,Jane Wanjiku,20013278,jane.wanjiku.748@inuka.org,+254 753 893 799,Vocational,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1749,Paul Rotich,20013046,paul.rotich.749@inuka.org,+254 742 762 230,Scholarship,Western,Consented,Digital Signature,2026-06-20 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1750,Mercy Kipruto,20013040,mercy.kipruto.750@inuka.org,+254 777 361 737,Vocational,Western,Consented,Physical Form,2026-04-18 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1751,Stephen Ombati,20013434,stephen.ombati.751@inuka.org,+254 731 264 116,Plus,Nairobi,Consented,Digital Signature,2026-04-27 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1752,Peter Koech,20013174,peter.koech.752@inuka.org,+254 774 443 843,Tech,North Eastern,Consented,Physical Form,2026-03-29 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1753,Michael Hassan,20013112,michael.hassan.753@inuka.org,+254 767 475 447,Scholarship,Coastal,Consented,Physical Form,2026-06-02 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1754,Francis Chepkemoi,20013708,francis.chepkemoi.754@inuka.org,+254 745 259 859,Vocational,Central,Consented,Digital Signature,2026-02-07 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1755,Beatrice Kipruto,20013283,beatrice.kipruto.755@inuka.org,+254 779 555 685,Tech,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1756,Patrick Nekesa,20013770,patrick.nekesa.756@inuka.org,+254 730 359 439,Tech,North Eastern,Consented,Digital Signature,2026-03-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1757,Catherine Mwangi,20013415,catherine.mwangi.757@inuka.org,+254 760 462 534,Plus,Eastern,Consented,SMS OTP,2026-08-15 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1758,Asha Mwangi,20013023,asha.mwangi.758@inuka.org,+254 747 706 775,Tech,Nairobi,Consented,Digital Signature,2026-08-17 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1759,Joseph Ali,20013685,joseph.ali.759@inuka.org,+254 785 268 767,Tech,Nairobi,Consented,Digital Signature,2026-05-20 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1760,Rose Ibrahim,20013520,rose.ibrahim.760@inuka.org,+254 750 512 405,Vocational,Nairobi,Consented,Digital Signature,2026-07-09 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1761,Francis Ibrahim,20013695,francis.ibrahim.761@inuka.org,+254 715 612 199,Scholarship,Rift Valley,Consented,SMS OTP,2026-03-26 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1762,Geoffrey Chelimo,20013475,geoffrey.chelimo.762@inuka.org,+254 737 419 636,Tech,Coastal,Consented,SMS OTP,2026-07-21 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1763,Brian Kipruto,20013466,brian.kipruto.763@inuka.org,+254 770 507 287,Plus,Western,Consented,Digital Signature,2026-03-02 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1764,Simon Otieno,20013527,simon.otieno.764@inuka.org,+254 774 489 578,Scholarship,Eastern,Consented,Physical Form,2026-02-24 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1765,Andrew Otieno,20013208,andrew.otieno.765@inuka.org,+254 757 355 587,Tech,Nyanza,Consented,SMS OTP,2026-07-02 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1766,Sarah Njoroge,20013168,sarah.njoroge.766@inuka.org,+254 775 589 312,Scholarship,Nairobi,Consented,Digital Signature,2026-08-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1767,Joyce Muthoni,20013175,joyce.muthoni.767@inuka.org,+254 786 752 630,Scholarship,Nairobi,Withdrawn,Physical Form,2026-07-01 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1768,Michael Maina,20013322,michael.maina.768@inuka.org,+254 737 327 850,Scholarship,Nyanza,Consented,Digital Signature,2026-06-03 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1769,Anita Kiarie,20013256,anita.kiarie.769@inuka.org,+254 775 309 230,Tech,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1770,Daniel Wekesa,20013488,daniel.wekesa.770@inuka.org,+254 796 560 532,Vocational,Eastern,Consented,Physical Form,2026-04-15 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1771,Peter Wanjiku,20013480,peter.wanjiku.771@inuka.org,+254 769 661 464,Scholarship,North Eastern,Consented,SMS OTP,2026-08-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1772,Mary Ombati,20013228,mary.ombati.772@inuka.org,+254 727 306 237,Plus,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1773,Grace Kipkorir,20013579,grace.kipkorir.773@inuka.org,+254 792 763 957,Scholarship,Rift Valley,Consented,Physical Form,2026-03-04 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1774,Simon Cherono,20013769,simon.cherono.774@inuka.org,+254 720 477 493,Vocational,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1775,Evans Simiyu,20013401,evans.simiyu.775@inuka.org,+254 739 822 671,Scholarship,Central,Consented,Digital Signature,2026-02-27 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1776,John Ekiru,20013852,john.ekiru.776@inuka.org,+254 775 199 209,Scholarship,Nairobi,Consented,Digital Signature,2026-02-01 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1777,Robert Chepkemoi,20013796,robert.chepkemoi.777@inuka.org,+254 727 471 960,Vocational,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1778,Eunice Onyango,20013400,eunice.onyango.778@inuka.org,+254 737 902 340,Tech,Central,Consented,Digital Signature,2026-04-08 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1779,Jane Kiptoo,20013395,jane.kiptoo.779@inuka.org,+254 757 443 579,Plus,Coastal,Consented,Digital Signature,2026-04-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1780,Brian Karanja,20013523,brian.karanja.780@inuka.org,+254 738 752 453,Scholarship,North Eastern,Consented,SMS OTP,2026-02-28 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1781,Agnes Odhiambo,20013912,agnes.odhiambo.781@inuka.org,+254 770 850 877,Tech,Rift Valley,Consented,Physical Form,2026-04-18 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1782,Beatrice Sang,20013956,beatrice.sang.782@inuka.org,+254 768 455 527,Tech,North Eastern,Consented,Digital Signature,2026-03-04 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1783,Evans Jebet,20013448,evans.jebet.783@inuka.org,+254 737 845 770,Scholarship,Central,Consented,Digital Signature,2026-05-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1784,Paul Onyango,20013740,paul.onyango.784@inuka.org,+254 710 441 770,Tech,Eastern,Consented,Physical Form,2026-04-06 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1785,Stephen Kiarie,20014246,stephen.kiarie.785@inuka.org,+254 798 606 372,Vocational,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1786,Julius Muthoni,20014190,julius.muthoni.786@inuka.org,+254 780 944 218,Scholarship,Rift Valley,Consented,Digital Signature,2026-03-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1787,Collins Nyangau,20013857,collins.nyangau.787@inuka.org,+254 751 791 338,Plus,Central,Consented,SMS OTP,2026-03-01 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1788,Faith Omondi,20013789,faith.omondi.788@inuka.org,+254 763 350 377,Scholarship,Central,Withdrawn,Physical Form,2026-08-02 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1789,Ruth Nduku,20014350,ruth.nduku.789@inuka.org,+254 766 482 962,Tech,Nairobi,Consented,Physical Form,2026-07-04 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1790,Esther Ndwiga,20014123,esther.ndwiga.790@inuka.org,+254 723 334 657,Vocational,Coastal,Consented,SMS OTP,2026-08-10 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1791,Peter Otieno,20014445,peter.otieno.791@inuka.org,+254 716 548 429,Vocational,Coastal,Consented,Digital Signature,2026-07-08 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1792,Mercy Omondi,20014081,mercy.omondi.792@inuka.org,+254 741 679 223,Vocational,Coastal,Consented,SMS OTP,2026-03-28 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1793,Agnes Otieno,20013608,agnes.otieno.793@inuka.org,+254 783 398 787,Tech,Western,Consented,SMS OTP,2026-03-14 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1794,Grace Koech,20014058,grace.koech.794@inuka.org,+254 780 155 959,Plus,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1795,Agnes Ibrahim,20014495,agnes.ibrahim.795@inuka.org,+254 732 315 542,Vocational,North Eastern,Consented,Digital Signature,2026-03-06 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1796,Eunice Kamau,20014515,eunice.kamau.796@inuka.org,+254 777 649 863,Scholarship,Western,Consented,Physical Form,2026-07-07 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1797,David Rotich,20013998,david.rotich.797@inuka.org,+254 731 414 271,Scholarship,Rift Valley,Consented,Physical Form,2026-02-16 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1798,John Achieng,20014240,john.achieng.798@inuka.org,+254 754 625 330,Plus,Rift Valley,Consented,Physical Form,2026-03-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1799,Emmanuel Hassan,20013876,emmanuel.hassan.799@inuka.org,+254 780 359 298,Plus,Rift Valley,Consented,SMS OTP,2026-05-15 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1800,Sarah Chepkemoi,20013763,sarah.chepkemoi.800@inuka.org,+254 778 833 122,Plus,Nyanza,Consented,SMS OTP,2026-08-03 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1801,Kevin Wamalwa,20014440,kevin.wamalwa.801@inuka.org,+254 757 297 803,Scholarship,Central,Consented,Digital Signature,2026-04-08 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1802,Faith Otieno,20014233,faith.otieno.802@inuka.org,+254 768 951 526,Scholarship,Eastern,Consented,SMS OTP,2026-02-27 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1803,Zainab Ochieng,20014038,zainab.ochieng.803@inuka.org,+254 790 374 285,Plus,Eastern,Consented,Physical Form,2026-02-14 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1804,Alice Ekiru,20014050,alice.ekiru.804@inuka.org,+254 778 787 312,Scholarship,Rift Valley,Consented,Digital Signature,2026-06-16 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1805,Grace Simiyu,20014621,grace.simiyu.805@inuka.org,+254 726 962 708,Vocational,Central,Consented,Physical Form,2026-07-10 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1806,Zainab Mohamed,20014045,zainab.mohamed.806@inuka.org,+254 729 523 535,Plus,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1807,Eunice Wangari,20014014,eunice.wangari.807@inuka.org,+254 789 723 738,Scholarship,Western,Consented,SMS OTP,2026-04-28 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1808,Andrew Simiyu,20014470,andrew.simiyu.808@inuka.org,+254 758 916 201,Vocational,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1809,Ruth Kamau,20014162,ruth.kamau.809@inuka.org,+254 761 118 505,Tech,Eastern,Consented,SMS OTP,2026-06-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1810,Michael Ndwiga,20014679,michael.ndwiga.810@inuka.org,+254 732 242 551,Scholarship,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1811,Jane Otieno,20014018,jane.otieno.811@inuka.org,+254 767 368 426,Tech,Coastal,Consented,Digital Signature,2026-06-06 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1812,Moses Njoroge,20014783,moses.njoroge.812@inuka.org,+254 792 172 918,Scholarship,Rift Valley,Consented,Digital Signature,2026-04-22 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1813,Philip Mwangi,20014065,philip.mwangi.813@inuka.org,+254 722 676 925,Tech,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1814,Andrew Wambui,20014558,andrew.wambui.814@inuka.org,+254 746 488 256,Plus,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1815,Andrew Chepkemoi,20014165,andrew.chepkemoi.815@inuka.org,+254 716 540 830,Plus,Western,Consented,SMS OTP,2026-05-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1816,Gladys Achieng,20014713,gladys.achieng.816@inuka.org,+254 740 707 141,Plus,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1817,Patrick Kiprop,20014518,patrick.kiprop.817@inuka.org,+254 751 389 133,Tech,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1818,Alice Kiarie,20014904,alice.kiarie.818@inuka.org,+254 721 551 153,Scholarship,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1819,Jane Maina,20014772,jane.maina.819@inuka.org,+254 765 623 775,Scholarship,Nyanza,Consented,SMS OTP,2026-03-06 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1820,Wycliffe Wambui,20014069,wycliffe.wambui.820@inuka.org,+254 764 262 383,Scholarship,Eastern,Consented,SMS OTP,2026-07-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1821,Catherine Nyangau,20014475,catherine.nyangau.821@inuka.org,+254 722 210 505,Plus,North Eastern,Consented,Physical Form,2026-03-09 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1822,David Odhiambo,20014149,david.odhiambo.822@inuka.org,+254 779 960 787,Plus,Western,Consented,Digital Signature,2026-06-26 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1823,Mary Cherono,20014669,mary.cherono.823@inuka.org,+254 743 356 748,Scholarship,North Eastern,Consented,Physical Form,2026-06-03 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1824,Stephen Kiprop,20014784,stephen.kiprop.824@inuka.org,+254 731 688 985,Scholarship,Western,Withdrawn,SMS OTP,2026-07-29 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1825,Robert Nyambura,20014653,robert.nyambura.825@inuka.org,+254 726 167 638,Tech,Nairobi,Consented,SMS OTP,2026-06-10 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1826,Daniel Ochieng,20014763,daniel.ochieng.826@inuka.org,+254 723 282 958,Plus,Eastern,Consented,Physical Form,2026-05-17 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1827,Charles Mohamed,20014559,charles.mohamed.827@inuka.org,+254 743 807 652,Vocational,Coastal,Consented,Digital Signature,2026-04-21 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1828,Ruth Mwangi,20015026,ruth.mwangi.828@inuka.org,+254 723 222 115,Plus,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1829,Moses Juma,20014598,moses.juma.829@inuka.org,+254 724 153 576,Vocational,Western,Consented,Digital Signature,2026-04-19 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1830,Sarah Nekesa,20014913,sarah.nekesa.830@inuka.org,+254 748 713 889,Scholarship,Eastern,Consented,Digital Signature,2026-04-29 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1831,Paul Kipkorir,20014993,paul.kipkorir.831@inuka.org,+254 784 256 680,Scholarship,Central,Consented,Physical Form,2026-08-14 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1832,Lucy Wamalwa,20014839,lucy.wamalwa.832@inuka.org,+254 795 507 749,Tech,Nyanza,Consented,Physical Form,2026-07-03 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1833,Mary Wekesa,20014510,mary.wekesa.833@inuka.org,+254 772 106 649,Vocational,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1834,Faith Achieng,20014923,faith.achieng.834@inuka.org,+254 732 577 953,Plus,North Eastern,Consented,Physical Form,2026-02-16 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1835,Lydia Juma,20014569,lydia.juma.835@inuka.org,+254 782 366 581,Scholarship,Nyanza,Consented,SMS OTP,2026-07-25 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1836,Sarah Ndwiga,20014418,sarah.ndwiga.836@inuka.org,+254 727 947 395,Plus,Rift Valley,Consented,Digital Signature,2026-07-13 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1837,Mercy Lagat,20014791,mercy.lagat.837@inuka.org,+254 793 698 328,Tech,Central,Consented,Physical Form,2026-03-05 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1838,John Kamau,20014926,john.kamau.838@inuka.org,+254 759 248 897,Tech,Nyanza,Consented,SMS OTP,2026-06-30 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1839,Daniel Wambui,20014555,daniel.wambui.839@inuka.org,+254 783 797 971,Scholarship,North Eastern,Consented,Digital Signature,2026-08-06 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1840,Esther Kipkorir,20014457,esther.kipkorir.840@inuka.org,+254 749 586 228,Plus,Western,Consented,Digital Signature,2026-04-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1841,Anita Onyango,20014742,anita.onyango.841@inuka.org,+254 794 975 457,Plus,North Eastern,Consented,Digital Signature,2026-05-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1842,Grace Maina,20015127,grace.maina.842@inuka.org,+254 719 808 651,Scholarship,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1843,Jane Onyango,20014803,jane.onyango.843@inuka.org,+254 745 360 617,Scholarship,Nyanza,Consented,Physical Form,2026-06-20 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1844,Julius Ali,20014938,julius.ali.844@inuka.org,+254 786 895 728,Plus,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1845,Kevin Nyambura,20014898,kevin.nyambura.845@inuka.org,+254 740 662 958,Plus,Nairobi,Consented,Digital Signature,2026-08-03 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1846,Paul Wamalwa,20014731,paul.wamalwa.846@inuka.org,+254 732 654 836,Plus,Rift Valley,Consented,Physical Form,2026-04-18 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1847,Ruth Nduku,20014820,ruth.nduku.847@inuka.org,+254 795 925 551,Tech,Western,Withdrawn,Digital Signature,2026-07-09 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1848,Robert Kemei,20014942,robert.kemei.848@inuka.org,+254 724 646 945,Scholarship,Western,Consented,SMS OTP,2026-03-27 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1849,Lucy Mwangi,20014576,lucy.mwangi.849@inuka.org,+254 772 740 734,Vocational,Eastern,Consented,SMS OTP,2026-08-08 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1850,Simon Njoroge,20015411,simon.njoroge.850@inuka.org,+254 774 513 260,Plus,Rift Valley,Consented,SMS OTP,2026-07-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1851,Moses Cherono,20014714,moses.cherono.851@inuka.org,+254 731 463 325,Tech,Coastal,Consented,Digital Signature,2026-04-28 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1852,Agnes Kiptoo,20014664,agnes.kiptoo.852@inuka.org,+254 729 253 132,Plus,North Eastern,Consented,SMS OTP,2026-03-31 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1853,Gladys Mwangi,20014627,gladys.mwangi.853@inuka.org,+254 786 799 660,Plus,Eastern,Consented,Physical Form,2026-04-13 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1854,Rose Mwangi,20014844,rose.mwangi.854@inuka.org,+254 774 921 186,Scholarship,North Eastern,Consented,Physical Form,2026-03-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1855,Charles Hassan,20015312,charles.hassan.855@inuka.org,+254 762 314 246,Scholarship,North Eastern,Consented,Digital Signature,2026-04-20 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1856,Lydia Mutua,20014655,lydia.mutua.856@inuka.org,+254 740 981 981,Plus,Rift Valley,Consented,Physical Form,2026-04-26 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1857,Kevin Ekiru,20015228,kevin.ekiru.857@inuka.org,+254 761 560 418,Plus,Rift Valley,Consented,Physical Form,2026-07-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1858,Catherine Lagat,20015413,catherine.lagat.858@inuka.org,+254 773 841 466,Plus,Western,Consented,Digital Signature,2026-03-19 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1859,David Nyambura,20014817,david.nyambura.859@inuka.org,+254 784 383 626,Vocational,Western,Consented,Digital Signature,2026-02-04 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1860,Collins Kipkorir,20015474,collins.kipkorir.860@inuka.org,+254 768 806 683,Tech,Coastal,Consented,Physical Form,2026-05-07 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1861,Francis Kiprop,20015352,francis.kiprop.861@inuka.org,+254 758 367 769,Scholarship,Nairobi,Consented,Physical Form,2026-02-28 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1862,Ruth Ekiru,20015371,ruth.ekiru.862@inuka.org,+254 735 772 993,Vocational,Coastal,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1863,James Ali,20014839,james.ali.863@inuka.org,+254 798 461 303,Scholarship,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1864,Charles Koech,20015439,charles.koech.864@inuka.org,+254 711 739 678,Scholarship,Rift Valley,Consented,Physical Form,2026-02-13 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1865,Evans Nekesa,20015197,evans.nekesa.865@inuka.org,+254 781 597 879,Scholarship,Nyanza,Consented,SMS OTP,2026-07-06 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1866,Zainab Sang,20015255,zainab.sang.866@inuka.org,+254 748 611 482,Plus,Eastern,Consented,SMS OTP,2026-04-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1867,Florence Muthoni,20014846,florence.muthoni.867@inuka.org,+254 790 307 168,Plus,Eastern,Consented,Digital Signature,2026-05-05 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1868,Michael Wangari,20015612,michael.wangari.868@inuka.org,+254 759 644 561,Scholarship,Eastern,Consented,SMS OTP,2026-03-13 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1869,Rose Mwangi,20015142,rose.mwangi.869@inuka.org,+254 720 504 936,Tech,Rift Valley,Consented,Digital Signature,2026-02-24 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1870,Alice Wanjiku,20015267,alice.wanjiku.870@inuka.org,+254 716 157 829,Vocational,Coastal,Consented,Physical Form,2026-03-30 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1871,Joseph Mwangi,20015403,joseph.mwangi.871@inuka.org,+254 723 415 481,Scholarship,Central,Consented,Digital Signature,2026-05-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1872,Joseph Juma,20015098,joseph.juma.872@inuka.org,+254 782 901 247,Plus,Eastern,Consented,SMS OTP,2026-08-14 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1873,Gladys Simiyu,20015354,gladys.simiyu.873@inuka.org,+254 726 199 767,Scholarship,Eastern,Consented,Physical Form,2026-05-20 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1874,Agnes Kiarie,20015358,agnes.kiarie.874@inuka.org,+254 795 648 199,Tech,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1875,Agnes Njoroge,20015079,agnes.njoroge.875@inuka.org,+254 774 879 328,Vocational,Central,Withdrawn,SMS OTP,2026-08-16 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1876,Robert Kiarie,20015133,robert.kiarie.876@inuka.org,+254 756 312 768,Tech,Nyanza,Consented,Digital Signature,2026-08-10 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1877,Joyce Cherono,20015401,joyce.cherono.877@inuka.org,+254 752 313 403,Tech,Nyanza,Consented,Physical Form,2026-03-23 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1878,Collins Kariuki,20015637,collins.kariuki.878@inuka.org,+254 742 666 581,Vocational,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1879,Michael Njoroge,20015929,michael.njoroge.879@inuka.org,+254 739 335 330,Vocational,Coastal,Consented,Physical Form,2026-03-16 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1880,Charles Mohamed,20015153,charles.mohamed.880@inuka.org,+254 715 694 789,Vocational,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1881,Fatuma Muthoni,20015971,fatuma.muthoni.881@inuka.org,+254 781 972 309,Tech,Nyanza,Consented,SMS OTP,2026-04-20 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1882,Rachael Simiyu,20015693,rachael.simiyu.882@inuka.org,+254 728 621 441,Plus,Rift Valley,Consented,Digital Signature,2026-05-11 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1883,James Kiarie,20015570,james.kiarie.883@inuka.org,+254 721 475 633,Vocational,Eastern,Consented,SMS OTP,2026-06-09 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1884,Julius Wanyama,20015977,julius.wanyama.884@inuka.org,+254 746 362 238,Vocational,Nyanza,Consented,Digital Signature,2026-03-09 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1885,Joseph Ochieng,20015256,joseph.ochieng.885@inuka.org,+254 756 678 746,Vocational,Nairobi,Consented,Digital Signature,2026-05-21 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1886,Evans Hassan,20015696,evans.hassan.886@inuka.org,+254 749 242 161,Scholarship,Eastern,Consented,Physical Form,2026-06-26 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1887,Gladys Njoroge,20015754,gladys.njoroge.887@inuka.org,+254 782 274 323,Plus,Western,Withdrawn,Physical Form,2026-08-11 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1888,Zainab Onyango,20015472,zainab.onyango.888@inuka.org,+254 751 598 278,Vocational,Rift Valley,Consented,Physical Form,2026-02-26 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1889,Philip Kariuki,20015877,philip.kariuki.889@inuka.org,+254 794 476 509,Vocational,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1890,Philip Sang,20015530,philip.sang.890@inuka.org,+254 721 128 640,Plus,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1891,Emmanuel Njoroge,20016078,emmanuel.njoroge.891@inuka.org,+254 740 233 516,Vocational,Coastal,Consented,Physical Form,2026-05-28 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1892,Joseph Lagat,20016028,joseph.lagat.892@inuka.org,+254 799 918 568,Vocational,Eastern,Consented,SMS OTP,2026-03-02 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1893,Rachael Ibrahim,20015624,rachael.ibrahim.893@inuka.org,+254 716 452 116,Plus,Eastern,Consented,SMS OTP,2026-05-04 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1894,Philip Ali,20015330,philip.ali.894@inuka.org,+254 721 751 757,Tech,Nairobi,Consented,SMS OTP,2026-05-23 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1895,Moses Ali,20015898,moses.ali.895@inuka.org,+254 791 224 421,Vocational,Eastern,Consented,Digital Signature,2026-05-04 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1896,Paul Muthoni,20015348,paul.muthoni.896@inuka.org,+254 748 446 402,Scholarship,Rift Valley,Consented,SMS OTP,2026-04-23 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1897,Beatrice Juma,20015429,beatrice.juma.897@inuka.org,+254 717 356 703,Tech,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1898,Halima Jebet,20015957,halima.jebet.898@inuka.org,+254 760 564 179,Scholarship,Rift Valley,Consented,SMS OTP,2026-05-18 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1899,Geoffrey Onyango,20015492,geoffrey.onyango.899@inuka.org,+254 737 923 881,Plus,Western,Consented,Digital Signature,2026-02-23 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1900,Jane Mutua,20015534,jane.mutua.900@inuka.org,+254 745 283 763,Plus,Western,Consented,SMS OTP,2026-08-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1901,Faith Ombati,20016262,faith.ombati.901@inuka.org,+254 715 490 561,Tech,Rift Valley,Consented,SMS OTP,2026-07-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1902,Peter Sang,20016234,peter.sang.902@inuka.org,+254 746 676 655,Tech,Western,Consented,SMS OTP,2026-07-11 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1903,Halima Wekesa,20015768,halima.wekesa.903@inuka.org,+254 765 573 161,Tech,North Eastern,Consented,Digital Signature,2026-03-09 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1904,Michael Wekesa,20015911,michael.wekesa.904@inuka.org,+254 772 677 415,Plus,Coastal,Withdrawn,Digital Signature,2026-07-14 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1905,Philip Achieng,20015891,philip.achieng.905@inuka.org,+254 770 637 628,Scholarship,Rift Valley,Consented,Digital Signature,2026-08-08 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1906,Stephen Wanjiku,20016266,stephen.wanjiku.906@inuka.org,+254 747 512 541,Plus,Coastal,Withdrawn,Digital Signature,2026-08-19 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1907,Emmanuel Kemei,20015986,emmanuel.kemei.907@inuka.org,+254 746 971 300,Scholarship,Nyanza,Consented,Digital Signature,2026-04-26 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1908,Robert Mwangi,20016202,robert.mwangi.908@inuka.org,+254 757 776 501,Tech,North Eastern,Consented,Digital Signature,2026-07-29 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1909,Faith Achieng,20016157,faith.achieng.909@inuka.org,+254 733 717 786,Scholarship,Coastal,Consented,SMS OTP,2026-08-03 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1910,Halima Wanyama,20016463,halima.wanyama.910@inuka.org,+254 781 136 235,Scholarship,Nyanza,Consented,Digital Signature,2026-04-19 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1911,Geoffrey Omondi,20015682,geoffrey.omondi.911@inuka.org,+254 717 272 996,Plus,North Eastern,Consented,SMS OTP,2026-04-21 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1912,Daniel Njoroge,20015928,daniel.njoroge.912@inuka.org,+254 711 758 511,Vocational,Nairobi,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1913,Mary Barasa,20016006,mary.barasa.913@inuka.org,+254 714 843 865,Scholarship,Nairobi,Consented,Digital Signature,2026-07-25 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1914,Daniel Kipruto,20016455,daniel.kipruto.914@inuka.org,+254 794 884 292,Vocational,Central,Consented,Digital Signature,2026-02-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1915,Lydia Kamau,20016160,lydia.kamau.915@inuka.org,+254 729 455 416,Vocational,Central,Consented,SMS OTP,2026-03-12 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1916,Agnes Koech,20016078,agnes.koech.916@inuka.org,+254 788 405 707,Plus,Rift Valley,Consented,SMS OTP,2026-03-20 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1917,Geoffrey Barasa,20016169,geoffrey.barasa.917@inuka.org,+254 728 929 929,Tech,Eastern,Consented,SMS OTP,2026-06-06 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1918,Grace Ndwiga,20015813,grace.ndwiga.918@inuka.org,+254 790 612 834,Tech,Central,Consented,Digital Signature,2026-02-22 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1919,Asha Otieno,20015725,asha.otieno.919@inuka.org,+254 794 991 156,Vocational,Rift Valley,Consented,Digital Signature,2026-03-28 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1920,Lucy Kiarie,20016035,lucy.kiarie.920@inuka.org,+254 790 277 228,Plus,Western,Consented,Digital Signature,2026-08-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1921,Andrew Omondi,20016122,andrew.omondi.921@inuka.org,+254 793 538 820,Tech,Eastern,Consented,SMS OTP,2026-04-24 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1922,Halima Kimani,20016365,halima.kimani.922@inuka.org,+254 724 781 730,Plus,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1923,Mary Mwangi,20016233,mary.mwangi.923@inuka.org,+254 733 636 901,Scholarship,Nyanza,Consented,SMS OTP,2026-05-18 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1924,Paul Kiprop,20016143,paul.kiprop.924@inuka.org,+254 746 244 660,Tech,Eastern,Consented,Digital Signature,2026-05-13 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1925,Mercy Juma,20015832,mercy.juma.925@inuka.org,+254 780 530 744,Vocational,Nairobi,Consented,Physical Form,2026-02-19 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1926,John Kamau,20015967,john.kamau.926@inuka.org,+254 719 934 702,Plus,Western,Consented,Physical Form,2026-07-23 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1927,Kevin Kipruto,20016347,kevin.kipruto.927@inuka.org,+254 737 988 661,Plus,Nyanza,Consented,Physical Form,2026-02-01 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1928,Paul Juma,20015929,paul.juma.928@inuka.org,+254 710 283 381,Plus,Central,Consented,SMS OTP,2026-05-05 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1929,Andrew Maina,20015923,andrew.maina.929@inuka.org,+254 769 682 964,Tech,Western,Consented,SMS OTP,2026-03-06 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1930,Julius Otieno,20016526,julius.otieno.930@inuka.org,+254 728 859 637,Plus,Central,Consented,Digital Signature,2026-03-03 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1931,Kevin Rotich,20016675,kevin.rotich.931@inuka.org,+254 798 289 995,Plus,Nyanza,Consented,Physical Form,2026-07-01 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1932,Lucy Ombati,20016168,lucy.ombati.932@inuka.org,+254 738 133 865,Tech,Western,Withdrawn,Physical Form,2026-07-17 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1933,Lydia Wambui,20016088,lydia.wambui.933@inuka.org,+254 789 658 961,Tech,Western,Consented,Digital Signature,2026-04-23 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1934,Mary Odhiambo,20016384,mary.odhiambo.934@inuka.org,+254 740 677 285,Tech,Rift Valley,Consented,Physical Form,2026-07-29 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1935,Alice Chepkemoi,20016334,alice.chepkemoi.935@inuka.org,+254 718 374 725,Tech,Western,Consented,Physical Form,2026-05-08 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1936,Lucy Nyangau,20016561,lucy.nyangau.936@inuka.org,+254 782 325 244,Plus,Nyanza,Consented,Digital Signature,2026-05-03 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1937,Emmanuel Wamalwa,20016780,emmanuel.wamalwa.937@inuka.org,+254 718 625 527,Tech,Central,Consented,Physical Form,2026-03-27 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1938,Fatuma Wamalwa,20016131,fatuma.wamalwa.938@inuka.org,+254 750 940 116,Scholarship,Rift Valley,Consented,Physical Form,2026-06-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1939,Philip Rotich,20016831,philip.rotich.939@inuka.org,+254 716 728 784,Vocational,Central,Consented,SMS OTP,2026-04-27 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1940,Peter Wanjiku,20016484,peter.wanjiku.940@inuka.org,+254 761 528 571,Plus,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1941,John Ombati,20016869,john.ombati.941@inuka.org,+254 728 232 817,Tech,Rift Valley,Consented,SMS OTP,2026-04-07 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1942,Kevin Cherono,20016609,kevin.cherono.942@inuka.org,+254 758 909 409,Plus,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1943,Rachael Achieng,20016491,rachael.achieng.943@inuka.org,+254 715 136 666,Scholarship,Nyanza,Withdrawn,SMS OTP,2026-07-12 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1944,Brian Nduku,20016751,brian.nduku.944@inuka.org,+254 781 625 795,Plus,Western,Withdrawn,Digital Signature,2026-07-16 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1945,Geoffrey Ochieng,20016627,geoffrey.ochieng.945@inuka.org,+254 732 565 804,Vocational,Nyanza,Consented,Digital Signature,2026-04-10 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1946,Rose Barasa,20016783,rose.barasa.946@inuka.org,+254 765 938 881,Vocational,Coastal,Consented,Physical Form,2026-02-02 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1947,Stephen Rotich,20016371,stephen.rotich.947@inuka.org,+254 785 323 525,Plus,Nairobi,Consented,Physical Form,2026-07-10 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1948,Charles Wanjiku,20016326,charles.wanjiku.948@inuka.org,+254 794 834 550,Vocational,Nairobi,Consented,Digital Signature,2026-07-30 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1949,Kevin Ekiru,20016496,kevin.ekiru.949@inuka.org,+254 792 466 926,Tech,Western,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1950,Patrick Jebet,20016957,patrick.jebet.950@inuka.org,+254 726 842 538,Tech,Nairobi,Consented,SMS OTP,2026-07-11 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1951,Patrick Barasa,20016727,patrick.barasa.951@inuka.org,+254 785 637 138,Scholarship,Rift Valley,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1952,Jane Maina,20016351,jane.maina.952@inuka.org,+254 787 289 997,Scholarship,Central,Consented,SMS OTP,2026-05-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1953,Mercy Wanjiku,20016865,mercy.wanjiku.953@inuka.org,+254 710 644 612,Scholarship,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1954,Anita Simiyu,20016383,anita.simiyu.954@inuka.org,+254 726 466 757,Vocational,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1955,Collins Odhiambo,20016952,collins.odhiambo.955@inuka.org,+254 745 291 166,Scholarship,Rift Valley,Consented,Digital Signature,2026-03-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1956,Francis Nduku,20016512,francis.nduku.956@inuka.org,+254 786 907 732,Tech,Nyanza,Consented,SMS OTP,2026-04-03 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1957,Rose Mohamed,20016385,rose.mohamed.957@inuka.org,+254 777 274 686,Plus,Coastal,Consented,Digital Signature,2026-07-27 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1958,Moses Karanja,20016983,moses.karanja.958@inuka.org,+254 716 865 720,Plus,Western,Consented,SMS OTP,2026-04-14 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1959,Paul Ali,20016620,paul.ali.959@inuka.org,+254 735 780 737,Vocational,Nairobi,Withdrawn,SMS OTP,2026-07-18 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1960,Grace Otieno,20016955,grace.otieno.960@inuka.org,+254 758 602 491,Tech,Nairobi,Consented,Digital Signature,2026-04-17 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1961,Sarah Hassan,20016570,sarah.hassan.961@inuka.org,+254 742 492 510,Plus,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1962,Emmanuel Wamalwa,20016934,emmanuel.wamalwa.962@inuka.org,+254 737 364 670,Plus,Rift Valley,Consented,Digital Signature,2026-04-22 19:38:09,Active,Enrolled,1,0,0,0
+INK-2026-1963,Rose Omondi,20016818,rose.omondi.963@inuka.org,+254 712 246 457,Vocational,Nyanza,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1964,Agnes Kariuki,20016939,agnes.kariuki.964@inuka.org,+254 744 304 211,Scholarship,Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1965,Halima Ibrahim,20016674,halima.ibrahim.965@inuka.org,+254 763 898 238,Vocational,Western,Consented,SMS OTP,2026-03-14 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1966,Paul Onyango,20017254,paul.onyango.966@inuka.org,+254 743 242 864,Tech,Central,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1967,Agnes Wamalwa,20016929,agnes.wamalwa.967@inuka.org,+254 719 902 379,Tech,Rift Valley,Consented,SMS OTP,2026-02-14 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1968,John Nyangau,20016623,john.nyangau.968@inuka.org,+254 773 286 420,Vocational,Nyanza,Consented,Physical Form,2026-02-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1969,Anita Barasa,20016606,anita.barasa.969@inuka.org,+254 747 684 334,Plus,Central,Consented,Digital Signature,2026-02-24 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1970,Moses Odhiambo,20017240,moses.odhiambo.970@inuka.org,+254 755 857 812,Scholarship,Rift Valley,Consented,Digital Signature,2026-06-30 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1971,Joseph Nekesa,20017455,joseph.nekesa.971@inuka.org,+254 724 166 973,Tech,Nairobi,Consented,SMS OTP,2026-07-20 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1972,Lydia Rotich,20016977,lydia.rotich.972@inuka.org,+254 738 986 526,Plus,Eastern,Consented,Physical Form,2026-08-05 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1973,Mercy Hassan,20017181,mercy.hassan.973@inuka.org,+254 784 881 159,Tech,Nairobi,Consented,Digital Signature,2026-05-25 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1974,Wycliffe Mutua,20017176,wycliffe.mutua.974@inuka.org,+254 757 184 192,Plus,Central,Consented,Physical Form,2026-05-02 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1975,Kevin Lagat,20017172,kevin.lagat.975@inuka.org,+254 780 317 295,Vocational,Central,Consented,SMS OTP,2026-07-15 19:38:09,Active,Enrolled,1,1,0,0
+INK-2026-1976,Halima Wambui,20017496,halima.wambui.976@inuka.org,+254 765 601 679,Scholarship,Coastal,Withdrawn,Digital Signature,2026-07-17 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1977,Fatuma Muthoni,20017121,fatuma.muthoni.977@inuka.org,+254 725 224 949,Scholarship,Central,Consented,Physical Form,2026-07-17 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1978,Gladys Kiarie,20017397,gladys.kiarie.978@inuka.org,+254 796 319 550,Tech,Coastal,Consented,Physical Form,2026-05-05 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1979,Emmanuel Karanja,20017340,emmanuel.karanja.979@inuka.org,+254 741 689 555,Tech,Nyanza,Consented,Digital Signature,2026-08-16 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1980,Philip Kipkorir,20017578,philip.kipkorir.980@inuka.org,+254 746 762 216,Tech,North Eastern,Consented,Digital Signature,2026-06-14 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1981,Grace Kipkorir,20017309,grace.kipkorir.981@inuka.org,+254 797 681 887,Tech,Rift Valley,Consented,SMS OTP,2026-03-07 19:38:09,Active,Enrolled,1,1,1,0
+INK-2026-1982,Collins Mohamed,20016994,collins.mohamed.982@inuka.org,+254 778 545 236,Scholarship,Coastal,Withdrawn,SMS OTP,2026-07-23 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1983,Rachael Kipkorir,20016847,rachael.kipkorir.983@inuka.org,+254 726 111 178,Scholarship,Rift Valley,Consented,Physical Form,2026-02-20 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1984,Asha Omondi,20017682,asha.omondi.984@inuka.org,+254 778 187 673,Scholarship,North Eastern,Consented,Digital Signature,2026-08-08 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1985,Kevin Kipkorir,20017256,kevin.kipkorir.985@inuka.org,+254 760 470 767,Plus,Central,Consented,SMS OTP,2026-03-22 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1986,Jane Ibrahim,20016995,jane.ibrahim.986@inuka.org,+254 757 409 729,Vocational,Nyanza,Consented,Physical Form,2026-08-15 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1987,Patrick Ndwiga,20017306,patrick.ndwiga.987@inuka.org,+254 760 990 166,Scholarship,Nairobi,Consented,SMS OTP,2026-03-09 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1988,Joseph Maina,20017448,joseph.maina.988@inuka.org,+254 796 962 379,Tech,Eastern,Consented,SMS OTP,2026-02-08 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1989,Francis Cherono,20016958,francis.cherono.989@inuka.org,+254 740 634 486,Tech,Western,Consented,Physical Form,2026-04-16 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1990,Brian Muthoni,20017748,brian.muthoni.990@inuka.org,+254 765 412 636,Vocational,North Eastern,Consented,Physical Form,2026-07-21 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1991,Anita Maina,20017210,anita.maina.991@inuka.org,+254 739 307 955,Scholarship,Rift Valley,Consented,Digital Signature,2026-05-22 19:38:09,Active,Enrolled,1,0,1,0
+INK-2026-1992,Philip Wanyama,20017042,philip.wanyama.992@inuka.org,+254 712 185 511,Plus,North Eastern,Consented,Physical Form,2026-02-02 19:38:09,Active,Enrolled,1,0,0,1
+INK-2026-1993,Moses Nyangau,20017763,moses.nyangau.993@inuka.org,+254 776 697 646,Tech,Central,Consented,SMS OTP,2026-05-10 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1994,Simon Kiarie,20017677,simon.kiarie.994@inuka.org,+254 723 982 808,Plus,Eastern,Consented,Physical Form,2026-02-26 19:38:09,Active,Enrolled,1,0,1,1
+INK-2026-1995,James Jebet,20017154,james.jebet.995@inuka.org,+254 781 432 758,Vocational,North Eastern,Pending,None,,Active,Pending Review,0,0,0,0
+INK-2026-1996,David Achieng,20017257,david.achieng.996@inuka.org,+254 774 763 448,Vocational,North Eastern,Withdrawn,Physical Form,2026-08-10 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-1997,Geoffrey Nekesa,20017241,geoffrey.nekesa.997@inuka.org,+254 795 758 712,Scholarship,Nairobi,Consented,SMS OTP,2026-06-01 19:38:09,Active,Enrolled,1,1,1,1
+INK-2026-1998,Esther Maina,20017111,esther.maina.998@inuka.org,+254 748 830 657,Vocational,Nyanza,Consented,Digital Signature,2026-07-13 19:38:09,Active,Enrolled,1,1,0,1
+INK-2026-1999,Paul Chelimo,20017931,paul.chelimo.999@inuka.org,+254 784 280 428,Vocational,Eastern,Withdrawn,Physical Form,2026-07-20 19:38:09,Active,On Hold,0,0,0,0
+INK-2026-2000,Paul Wanjiku,20017788,paul.wanjiku.1000@inuka.org,+254 723 376 749,Tech,North Eastern,Consented,SMS OTP,2026-03-25 19:38:09,Active,Enrolled,1,1,0,0
