@@ -17,6 +17,8 @@ def setup_test_database():
     from seed_db import seed_database
     seed_database()
     yield
+    from seed_inuka_db import seed_database as seed_inuka
+    seed_inuka()
 
 def test_database_tables_exist():
     """Verify that Stage 2 database tables exist and are seeded."""
