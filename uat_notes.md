@@ -1,129 +1,89 @@
 # User Acceptance Testing (UAT) & QA Report
 
-This document outlines the test evidence, QA validation, and instructions for User Acceptance Testing of the KPC Depot Throughput & Turnaround Optimization pipeline.
+This document outlines the test evidence, QA validation, and instructions for User Acceptance Testing (UAT) of the **KPC Inuka Foundation Data Privacy, Consent, & Financial Reconciliation Portal**.
 
 ---
 
 ## 1. QA Test Evidence & Pipeline Execution
 
-### Step 1: Data Extraction
-Command run: `python extract.py`
-* **Inputs**: `dataset/kpc_depot_raw.csv` (5,530 rows, 20 columns)
-* **Outputs**: `dataset/kpc_depot_extracted.csv`
-* **Status**: Passed (Exited with code 0)
+### Step 1: Real-Time Stream Ingestion & Great Expectations Quality Gates
+Command run: `python stream_simulator.py` (which targets `/api/stream/beneficiary` on `dashboard_app.py`)
+* **Inputs**: Dynamic JSON registration payloads (e.g. name, phone, email, pillar, region, consent_status).
+* **Validation Engine**: Upgraded in-memory Great Expectations suite in `inuka_etl.py` executing 9 schema checks.
+* **Status**: Passed
 * **Evidence**:
-  ```text
-  --- STARTING EXTRACTION STAGE ---
-  Reading raw data from dataset\kpc_depot_raw.csv...
-  Extracted 5530 rows and 20 columns.
-  Data saved to intermediate path: dataset\kpc_depot_extracted.csv
-  --- EXTRACTION STAGE COMPLETED ---
-  ```
+  * Clean records successfully cleansed (e.g., standardizing phones to `+254...`, title-casing names) and loaded into the `inuka_beneficiaries` table.
+  * Invalid records (such as empty names, out-of-bounds regions, or invalid email formats) intercepted at the boundary and routed to the `quarantined_events` table for DPO review.
+  * Console Output logs:
+    ```text
+    [Simulator] Streaming event INK-2026-2051 (Valid=True)...
+    [Simulator] Response Code: 200. Response: {"success": true, "status": "SUCCESS", "result": {...}}
+    ```
 
-### Step 2: Data Transformation & Imputation
-Command run: `python transform.py`
-* **Inputs**: `dataset/kpc_depot_extracted.csv`
-* **Outputs**: `dataset/kpc_depot_transformed.csv`
+### Step 2: Privacy Anomaly & Chatbot Intent ML Training
+Command run: `python train_ml_models.py`
+* **Outputs**: `models/access_anomaly_detector.joblib` (Isolation Forest) and `models/chatbot_intent_classifier.joblib` (TF-IDF Pipeline).
 * **Status**: Passed (Exited with code 0)
-* **Evidence**:
-  - Dropped 30 exact duplicate transactions (reducing size to 5,500).
-  - Standardized all 24 `depot_location` variation typos (e.g. `KISUMU`, `kisumu`, ` Kisumu` standardized to title-case `Kisumu`).
-  - Imputed 24 negative values in `actual_loaded_liters` (value `-1`) using:
-    `actual_loaded_liters = round((loading_accuracy / 100) * ordered_volume_liters)`
-  - Imputed 220 missing timestamps and aligned 371 out-of-order/swapped timestamps (such as gate_out_time < gate_in_time) using median duration offsets.
-
-### Step 3: Great Expectations Quality Gates & Data Loading
-Command run: `python load.py`
-* **Inputs**: `dataset/kpc_depot_transformed.csv`
-* **Outputs**: `dataset/kpc_depot_clean.csv` and `dataset/kpc_depot.db` (SQLite)
-* **Status**: Passed (Exited with code 0)
-* **Validation Evidence**:
-  - Defined 9 schema, type, and distribution bounds via Great Expectations v1.19.0.
-  - Ephemeral context validated all 5,500 records.
-  - **Results**: 100% of expectations passed. Data successfully loaded to both CSV and SQLite database table `depot_operations`.
+* **Model Validation**:
+  * **PII Anomaly Detector**: Successfully separates typical query volumes (e.g., volume 10, midday, correct region) from high-threat patterns (e.g., query volume 150, 2 AM, out-of-region access).
+  * **Bilingual Chatbot NLP Classifier**: Achieves $100\%$ classification accuracy on Swahili and English intents (`view_data`, `update_consent`, `request_deletion`, `generate_report`).
 
 ---
 
-## 2. Analytics & Model Diagnostics
-
-Command run: `python analytics_diagnostics.py`
-* **Outputs**: `models/tat_regressor.joblib`, `models/demurrage_classifier.joblib`, `models/model_columns.json`, and `dataset/dashboard_data.json`
-* **Status**: Passed (Exited with code 0)
-* **Model Evaluation Metrics**:
-  - **Regression (TAT Prediction)**:
-    - MAE: 44.42 minutes
-    - RMSE: 59.24 minutes
-    - R2 Score: -0.0039 (Indicates that turnaround time is highly stochastic and independent of static truck features like depot or product type. This is an important, honest operational finding: bottlenecking is systemic, not truck-specific.)
-  - **Classification (Demurrage Risk)**:
-    - Accuracy: 87.73%
-    - Precision: 87.73%
-    - Recall: 100.00%
-    - F1 Score: 0.9346
-    - ROC-AUC: 0.5253
-
----
-
-## 3. Web Dashboard & Prediction API Verification
+## 2. API Endpoint Verification
 
 Server run: `python dashboard_app.py`
-* **URL**: `http://localhost:8000`
-* **Status**: Running as daemon background task
-* **API Endpoint Tested**: `POST http://localhost:8000/api/predict`
-* **Test Request Payload**:
+* **Local Server**: `http://localhost:8000`
+* **Constant Public Link**: `https://kpc-inuka-compliance.loca.lt/dashboard.html`
+
+### Endpoint 1: Query Directory & Dynamic RLS/CLS (`GET /api/beneficiaries`)
+* **Auditor Role Test**: Logging in as `kdpa_auditor` queries this endpoint. The server automatically activates Column-Level Security (CLS), returning fully masked PII fields (`M*. Oum***`, `*****805`).
+* **Field Officer RLS Test**: Logging in as `nyanza_field` queries this endpoint. The server applies Row-Level Security, returning only the subset of beneficiaries registered in the `Nyanza` region.
+
+### Endpoint 2: AI Compliance Chatbot (`POST /api/chatbot/message`)
+* **Bilingual Report Test**: Send request: `{"message": "ripoti ya nyanza region"}` (Swahili for Nyanza report).
+* **Status**: 200 OK
+* **Response Payload**:
   ```json
   {
-      "depot_location": "Nairobi",
-      "truck_type": "Tanker (45k Liters)",
-      "product_type": "Premium Motor Spirit (PMS)",
-      "assigned_bay": "Loading Bay 12",
-      "hour_of_day": 10,
-      "day_of_week": 2
+      "intent": "generate_report",
+      "reply": "KPC Inuka Pillar Compliance Report (Nyanza Region):\n- Total beneficiaries registered: 125\n- Average active consent rate: 94.0%\n- Active financial discrepancies: 0\nAll processing operations comply with KDPA standards."
   }
   ```
-* **API Response Evidence**:
+
+### Endpoint 3: Financial Reconciliation Auditing (`GET /api/reconciliation`)
+* **Status**: 200 OK
+* **Response Payload**: Returns all monthly stipend records. Over-payments are flagged with `status: "Discrepancy"`, specifying the reason (e.g., `"Low attendance rate: 58.0% (Required Min 75%)"` or `"Withdrawn data sharing consent"`).
+
+### Endpoint 4: Discrepancy Correction (`POST /api/reconciliation/correct`)
+* **Request Payload**: `{"beneficiary_id": "INK-2026-1011", "operator": "hq_director"}`
+* **Response Payload**:
   ```json
   {
-      "predicted_tat_minutes": 213.53,
-      "demurrage_probability": 0.892
+      "success": true,
+      "message": "Disbursement KES 5,000.00 recalled for fellow INK-2026-1011. Enrollment status placed On Hold."
   }
   ```
-* **Interactive What-If Simulation**: Verified that sliding the Queue Time Reduction slider dynamically queries the savings curve dataset and updates the saved demurrage costs in real-time on the UI.
 
 ---
 
-## 4. User Acceptance Testing (UAT) Guide
+## 3. UAT Execution Checklist & Test Command
 
-To verify the deliverables on a local environment:
+To run the complete test suite locally:
 
-### Prerequisites
-Make sure the required packages are installed:
+### 1. Run All Project Unit Tests
+Run the following in the project root:
 ```bash
-pip install -r requirements.txt
+.\venv\Scripts\python.exe -m pytest
 ```
+* **Expected Outcome**: **19 tests pass successfully** (including 9 privacy/consent engine tests, 5 pipeline tests, and 5 telemetry tests).
+  ```text
+  ===================== 19 passed, 4622 warnings in 19.64s ======================
+  ```
 
-### Run the Pipeline & Server
-1. Run the test suite:
-   ```bash
-   python -m pytest tests/
-   ```
-   *Expected outcome*: 5 tests pass successfully.
-   
-2. Run the full ETL and Analytics pipeline:
-   ```bash
-   python extract.py
-   python transform.py
-   python load.py
-   python analytics_diagnostics.py
-   ```
-   *Expected outcome*: `kpc_depot_clean.csv`, `kpc_depot.db`, `dashboard_data.json` are created in `dataset/`, and models are saved in `models/`.
-
-3. Launch the dashboard server:
-   ```bash
-   python dashboard_app.py
-   ```
-   *Expected outcome*: Console logs `Starting server on http://localhost:8000`.
-
-4. Access the dashboard:
-   - Open a browser and navigate to `http://localhost:8000`.
-   - Interact with the **What-If Queue Simulator** slider to observe dynamic cost savings.
-   - Enter values in the **Predictive Dispatch Assistant** form and click "Predict expected TAT & Demurrage Risk" to retrieve live predictions.
+### 2. Verify Key Live User Flows in the Portal
+Navigate to the Constant URL: `https://kpc-inuka-compliance.loca.lt/dashboard.html`
+* **Test Flow 1: PII Masking toggle**: Log in as `hq_director`. Toggle **"KDPA Masking"** on the table header. Verify that PII columns instantly obfuscate.
+* **Test Flow 2: Compliant Report Export**: Click **"Export Compliant Report (CSV)"**. Verify that a CSV file containing the active view is downloaded with 100% masked/redacted PII fields.
+* **Test Flow 3: Financial Audit Correction**: Scroll to the *Financial Reconciliation table*. Filter by *Flagged Anomalies*. Verify that there are 8 over-payment anomalies. Click **"Recall Payout & Hold"** and verify that the anomaly count decreases and the student's status is suspended in the audit log.
+* **Test Flow 4: Self-Service Portal**: Log in as beneficiary **`INK-2026-1002`** (password: `password`). Verify that you can view your enrollment details, toggle granular consent purposes, and request profile erasure.
