@@ -10,7 +10,7 @@ RAW_TEST_PATH = os.path.join("dataset", "inuka_beneficiary_raw.csv")
 EXTRACTED_TEST_PATH = os.path.join("dataset", "inuka_beneficiary_extracted.csv")
 TRANSFORMED_TEST_PATH = os.path.join("dataset", "inuka_beneficiary_transformed.csv")
 CLEAN_TEST_PATH = os.path.join("dataset", "inuka_beneficiary_clean.csv")
-DB_TEST_PATH = os.path.join("dataset", "kpc_depot.db")
+DB_TEST_PATH = os.path.join("dataset", "inuka.db")
 
 def test_extraction():
     """Verify that extraction runs and generates a file with correct schema."""

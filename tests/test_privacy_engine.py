@@ -6,7 +6,7 @@ import pandas as pd
 from inuka_etl import cleanse_beneficiary, validate_beneficiary, process_and_load_event
 from dashboard_app import load_prediction_models, models
 
-DB_TEST_PATH = os.path.join("dataset", "kpc_depot.db")
+DB_TEST_PATH = os.path.join("dataset", "inuka.db")
 
 @pytest.fixture(scope="session", autouse=True)
 def setup_test_database():

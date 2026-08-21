@@ -11,33 +11,21 @@ import datetime
 
 PORT = 8000
 MODELS_DIR = "models"
-DB_PATH = os.path.join("dataset", "kpc_depot.db")
+DB_PATH = os.path.join("dataset", "inuka.db")
 
 # Global cache for models
 models = {}
 
 def load_prediction_models():
-    """Load both Inuka and Depot ML models once at server startup."""
-    print("Loading Inuka & Depot ML Models...")
+    """Load Inuka ML models once at server startup."""
+    print("Loading Inuka ML Models...")
     anomaly_path = os.path.join(MODELS_DIR, "access_anomaly_detector.joblib")
     chatbot_path = os.path.join(MODELS_DIR, "chatbot_intent_classifier.joblib")
-    regressor_path = os.path.join(MODELS_DIR, "tat_regressor.joblib")
-    classifier_path = os.path.join(MODELS_DIR, "demurrage_classifier.joblib")
-    columns_path = os.path.join(MODELS_DIR, "model_columns.json")
     
     try:
         models['anomaly_detector'] = joblib.load(anomaly_path)
         models['chatbot'] = joblib.load(chatbot_path)
-        
-        if os.path.exists(regressor_path):
-            models['regressor'] = joblib.load(regressor_path)
-        if os.path.exists(classifier_path):
-            models['classifier'] = joblib.load(classifier_path)
-        if os.path.exists(columns_path):
-            with open(columns_path, 'r') as f:
-                models['columns'] = json.load(f)
-                
-        print("All ML Models loaded successfully.")
+        print("Inuka ML Models loaded successfully.")
         return True
     except Exception as e:
         print(f"[ERROR] Failed to load models: {e}")

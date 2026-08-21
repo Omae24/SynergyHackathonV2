@@ -31,9 +31,9 @@ jobs:
         python transform.py
         python load.py
 
-    - name: Train Models
+    - name: Train Inuka ML Models
       run: |
-        python train.py
+        python train_ml_models.py
 
     - name: Run Unit Tests
       run: |

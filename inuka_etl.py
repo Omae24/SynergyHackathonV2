@@ -10,7 +10,7 @@ from great_expectations.expectations import (
     ExpectColumnValuesToMatchRegex
 )
 
-DB_PATH = os.path.join("dataset", "kpc_depot.db")
+DB_PATH = os.path.join("dataset", "inuka.db")
 REGIONS_SET = ["North Eastern", "Coastal", "Eastern", "Central", "Nairobi", "Nyanza", "Rift Valley", "Western"]
 
 # Global Great Expectations Setup

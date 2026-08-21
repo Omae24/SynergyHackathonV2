@@ -4,7 +4,7 @@ import csv
 import random
 from datetime import datetime
 
-DB_PATH = os.path.join("dataset", "kpc_depot.db")
+DB_PATH = os.path.join("dataset", "inuka.db")
 RAW_CSV_PATH = os.path.join("dataset", "inuka_beneficiary_raw.csv")
 
 def seed_database():

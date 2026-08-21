@@ -100,5 +100,5 @@ def run_validation_and_load(transformed_path, clean_csv_path, db_path):
 if __name__ == "__main__":
     TRANSFORMED_PATH = os.path.join("dataset", "inuka_beneficiary_transformed.csv")
     CLEAN_CSV_PATH = os.path.join("dataset", "inuka_beneficiary_clean.csv")
-    DB_PATH = os.path.join("dataset", "kpc_depot.db")
+    DB_PATH = os.path.join("dataset", "inuka.db")
     run_validation_and_load(TRANSFORMED_PATH, CLEAN_CSV_PATH, DB_PATH)
