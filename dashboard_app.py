@@ -17,18 +17,30 @@ DB_PATH = os.path.join("dataset", "kpc_depot.db")
 models = {}
 
 def load_prediction_models():
-    """Load Inuka ML models once at server startup."""
-    print("Loading Inuka ML Models...")
+    """Load both Inuka and Depot ML models once at server startup."""
+    print("Loading Inuka & Depot ML Models...")
     anomaly_path = os.path.join(MODELS_DIR, "access_anomaly_detector.joblib")
     chatbot_path = os.path.join(MODELS_DIR, "chatbot_intent_classifier.joblib")
+    regressor_path = os.path.join(MODELS_DIR, "tat_regressor.joblib")
+    classifier_path = os.path.join(MODELS_DIR, "demurrage_classifier.joblib")
+    columns_path = os.path.join(MODELS_DIR, "model_columns.json")
     
     try:
         models['anomaly_detector'] = joblib.load(anomaly_path)
         models['chatbot'] = joblib.load(chatbot_path)
-        print("Inuka ML Models loaded successfully.")
+        
+        if os.path.exists(regressor_path):
+            models['regressor'] = joblib.load(regressor_path)
+        if os.path.exists(classifier_path):
+            models['classifier'] = joblib.load(classifier_path)
+        if os.path.exists(columns_path):
+            with open(columns_path, 'r') as f:
+                models['columns'] = json.load(f)
+                
+        print("All ML Models loaded successfully.")
         return True
     except Exception as e:
-        print(f"[ERROR] Failed to load Inuka models: {e}")
+        print(f"[ERROR] Failed to load models: {e}")
         return False
 
 class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
