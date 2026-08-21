@@ -88,34 +88,12 @@ def seed_database():
     ]
     cursor.executemany("INSERT INTO users VALUES (?, ?, ?, ?, ?)", users_data)
 
-    # 5. Create financial_reconciliation table
-    print("Creating 'financial_reconciliation' table...")
-    cursor.execute("DROP TABLE IF EXISTS financial_reconciliation")
-    cursor.execute("""
-        CREATE TABLE financial_reconciliation (
-            reconciliation_id INTEGER PRIMARY KEY AUTOINCREMENT,
-            beneficiary_id TEXT NOT NULL,
-            full_name TEXT NOT NULL,
-            month TEXT NOT NULL,
-            attendance_rate REAL NOT NULL,
-            disbursed_amount REAL NOT NULL,
-            expected_amount REAL NOT NULL,
-            discrepancy_reason TEXT,
-            status TEXT NOT NULL,
-            FOREIGN KEY(beneficiary_id) REFERENCES inuka_beneficiaries(beneficiary_id)
-        )
-    """)
-
-    # 6. Populate inuka_beneficiaries from raw CSV
+    # 5. Populate inuka_beneficiaries from raw CSV
     if os.path.exists(RAW_CSV_PATH):
         print(f"Reading beneficiaries from {RAW_CSV_PATH}...")
         with open(RAW_CSV_PATH, 'r', encoding='utf-8') as f:
             reader = csv.DictReader(f)
             beneficiaries = []
-            recon_records = []
-            
-            # Setup deterministic seed for reproducible discrepancies
-            random.seed(42)
             
             for index, row in enumerate(reader):
                 b_id = row['beneficiary_id']
@@ -138,62 +116,18 @@ def seed_database():
                     enroll_status, sharing, photo, sms, ext_report
                 ))
                 
-                # --- Generate Financial Reconciliation Data ---
-                month = "August 2026"
-                
-                # Default normal calculations
-                attendance = round(random.uniform(75.0, 100.0), 1)
-                expected = 5000.00 if (consent_status == "Consented" and attendance >= 75.0) else 0.00
-                disbursed = expected
-                reason = None
-                recon_status = "Matched"
-                
-                # Inject 5 Low Attendance Discrepancies (stipend paid despite low attendance)
-                if index in [10, 250, 450, 720, 910]:
-                    attendance = round(random.uniform(50.0, 70.0), 1) # < 75%
-                    expected = 0.00
-                    disbursed = 5000.00
-                    reason = f"Low attendance ({attendance}%) payout violation"
-                    recon_status = "Discrepancy"
-                    
-                # Inject 3 Consent Violation Discrepancies (withdrawn consent but still paid)
-                elif index in [55, 330, 805] and consent_status == "Withdrawn":
-                    attendance = round(random.uniform(80.0, 95.0), 1)
-                    expected = 0.00
-                    disbursed = 5000.00
-                    reason = "Withdrawn consent payout violation"
-                    recon_status = "Discrepancy"
-                    
-                # Standard case for other low attendance or withdrawn cases
-                else:
-                    if consent_status == "Withdrawn" or consent_status == "Pending":
-                        expected = 0.00
-                        disbursed = 0.00
-                    elif attendance < 75.0:
-                        expected = 0.00
-                        disbursed = 0.00
-                
-                recon_records.append((
-                    b_id, name, month, attendance, disbursed, expected, reason, recon_status
-                ))
-                
             cursor.executemany("""
                 INSERT INTO inuka_beneficiaries 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
             """, beneficiaries)
             
-            cursor.executemany("""
-                INSERT INTO financial_reconciliation (beneficiary_id, full_name, month, attendance_rate, disbursed_amount, expected_amount, discrepancy_reason, status)
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
-            """, recon_records)
-            
-            print(f"Seeded {len(beneficiaries)} beneficiaries and {len(recon_records)} financial records.")
+            print(f"Seeded {len(beneficiaries)} beneficiaries.")
     else:
         print("[WARNING] Raw CSV not found. Seeding skipped.")
 
-    # 7. Seed dummy compliance audit logs
+    # 6. Seed dummy compliance audit logs
     dummy_logs = [
-        (datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "system", "SYSTEM_STARTUP", None, "Inuka Privacy Database, Consent Purposes, and Financial Ledgers initialized.", "127.0.0.1", 0)
+        (datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "system", "SYSTEM_STARTUP", None, "Inuka Privacy Database and Consent Purposes initialized.", "127.0.0.1", 0)
     ]
     cursor.executemany("""
         INSERT INTO privacy_audit_log (timestamp, operator, action_type, target_beneficiary_id, details, ip_address, is_anomaly)

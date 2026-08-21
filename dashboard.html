@@ -906,10 +906,10 @@
                     <div class="kpi-value" id="kpi-quarantine">0</div>
                     <div class="kpi-trend" id="kpi-quarantine-desc">Great Expectations rejects</div>
                 </div>
-                <div class="kpi-card danger" id="kpi-threat-box">
-                    <div class="kpi-title">Financial Anomalies</div>
-                    <div class="kpi-value" id="kpi-threat">0</div>
-                    <div class="kpi-trend" id="kpi-threat-desc">Stipend payout errors</div>
+                <div class="kpi-card success" id="kpi-threat-box">
+                    <div class="kpi-title">Active Data Erasures</div>
+                    <div class="kpi-value" id="kpi-erasures">0</div>
+                    <div class="kpi-trend" id="kpi-threat-desc">KDPA Sec 40 requests executed</div>
                 </div>
             </div>
 
@@ -964,39 +964,7 @@
                 </div>
             </div>
 
-            <!-- DISBURSEMENT VS ATTENDANCE FINANCIAL RECONCILIATION -->
-            <div class="dashboard-box" id="reconciliation-container">
-                <div class="box-header">
-                    <div class="box-title">Financial Reconciliation & Attendance Audit Ledger</div>
-                    <div style="display: flex; gap: 10px; align-items: center;">
-                        <select id="reconciliation-filter" class="form-control" style="width: 200px; font-size: 12.5px; padding: 6px;" onchange="loadReconciliation()">
-                            <option value="All">All Payments (August 2026)</option>
-                            <option value="Discrepancy">Flagged Anomalies (Discrepancies)</option>
-                            <option value="Matched">Matched Payments</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Fellow Name</th>
-                                <th>Month</th>
-                                <th>M&E Attendance Rate</th>
-                                <th>Disbursed Amount</th>
-                                <th>Expected Amount (Min 75% Attend)</th>
-                                <th>Discrepancy Alert Reason</th>
-                                <th>Status</th>
-                                <th style="text-align: right;">Action</th>
-                            </tr>
-                        </thead>
-                        <tbody id="reconciliation-table-body">
-                            <!-- Filled dynamically -->
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+
 
             <!-- AUDIT LEDGER -->
             <div class="dashboard-box">
@@ -1302,12 +1270,10 @@
 
         function initDashboard() {
             loadBeneficiaries();
-            loadReconciliation();
             loadLogs();
             
             updateIntervals = setInterval(() => {
                 loadBeneficiaries(false);
-                loadReconciliation();
                 loadLogs();
             }, 3000);
         }
@@ -1464,81 +1430,15 @@
             }
         }
 
-        async function loadReconciliation() {
-            if (!currentUser) return;
-            const filterVal = document.getElementById('reconciliation-filter').value;
-            
-            try {
-                const response = await fetch(`/api/reconciliation?role=${currentUser.role}&operator_region=${currentUser.depot}&operator_pillar=${currentUser.truck_reg}&status=${filterVal}`);
-                if (response.ok) {
-                    const records = await response.json();
-                    
-                    const tbody = document.getElementById('reconciliation-table-body');
-                    tbody.innerHTML = '';
-                    
-                    let discrepancyCount = 0;
-                    records.forEach(r => {
-                        if (r.status === 'Discrepancy') discrepancyCount++;
-                        
-                        const tr = document.createElement('tr');
-                        if (r.status === 'Discrepancy') {
-                            tr.className = 'audit-alert-row';
-                        }
-                        
-                        let actionCell = `<span style="font-size:11px; color:var(--success)">Matched</span>`;
-                        if (r.status === 'Discrepancy') {
-                            actionCell = `<button class="btn-table danger-action" onclick="correctReconciliation('${r.beneficiary_id}')">Recall Payout & Hold</button>`;
-                        }
-                        
-                        tr.innerHTML = `
-                            <td style="font-weight: 600;">${r.beneficiary_id}</td>
-                            <td style="font-weight: 600;">${r.full_name}</td>
-                            <td>${r.month}</td>
-                            <td style="font-weight: 700; color: ${r.attendance_rate < 75.0 ? 'var(--danger)' : 'var(--success)'}">${r.attendance_rate}%</td>
-                            <td style="font-weight: 700;">KES ${r.disbursed_amount.toLocaleString(undefined, {minimumFractionDigits: 2})}</td>
-                            <td style="font-weight: 700; color: var(--text-secondary)">KES ${r.expected_amount.toLocaleString(undefined, {minimumFractionDigits: 2})}</td>
-                            <td style="color: #fca5a5; font-weight: 600;">${r.discrepancy_reason || 'None'}</td>
-                            <td><span class="badge-status ${r.status === 'Discrepancy' ? 'withdrawn' : 'consented'}">${r.status}</span></td>
-                            <td style="text-align: right;">${actionCell}</td>
-                        `;
-                        tbody.appendChild(tr);
-                    });
-                    
-                    document.getElementById('kpi-threat').innerText = discrepancyCount;
-                }
-            } catch (err) {
-                console.error("Reconciliation error", err);
-            }
-        }
-
-        async function correctReconciliation(id) {
-            if (!confirm(`Are you sure you want to recall disbursement and hold payment for fellow ${id}?\nThis will adjust their disbursed amount to KES 0.00 and flag their active fellowship status "On Hold".`)) {
-                return;
-            }
-            try {
-                const response = await fetch('/api/reconciliation/correct', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ beneficiary_id: id, operator: currentUser.username })
-                });
-                if (response.ok) {
-                    loadReconciliation();
-                    loadLogs();
-                } else {
-                    alert("Correction rejected by finance gateway.");
-                }
-            } catch (err) {
-                console.error(err);
-            }
-        }
-
         function updateDashboardKPIs(list, anomalyFlagged) {
             const total = list.length;
             const consented = list.filter(b => b.consent_status === 'Consented').length;
             const consentRate = total > 0 ? Math.round((consented / total) * 100) : 0;
+            const erasures = list.filter(b => b.status === 'Anonymized').length;
 
             document.getElementById('kpi-total').innerText = total;
             document.getElementById('kpi-consent').innerText = consentRate + '%';
+            document.getElementById('kpi-erasures').innerText = erasures;
         }
 
         async function loadLogs() {
@@ -1842,7 +1742,6 @@
                         setupBeneficiaryProfileView();
                     } else if (currentUser) {
                         loadBeneficiaries(true);
-                        loadReconciliation();
                         loadLogs();
                     }
                 } else {

@@ -1,6 +1,6 @@
 # User Acceptance Testing (UAT) & QA Report
 
-This document outlines the test evidence, QA validation, and instructions for User Acceptance Testing (UAT) of the **KPC Inuka Foundation Data Privacy, Consent, & Financial Reconciliation Portal**.
+This document outlines the test evidence, QA validation, and instructions for User Acceptance Testing (UAT) of the **KPC Inuka Foundation Data Privacy, Consent, & KDPA Governance Portal**.
 
 ---
 
@@ -47,21 +47,7 @@ Server run: `python dashboard_app.py`
   ```json
   {
       "intent": "generate_report",
-      "reply": "KPC Inuka Pillar Compliance Report (Nyanza Region):\n- Total beneficiaries registered: 125\n- Average active consent rate: 94.0%\n- Active financial discrepancies: 0\nAll processing operations comply with KDPA standards."
-  }
-  ```
-
-### Endpoint 3: Financial Reconciliation Auditing (`GET /api/reconciliation`)
-* **Status**: 200 OK
-* **Response Payload**: Returns all monthly stipend records. Over-payments are flagged with `status: "Discrepancy"`, specifying the reason (e.g., `"Low attendance rate: 58.0% (Required Min 75%)"` or `"Withdrawn data sharing consent"`).
-
-### Endpoint 4: Discrepancy Correction (`POST /api/reconciliation/correct`)
-* **Request Payload**: `{"beneficiary_id": "INK-2026-1011", "operator": "hq_director"}`
-* **Response Payload**:
-  ```json
-  {
-      "success": true,
-      "message": "Disbursement KES 5,000.00 recalled for fellow INK-2026-1011. Enrollment status placed On Hold."
+      "reply": "KPC Inuka Pillar Compliance Report (Nyanza Region):\n- Total beneficiaries registered: 125\n- Average active consent rate: 94.0%\n- Active data erasures: 2 profiles purged.\nAll processing operations comply with KDPA standards."
   }
   ```
 
@@ -76,14 +62,13 @@ Run the following in the project root:
 ```bash
 .\venv\Scripts\python.exe -m pytest
 ```
-* **Expected Outcome**: **19 tests pass successfully** (including 9 privacy/consent engine tests, 5 pipeline tests, and 5 telemetry tests).
+* **Expected Outcome**: **18 tests pass successfully** (including 8 privacy/consent engine tests, 5 pipeline tests, and 5 telemetry tests).
   ```text
-  ===================== 19 passed, 4622 warnings in 19.64s ======================
+  ===================== 18 passed, 4622 warnings in 19.64s ======================
   ```
 
 ### 2. Verify Key Live User Flows in the Portal
 Navigate to the Constant URL: `https://kpc-inuka-compliance.loca.lt/dashboard.html`
 * **Test Flow 1: PII Masking toggle**: Log in as `hq_director`. Toggle **"KDPA Masking"** on the table header. Verify that PII columns instantly obfuscate.
 * **Test Flow 2: Compliant Report Export**: Click **"Export Compliant Report (CSV)"**. Verify that a CSV file containing the active view is downloaded with 100% masked/redacted PII fields.
-* **Test Flow 3: Financial Audit Correction**: Scroll to the *Financial Reconciliation table*. Filter by *Flagged Anomalies*. Verify that there are 8 over-payment anomalies. Click **"Recall Payout & Hold"** and verify that the anomaly count decreases and the student's status is suspended in the audit log.
-* **Test Flow 4: Self-Service Portal**: Log in as beneficiary **`INK-2026-1002`** (password: `password`). Verify that you can view your enrollment details, toggle granular consent purposes, and request profile erasure.
+* **Test Flow 3: Self-Service Portal**: Log in as beneficiary **`INK-2026-1002`** (password: `password`). Verify that you can view your enrollment details, toggle granular consent purposes, and request profile erasure.

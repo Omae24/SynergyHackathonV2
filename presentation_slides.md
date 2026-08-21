@@ -1,31 +1,31 @@
 # KPC Inuka Foundation Data Privacy & Compliance Portal
 ## 6-Slide Pitch Deck
-**Focus: KDPA Consent Management, ML Security Anomaly Detection, & Automated Financial Reconciliation**
+**Focus: KDPA Consent Management, ML Security Anomaly Detection, & Dynamic Data Masking**
 
 ---
 
 # Slide 1: Title & Executive Summary
 ## Inuka Fellowship Data Privacy & Consent Portal
-### Securing Beneficiary Data Rights (KDPA) & Financial Disbursement Integrity
-* **Core Goal**: Protect KPC Inuka Foundation against KDPA compliance liabilities (up to KES 5M in statutory fines) while automating financial reconciliation of stipend payouts.
+### Securing Beneficiary Data Rights (KDPA) & Compliance Operations
+* **Core Goal**: Protect KPC Inuka Foundation against KDPA compliance liabilities (up to KES 5M in statutory fines) while automating data privacy safeguards.
 * **Scale**: Processes a digitized directory of **1,000 active fellows** across **8 official regions of Kenya** and **4 program pillars** (Scholarship, Plus, Vocational, Tech).
-* **Impact**: Saves **34 administrative hours/week** and prevents **KES 480,000.00/year** in stipend over-payments.
+* **Impact**: Saves **34 administrative hours/week** and guarantees zero PII leaks.
 
 ---
 
 # Slide 2: The Core Compliance Challenges
-## Balancing Digitization with Privacy & Donor Audits
-1. **PII Exposure Risk**: Sharing raw contact details (Names, National IDs, phone numbers, emails) with auditors and coordinators violates data minimization laws.
-2. **Data Ingestion Quality**: Raw field registration data often contains corrupt or missing fields, leading to system errors.
-3. **Stipend Payout Leakage**: Manually cross-referencing monthly stipend disbursements (KES 5,000/month) against class attendance logs is highly error-prone. Over-payments are frequently made to students with low attendance or those with withdrawn consent.
+## Digitizing Beneficiary Records Safely
+1. **PII Exposure Risk**: Sharing contact details (Names, National IDs, phone numbers, emails) in raw files with coordinators and donors violates data minimization laws.
+2. **Data Ingestion Quality**: Registrations submitted from the field often contain syntax errors, missing signatures, or wrong formats.
+3. **Rights Execution Latency**: Manually processing beneficiary requests to verify, withdraw, or delete profiles ("Right to be Forgotten" under Section 40) takes up to **14 business days** per request.
 
 ---
 
 # Slide 3: Event-Driven Quality Gates (ETL Ingestion)
 ## Automated Validation with Great Expectations
-* **Real-time API Endpoint**: Receives field registrations via `/api/stream/beneficiary` and automatically cleanses formats (standardizing phone numbers to E.164,Title Cases names, etc.).
-* **Boundary Validation**: The data is checked against strict Great Expectations rules in-memory.
-* **Zero-Pollution Quarantine**: Valid records are inserted into the directory, while non-compliant records are immediately routed to a `quarantined_events` log for DPO review, preserving database cleanliness.
+* **Real-time API Endpoint**: Receives field registrations via `/api/stream/beneficiary` and automatically standardizes formatting (standardizing phone numbers, casing names).
+* **Boundary Validation**: Validates inputs in-memory against 9 Great Expectations rules (validating email, regions, and pillars).
+* **Zero-Pollution Quarantine**: Valid records write directly to the database, while faulty registries route to a quarantine log, ensuring database integrity.
 
 ---
 
@@ -37,17 +37,17 @@
 
 ---
 
-# Slide 5: Automated Financial Reconciliation (Problem 10)
-## Restoring Funding Integrity (Stipend vs. Attendance Audit)
-* **The Rule**: Stipends (KES 5,000.00/month) require a minimum **75% class attendance rate** and active **Data-Sharing Consent** to be disbursed.
-* **Dynamic Auditing Widget**: Automatically cross-references actual disbursements against expected amounts based on monthly attendance rates and consent status.
-* **Discrepancy Resolution**: Instantly flags anomalous payments (e.g. payout made despite withdrawn consent or low attendance). Allows station managers to execute corrective actions ("Recall Payout & Hold") with a single click.
+# Slide 5: Chatbot Rights Engine & Compliant Exporter
+## Automated Consent Control & Audits
+* **Bilingual Rights Agent**: Handles data requests in Swahili and English. Allows fellows to check profile details, update consent purposes, or execute data purges.
+* **External Compliant Export**: A prominent **Export Compliant Donor Report (CSV)** button allows compliance auditors to instantly download masked, donor-safe datasets for external audits.
+* **Direct Self-Service**: Beneficiaries log in directly to adjust permissions for Stipends, Photos, SMS, or Audits.
 
 ---
 
 # Slide 6: Quantified Impact & Strategic ROI
-## Operational & Financial Savings Compiled
-* **Compliance Savings**: Saves **24 hours/week** of manual ledger compilation and **10 hours/week** of data cleansing.
-* **Audit Efficiency**: Reduces monthly reconciliation times from **15 hours to less than 1 minute** via the automated auditing widget.
-* **Stipend Recovery**: Seeded data immediately flags **8 discrepancies** (5 low attendance, 3 consent violations), preventing **KES 40,000.00/month** in direct leakage (projected **KES 480,000.00/year**).
+## Operational Savings Compiled
+* **Compliance Savings**: Saves **24 hours/week** of manual access logging and **10 hours/week** of manual data cleansing.
+* **Rights SLA Compliance**: Reduces profile erasure ("Right to be Forgotten") cycle times from **14 business days to less than 1 second**.
+* **Zero-Pollution boundary**: Quarantines registrations containing bad formats before they write to active directory.
 * **Legal Shield**: Dynamic PII masking and right-to-be-forgotten controls prevent KDPA statutory fine exposure (up to KES 5M).

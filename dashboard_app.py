@@ -67,8 +67,6 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.handle_get_audit_logs(query_params)
         elif path == "/api/quarantined":
             self.handle_get_quarantined(query_params)
-        elif path == "/api/reconciliation":
-            self.handle_get_reconciliation(query_params)
         elif path == "/" or self.path == "/index.html":
             self.path = "/dashboard.html"
             super().do_GET()
@@ -89,8 +87,6 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.handle_beneficiary_anonymize()
         elif path == "/api/beneficiary/update_consent":
             self.handle_beneficiary_self_update_consent()
-        elif path == "/api/reconciliation/correct":
-            self.handle_reconciliation_correct()
         elif path == "/api/chatbot/message":
             self.handle_chatbot_message()
         else:
@@ -322,99 +318,7 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
 
-    def handle_get_reconciliation(self, query_params):
-        role = query_params.get('role', ['hq_admin'])[0]
-        operator_region = query_params.get('operator_region', ['All'])[0]
-        operator_pillar = query_params.get('operator_pillar', ['All'])[0]
-        status_filter = query_params.get('status', ['All'])[0]
-        
-        try:
-            conn = sqlite3.connect(DB_PATH, timeout=30.0)
-            conn.row_factory = sqlite3.Row
-            cursor = conn.cursor()
-            
-            # Base query joining on beneficiaries to enforce RLS
-            query = """
-                SELECT fr.*, ib.pillar, ib.region 
-                FROM financial_reconciliation fr
-                JOIN inuka_beneficiaries ib ON fr.beneficiary_id = ib.beneficiary_id
-                WHERE 1=1
-            """
-            params = []
-            
-            # Apply RLS boundaries
-            if role == "field_officer":
-                query += " AND ib.region = ?"
-                params.append(operator_region)
-            elif role == "pillar_coord":
-                query += " AND ib.pillar = ?"
-                params.append(operator_pillar)
-                
-            # Filter by reconciliation match status
-            if status_filter != "All":
-                query += " AND fr.status = ?"
-                params.append(status_filter)
-                
-            cursor.execute(query, params)
-            records = [dict(row) for row in cursor.fetchall()]
-            conn.close()
-            
-            self.send_response(200)
-            self.send_header('Content-Type', 'application/json')
-            self.end_headers()
-            self.wfile.write(json.dumps(records).encode('utf-8'))
-        except Exception as e:
-            self.send_response(500)
-            self.send_header('Content-Type', 'application/json')
-            self.end_headers()
-            self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
 
-    def handle_reconciliation_correct(self):
-        content_length = int(self.headers['Content-Length'])
-        post_data = self.rfile.read(content_length)
-        try:
-            payload = json.loads(post_data.decode('utf-8'))
-            beneficiary_id = payload.get("beneficiary_id")
-            operator = payload.get("operator", "system")
-            
-            conn = sqlite3.connect(DB_PATH, timeout=30.0)
-            cursor = conn.cursor()
-            
-            # Correct disbursement record: recall payout and mark matched
-            cursor.execute("""
-                UPDATE financial_reconciliation
-                SET disbursed_amount = 0.00,
-                    status = 'Matched',
-                    discrepancy_reason = 'Corrected: Disbursement Recalled / Suspended'
-                WHERE beneficiary_id = ?
-            """, (beneficiary_id,))
-            
-            # Place beneficiary fellowship On Hold if it was low attendance / consent violation
-            cursor.execute("""
-                UPDATE inuka_beneficiaries
-                SET enrollment_status = 'On Hold'
-                WHERE beneficiary_id = ?
-            """, (beneficiary_id,))
-            
-            # Write transaction log
-            timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            cursor.execute("""
-                INSERT INTO privacy_audit_log (timestamp, operator, action_type, target_beneficiary_id, details, ip_address, is_anomaly)
-                VALUES (?, ?, 'FINANCIAL_RECONCILIATION', ?, ?, '127.0.0.1', 0)
-            """, (timestamp, operator, beneficiary_id, f"Corrected disbursement anomaly for {beneficiary_id}. Payout recalled, fellowship set to On Hold."))
-            
-            conn.commit()
-            conn.close()
-            
-            self.send_response(200)
-            self.send_header('Content-Type', 'application/json')
-            self.end_headers()
-            self.wfile.write(json.dumps({"success": True}).encode('utf-8'))
-        except Exception as e:
-            self.send_response(500)
-            self.send_header('Content-Type', 'application/json')
-            self.end_headers()
-            self.wfile.write(json.dumps({"error": str(e)}).encode('utf-8'))
 
     def handle_stream_beneficiary(self):
         content_length = int(self.headers['Content-Length'])
@@ -672,18 +576,17 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
                     row = dict(cursor.fetchone())
                     
                     cursor.execute("""
-                        SELECT COUNT(*) as discrepancies
-                        FROM financial_reconciliation fr
-                        JOIN inuka_beneficiaries ib ON fr.beneficiary_id = ib.beneficiary_id
-                        WHERE ib.pillar = ? AND fr.status = 'Discrepancy'
+                        SELECT COUNT(*) as erasures
+                        FROM inuka_beneficiaries
+                        WHERE pillar = ? AND status = 'Anonymized'
                     """, (pillar_match,))
-                    discrepancy_row = dict(cursor.fetchone())
+                    erasure_row = dict(cursor.fetchone())
                     
                     total = row['total']
                     consented = row['consented'] or 0
                     pending = row['pending'] or 0
                     withdrawn = row['withdrawn'] or 0
-                    discrepancies = discrepancy_row['discrepancies'] or 0
+                    erasures = erasure_row['erasures'] or 0
                     consent_rate = round((consented / total * 100), 1) if total > 0 else 0
                     
                     response_msg = f"📊 **[Inuka Pillar Report: {pillar_match}]**\n" \
@@ -691,7 +594,7 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
                                    f"- **Consent Opt-In Rate**: {consent_rate}% ({consented} / {total})\n" \
                                    f"- **Pending Verification**: {pending}\n" \
                                    f"- **Withdrawn Consent**: {withdrawn}\n" \
-                                   f"- **Disbursement Discrepancies**: {discrepancies} payment anomalies flagged.\n" \
+                                   f"- **Active Data Erasures**: {erasures} profiles purged under KDPA Sec 40.\n" \
                                    f"*Pillar compliance audit generated and logged in KDPA access ledger.*"
                                    
                 elif region_match:
@@ -707,18 +610,17 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
                     row = dict(cursor.fetchone())
                     
                     cursor.execute("""
-                        SELECT COUNT(*) as discrepancies
-                        FROM financial_reconciliation fr
-                        JOIN inuka_beneficiaries ib ON fr.beneficiary_id = ib.beneficiary_id
-                        WHERE ib.region = ? AND fr.status = 'Discrepancy'
+                        SELECT COUNT(*) as erasures
+                        FROM inuka_beneficiaries
+                        WHERE region = ? AND status = 'Anonymized'
                     """, (region_match,))
-                    discrepancy_row = dict(cursor.fetchone())
+                    erasure_row = dict(cursor.fetchone())
                     
                     total = row['total']
                     consented = row['consented'] or 0
                     pending = row['pending'] or 0
                     withdrawn = row['withdrawn'] or 0
-                    discrepancies = discrepancy_row['discrepancies'] or 0
+                    erasures = erasure_row['erasures'] or 0
                     consent_rate = round((consented / total * 100), 1) if total > 0 else 0
                     
                     response_msg = f"📊 **[Inuka Region Report: {region_match}]**\n" \
@@ -726,7 +628,7 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
                                    f"- **Consent Opt-In Rate**: {consent_rate}% ({consented} / {total})\n" \
                                    f"- **Pending Verification**: {pending}\n" \
                                    f"- **Withdrawn Consent**: {withdrawn}\n" \
-                                   f"- **Disbursement Discrepancies**: {discrepancies} payment anomalies flagged.\n" \
+                                   f"- **Active Data Erasures**: {erasures} profiles purged under KDPA Sec 40.\n" \
                                    f"*Regional compliance audit generated and logged in KDPA access ledger.*"
                 else:
                     # Global report across all registry
@@ -740,8 +642,8 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
                     """)
                     row = dict(cursor.fetchone())
                     
-                    cursor.execute("SELECT COUNT(*) as discrepancies FROM financial_reconciliation WHERE status = 'Discrepancy'")
-                    discrepancies = cursor.fetchone()[0] or 0
+                    cursor.execute("SELECT COUNT(*) as erasures FROM inuka_beneficiaries WHERE status = 'Anonymized'")
+                    erasures = cursor.fetchone()[0] or 0
                     
                     total = row['total']
                     consented = row['consented'] or 0
@@ -754,7 +656,7 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
                                    f"- **Consent Opt-In Rate**: {consent_rate}% ({consented} / {total})\n" \
                                    f"- **Pending Verification**: {pending}\n" \
                                    f"- **Withdrawn Consent**: {withdrawn}\n" \
-                                   f"- **Total Disbursement Discrepancies**: {discrepancies} flagged violations.\n" \
+                                   f"- **Total Active Data Erasures**: {erasures} profiles anonymized.\n" \
                                    f"*Compliance audit trail compiled and secured.*"
 
                 # Log reporting transaction

@@ -207,35 +207,4 @@ def test_beneficiary_login_and_purpose_rls():
     
     conn.close()
 
-def test_financial_reconciliation_audit():
-    """Verify that stipend anomalies are caught and correctable."""
-    from seed_inuka_db import seed_database
-    seed_database() # reset
-    
-    conn = sqlite3.connect(DB_TEST_PATH)
-    cursor = conn.cursor()
-    
-    # Check seeded discrepancy record (Joseph Kiprop INK-2026-1011 has index 10 and is a discrepancy)
-    cursor.execute("SELECT status, discrepancy_reason FROM financial_reconciliation WHERE beneficiary_id = 'INK-2026-1011'")
-    status, reason = cursor.fetchone()
-    assert status == "Discrepancy"
-    assert "Low attendance" in reason
-    
-    # Run correction
-    cursor.execute("""
-        UPDATE financial_reconciliation
-        SET disbursed_amount = 0.00,
-            status = 'Matched',
-            discrepancy_reason = 'Corrected: Disbursement Recalled / Suspended'
-        WHERE beneficiary_id = 'INK-2026-1011'
-    """)
-    conn.commit()
-    
-    # Verify corrected
-    cursor.execute("SELECT status, disbursed_amount, discrepancy_reason FROM financial_reconciliation WHERE beneficiary_id = 'INK-2026-1011'")
-    status_c, disbursed_c, reason_c = cursor.fetchone()
-    assert status_c == "Matched"
-    assert disbursed_c == 0.00
-    assert "Corrected" in reason_c
-    
-    conn.close()
+
