@@ -43,89 +43,183 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(11, 15, 25, 0.95);
+            background: #000;
             z-index: 1000;
+            display: flex;
+        }
+
+        .login-left-pane {
+            width: 58%;
+            height: 100%;
+            background: radial-gradient(circle at 80% 80%, rgba(204, 24, 30, 0.25) 0%, rgba(204, 24, 30, 0.05) 50%, transparent 100%), 
+                        radial-gradient(circle at 20% 30%, rgba(217, 119, 6, 0.15) 0%, transparent 70%),
+                        #0e0f13;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 60px 80px;
+            box-sizing: border-box;
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .login-right-pane {
+            width: 42%;
+            height: 100%;
+            background: #f9fafb;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 40px;
+            box-sizing: border-box;
         }
 
-        .login-box {
-            background: var(--bg-panel);
-            border: 1px solid var(--border);
-            padding: 30px;
-            border-radius: 12px;
-            width: 440px;
-            box-shadow: 0 10px 25px var(--shadow);
+        .login-card {
+            background: white;
+            border-radius: 16px;
+            width: 460px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+            box-sizing: border-box;
         }
 
-        .login-logo {
-            font-size: 24px;
+        .login-header-group {
+            margin-bottom: 24px;
+        }
+
+        .login-tag {
+            font-size: 11px;
+            font-weight: 700;
+            color: #cc181e;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+
+        .login-title-h1 {
+            font-size: 28px;
             font-weight: 800;
-            color: var(--primary);
-            text-align: center;
-            margin-bottom: 5px;
-            letter-spacing: 0.5px;
+            color: #111827;
+            margin: 0 0 8px 0;
+            letter-spacing: -0.5px;
         }
 
-        .login-subtitle {
+        .login-desc {
             font-size: 13px;
-            color: var(--text-secondary);
-            text-align: center;
-            margin-bottom: 25px;
+            color: #6b7280;
+            line-height: 1.5;
+            margin: 0;
         }
 
-        .form-group {
-            margin-bottom: 18px;
-        }
-
-        .form-group label {
-            display: block;
+        .custom-form-label {
             font-size: 12px;
             font-weight: 600;
-            color: var(--text-secondary);
+            color: #374151;
             margin-bottom: 6px;
-            text-transform: uppercase;
+            display: block;
         }
 
-        .form-control {
+        .custom-form-input {
             width: 100%;
-            padding: 10px 12px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            color: var(--text-main);
+            padding: 12px 14px;
+            background: #edf2f7;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            color: #111827;
             font-size: 14px;
-            transition: border-color 0.2s;
+            box-sizing: border-box;
+            transition: all 0.2s;
         }
 
-        .form-control:focus {
-            border-color: var(--primary);
+        .custom-form-input:focus {
+            border-color: #cc181e;
+            background: white;
             outline: none;
+            box-shadow: 0 0 0 3px rgba(204, 24, 30, 0.1);
         }
 
-        .btn-login {
+        .password-container {
+            position: relative;
+            display: flex;
+            align-items: center;
             width: 100%;
-            padding: 12px;
-            background: var(--primary);
-            color: var(--text-main);
+        }
+
+        .password-toggle-btn {
+            position: absolute;
+            right: 14px;
+            background: none;
             border: none;
-            border-radius: 6px;
-            font-size: 14px;
+            color: #6b7280;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn-login-secure {
+            width: 100%;
+            padding: 14px;
+            background: #cc181e;
+            color: white;
+            border: none;
+            border-radius: 8px;
             font-weight: 700;
+            font-size: 14px;
             cursor: pointer;
             transition: background 0.2s;
+            margin-top: 10px;
         }
 
-        .btn-login:hover {
-            background: var(--primary-hover);
+        .btn-login-secure:hover {
+            background: #b01015;
+        }
+
+        .kpc-logo-circle {
+            width: 44px;
+            height: 44px;
+            background: #cc181e;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(204, 24, 30, 0.3);
+        }
+
+        .kpc-logo-symbol {
+            width: 22px;
+            height: 22px;
+            fill: white;
+        }
+
+        .left-badges-container {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .left-badge {
+            font-size: 12px;
+            color: #d1d5db;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 6px 14px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .left-badge::before {
+            content: "•";
+            color: #cc181e;
+            font-size: 14px;
         }
 
         .login-error {
-            color: var(--danger);
+            color: #cc181e;
             font-size: 12px;
             text-align: center;
             margin-top: 10px;
+            font-weight: 600;
             display: none;
         }
 
@@ -781,40 +875,83 @@
 
     <!-- 1. LOGIN SECTION -->
     <div id="login-overlay">
-        <div class="login-box">
-            <div class="login-logo">Inuka Fellowship</div>
-            <div class="login-subtitle">KDPA Compliance & Consent Engine</div>
-            
-            <div class="form-group">
-                <label>Demo Profiles Access Matrix</label>
-                <select id="quick-login" class="form-control" style="background: #111827; border-color: rgba(59, 130, 246, 0.3);" onchange="fillLoginCredentials()">
-                    <option value="">-- Choose Access Profile --</option>
-                    <option value="hq_director">1. HQ Program Director (Full Scope, Maskable PII)</option>
-                    <option value="scholarship_hq">2. Scholarship Pillar Coordinator (Scholarship Pillar Only)</option>
-                    <option value="tech_hq">3. Tech Pillar Coordinator (Tech Pillar Only)</option>
-                    <option value="nyanza_field">4. Nyanza Field Officer (Nyanza Region Only)</option>
-                    <option value="nairobi_field">5. Nairobi Field Officer (Nairobi Region Only)</option>
-                    <option value="coastal_field">6. Coastal Field Officer (Coastal Region Only)</option>
-                    <option value="kdpa_auditor">7. Compliance Auditor (Ledgers Only, Fully Masked)</option>
-                    <option value="INK-2026-1002">8. Beneficiary (INK-2026-1002 - Lucy Hassan)</option>
-                </select>
-                <p style="font-size: 11px; color: var(--text-secondary); margin-top: 6px; line-height: 1.4;">
-                    💡 <strong>Compliance Note:</strong> Column-level and row-level safety policies are enforced dynamically on the database query layer.
+        <!-- Left Pane -->
+        <div class="login-left-pane">
+            <!-- Left Top Header -->
+            <div style="display: flex; align-items: center; gap: 14px;">
+                <div class="kpc-logo-circle">
+                    <svg viewBox="0 0 100 100" class="kpc-logo-symbol">
+                        <polygon points="50,15 15,48 30,48 30,85 70,85 70,48 85,48" fill="white"/>
+                        <rect x="42" y="58" width="16" height="27" fill="#cc181e"/>
+                    </svg>
+                </div>
+                <div>
+                    <div style="font-weight: 800; font-size: 17px; color: white; letter-spacing: 0.5px; line-height: 1.2;">KENYA PIPELINE COMPANY PLC</div>
+                    <div style="font-size: 10px; color: #a1a1aa; letter-spacing: 1px; font-weight: 700;">SYNERGY TRUST &bull; Privacy Intelligence</div>
+                </div>
+            </div>
+
+            <!-- Left Middle Content -->
+            <div style="margin: 40px 0;">
+                <div style="font-size: 12px; font-weight: 700; color: #f59e0b; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">SUPER DATA AND CONSENT TRUST</div>
+                <h1 style="font-size: 56px; font-weight: 900; color: white; margin: 0 0 20px 0; line-height: 1.1; letter-spacing: -1.5px;">
+                    Trust the data.<br>
+                    <span style="color: #f59e0b;">Protect the person.</span>
+                </h1>
+                <p style="font-size: 16px; color: #9ca3af; line-height: 1.6; max-width: 520px; margin: 0;">
+                    A role-aware privacy, consent and beneficiary intelligence platform built on the upgraded Inuka data fabric.
                 </p>
             </div>
 
-            <form id="login-form" onsubmit="handleLoginSubmit(event)">
-                <div class="form-group">
-                    <label>Username</label>
-                    <input type="text" id="username" class="form-control" required placeholder="Enter username">
+            <!-- Left Bottom Badges -->
+            <div class="left-badges-container">
+                <span class="left-badge">Real-time consent</span>
+                <span class="left-badge">Safe reporting</span>
+                <span class="left-badge">AI operations</span>
+                <span class="left-badge">Tamper-evident audit</span>
+            </div>
+        </div>
+
+        <!-- Right Pane -->
+        <div class="login-right-pane">
+            <div class="login-card">
+                <div class="login-header-group">
+                    <div class="login-tag">Secure Access</div>
+                    <h1 class="login-title-h1">Sign in to your workspace</h1>
+                    <p class="login-desc">Your page, permissions and AI context are determined by your account.</p>
                 </div>
-                <div class="form-group">
-                    <label>Password</label>
-                    <input type="password" id="password" class="form-control" required placeholder="Enter password">
+
+                <div class="form-group" style="margin-bottom: 20px; background: #f9fafb; border: 1px dashed #d1d5db; padding: 12px; border-radius: 8px;">
+                    <label class="custom-form-label" style="color: #4b5563; font-weight: 700; margin-bottom: 4px;">Demo Profiles Access Matrix</label>
+                    <select id="quick-login" class="custom-form-input" style="background: white; border-color: #d1d5db; padding: 8px 12px; font-size: 13px;" onchange="fillLoginCredentials()">
+                        <option value="">-- Choose Access Profile --</option>
+                        <option value="hq_director">1. HQ Program Director (Full Scope, Maskable PII)</option>
+                        <option value="scholarship_hq">2. Scholarship Pillar Coordinator (Scholarship Pillar Only)</option>
+                        <option value="tech_hq">3. Tech Pillar Coordinator (Tech Pillar Only)</option>
+                        <option value="nyanza_field">4. Nyanza Field Officer (Nyanza Region Only)</option>
+                        <option value="nairobi_field">5. Nairobi Field Officer (Nairobi Region Only)</option>
+                        <option value="coastal_field">6. Coastal Field Officer (Coastal Region Only)</option>
+                        <option value="kdpa_auditor">7. Compliance Auditor (Ledgers Only, Fully Masked)</option>
+                        <option value="INK-2026-1002">8. Beneficiary (INK-2026-1002 - Lucy Hassan)</option>
+                    </select>
                 </div>
-                <button type="submit" class="btn-login">Authenticate Profile</button>
-            </form>
-            <div class="login-error" id="login-error">Authentication failed. Invalid username or password.</div>
+
+                <form id="login-form" onsubmit="handleLoginSubmit(event)">
+                    <div class="form-group" style="margin-bottom: 18px;">
+                        <label class="custom-form-label" for="username">Email or Username</label>
+                        <input type="text" id="username" class="custom-form-input" required placeholder="admin@inuka.demo">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 24px;">
+                        <label class="custom-form-label" for="password">Password</label>
+                        <div class="password-container">
+                            <input type="password" id="password" class="custom-form-input" required placeholder="••••••••" style="padding-right: 60px;">
+                            <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility()">Show</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-login-secure">Sign in securely &rarr;</button>
+                </form>
+                <div class="login-error" id="login-error">Authentication failed. Invalid username or password.</div>
+            </div>
         </div>
     </div>
 
@@ -1181,11 +1318,29 @@
             const passField = document.getElementById('password');
 
             if (select.value) {
-                userField.value = select.value;
+                if (select.value === 'hq_director') {
+                    userField.value = 'admin@inuka.demo';
+                } else if (select.value === 'INK-2026-1002') {
+                    userField.value = 'lucy@inuka.demo';
+                } else {
+                    userField.value = select.value + '@inuka.demo';
+                }
                 passField.value = 'password';
             } else {
                 userField.value = '';
                 passField.value = '';
+            }
+        }
+
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById('password');
+            const toggleBtn = document.querySelector('.password-toggle-btn');
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleBtn.innerText = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                toggleBtn.innerText = 'Show';
             }
         }
 

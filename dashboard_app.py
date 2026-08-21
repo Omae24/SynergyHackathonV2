@@ -105,16 +105,28 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
             cursor = conn.cursor()
             
             # 1. First attempt login as staff user
+            staff_email_map = {
+                "admin@inuka.demo": "hq_director",
+                "hq_director@inuka.demo": "hq_director",
+                "scholarship_hq@inuka.demo": "scholarship_hq",
+                "tech_hq@inuka.demo": "tech_hq",
+                "nyanza_field@inuka.demo": "nyanza_field",
+                "nairobi_field@inuka.demo": "nairobi_field",
+                "coastal_field@inuka.demo": "coastal_field",
+                "kdpa_auditor@inuka.demo": "kdpa_auditor"
+            }
+            mapped_username = staff_email_map.get(username.lower(), username)
+
             cursor.execute(
                 "SELECT role, depot, truck_reg FROM users WHERE username = ? AND password = ?",
-                (username, password)
+                (mapped_username, password)
             )
             user_row = cursor.fetchone()
             
             if user_row:
                 role, depot, truck_reg = user_row
                 response = {
-                    "username": username,
+                    "username": mapped_username,
                     "role": role,
                     "depot": depot,
                     "truck_reg": truck_reg,
@@ -127,11 +139,12 @@ class DashboardHTTPHandler(http.server.SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps(response).encode('utf-8'))
                 return
                 
-            # 2. Second attempt: login as beneficiary (INK-2026-XXXX) with password "password"
-            cursor.execute(
-                "SELECT beneficiary_id, full_name, pillar, region, consent_status, enrollment_status FROM inuka_beneficiaries WHERE beneficiary_id = ? AND ? = 'password'",
-                (username, password)
-            )
+            # 2. Second attempt: login as beneficiary (by ID or email) with password "password"
+            cursor.execute("""
+                SELECT beneficiary_id, full_name, pillar, region, consent_status, enrollment_status 
+                FROM inuka_beneficiaries 
+                WHERE (beneficiary_id = ? OR email = ?) AND ? = 'password'
+            """, (username, username, password))
             ben_row = cursor.fetchone()
             conn.close()
 
